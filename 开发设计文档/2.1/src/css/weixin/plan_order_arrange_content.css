@@ -1,0 +1,152 @@
+html,body,.wrap{
+	height: 100%;
+}
+/*~~~~~~~~~~~~~~~~~~~活动内容~~~~~~~~~~~~~~~~~~~*/
+.content{
+	width: 1200px;
+	margin: 0 auto 34px;
+	background: #ffffff;
+	border-top: 4px solid #C81624;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	color: #1D1D1D;
+}
+.in-content{
+	width: 800px;
+	margin: 0 auto;
+	padding: 30px;
+}
+.title-wrap{
+	display: inline-block;
+	position: relative;
+	width: 110px;
+	text-align: right;
+}
+.in-content .title{
+	display: inline-block;
+	position: relative;
+}
+.title-wrap i{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: -4px;
+	left: -10px;
+	background: url(../../images/plan_active.png) -139px -23px no-repeat;
+}
+.plan-time{
+	margin: 24px 0 14px 0;
+}
+.plan-time input,
+.cut-time input
+{
+	display: inline-block;
+	width: 268px;
+	height: 44px;
+	padding-right: 32px;
+}
+.plan-time .line{
+	display: inline-block;
+	width: 20px;
+	margin: 10px;
+	height: 1px;
+	background: #c2c2c2;
+	vertical-align: middle;
+}
+.plan-time-alert{
+	display: block;
+	font-size: 12px;
+	color: #B8B8B8;
+	margin-left: 116px;
+	line-height: 20px;
+}
+.plan-time em{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top: 13px;
+	background: url("../../images/plan_active.png") -61px 0 no-repeat;
+}
+.plan-time em:nth-of-type(1){
+	right: 54px;
+}
+.plan-time em:nth-of-type(2){
+	right: 370px;
+}
+.content-sum .title-wrap{
+	vertical-align: top;
+}
+.count-num{
+	color: #C9C9C9;
+}
+.count-num em{
+	color: #C81624;
+}
+.content-sum textarea{
+	width: 585px;
+	height: 214px;
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	resize: none;
+}
+.content-sum .count-num{
+	display: block;
+	margin-left: 542px;
+}
+.attach-file .btn{
+	width: 57px;
+	height: 45px;
+	background: #C81624;
+	margin-right: 18px;
+}
+.attach-file p{
+	color: #B8B8B8;
+	display: inline-block;
+}
+.attach-file ul{
+	margin: 22px 0 20px 115px;
+}
+.attach-file li{
+	float: left;
+	margin:0 32px 10px 0;
+}
+.attach-file li p{
+	text-align: center;
+	line-height: 26px;
+	color: #000000;
+	border: 1px solid #C81624;
+	padding: 0 5px;
+	border-radius: 2px;
+}
+.attach-file li .progress{
+	margin-bottom: 4px;
+}
+.attach-file li i{
+	cursor: pointer;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 10px;
+	background: url("../../images/plan_active.png") -33px 0 no-repeat;
+	transition: all 0.5s;
+}
+.attach-file li i:hover{
+	transform: rotate(180deg);
+	 -webkit-transform: rotate(180deg);
+	  -ms-transform: rotate(180deg);
+	   -moz-transform: rotate(180deg);
+	   	-o-transform: rotate(180deg);
+}
+.cut-time span{
+	color: #B8B8B8;
+	margin-left: 10px;
+}
+.save-data{
+	width: 440px;
+	height: 46px;
+	background: #C81624;
+	margin: 32px 0 0 114px;
+}

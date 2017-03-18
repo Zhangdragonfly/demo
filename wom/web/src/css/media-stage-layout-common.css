@@ -1,0 +1,224 @@
+.in-nav
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~顶部开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.top{
+	width: 100%;
+	height: 42px;
+	border-bottom: 1px solid #DCDCDC;
+	line-height: 42px;
+}
+.top span{
+	margin-left: 3%;
+}
+.top .fr{
+	margin-right: 5%;
+}
+.top .btn{
+	width: 83px;
+	height: 29px;
+	text-align: center;
+	padding:0;
+	line-height: 29px;
+	background: #C81724;
+	border: 0;
+	margin:0 18px 3px 0;
+}
+.top .btn:active{
+	background: #C81724;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~头部开始~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header{
+	width: 100%;
+	height: 131px;
+	background: #ffffff;
+	position: relative;
+}
+.header h1{
+	margin:0 16% 0 3%;
+}
+.header h1 a{
+	text-indent: -99999px;
+	display: inline-block;
+	width: 217px;
+	height: 69px;
+	background: url("../images/logo.png");
+	margin-top: 32px;
+}
+.search-key{
+	margin-top:48px;
+	width: 546px;
+	height: 40px;
+	border: 1px solid #8d8d8d;
+	border-radius: 2px;
+	box-shadow: inset 2px 2px 5px #dfdfdf;
+	position: absolute;
+	left: 50%;
+	margin-left: -273px;
+}
+.search-key .dropdown{
+	margin: 10px 5px 0 8px;
+	width: 102px;
+	cursor: pointer;
+}
+.search-key .dropdown .caret{
+	margin-top: -2px;
+}
+.search-key ul{
+	left: -9px;
+	top: 28px;
+	position: absolute;
+}
+.search-key ul li{
+	padding: 3px 20px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	color: #333;
+	white-space: nowrap;
+}
+.search-key ul li:hover{
+	background: #f5f5f5;
+}
+.search-key input{
+	width: 368px;
+	height: 27px;
+	padding:0 10px;
+	outline: none;
+	border: none;
+	margin-top: 6px;
+	border-left: 1px solid #b7b7b7;
+	color: #8d8d8d;
+	font-size: 12px;
+}
+.search-media{
+	width: 60px;
+	height: 40px;
+	background: #C81724;
+	cursor: pointer;
+	border-radius: 0 2px 2px 0;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+}
+.search-media span{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	background: url("../images/list-ghost.png") 0 -107px no-repeat;
+}
+.header .phone-num{
+	display: block;
+	width: 275px;
+	height: 96px;
+	margin: 20px 5% 0 0;
+	background: url("../images/list-ghost.png") 0 0 no-repeat;
+}
+.header .contact-img{
+	margin-right: 5%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~登录后头部~~~~~~~~~~~~~~~~~~~~~~~~*/
+.head-top{
+	min-width: 1200px;
+	line-height: 42px;
+	margin: 0 auto;
+}
+.head-top .welcome{
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	margin-left: 24px;
+	font-weight: normal;
+}
+.enter ul li{
+	float: left;
+	font-size: 14px;
+	margin-right: 24px;
+	font-weight: 500;
+}
+.enter ul .username:hover,
+.enter ul .my-lib:hover{
+	color: #c81624;
+}
+.head-top .enter a{
+	float: none;
+}
+.head-top .enter a:hover{
+	color: #c81624;
+}
+.head-bottom{
+	background: #fff;
+}
+.dropdown .caret
+{
+	background: url("../images/list-ghost.png") -285px -75px no-repeat;
+	width: 9px;
+	height: 6px;
+	border: 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 0 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~导航开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.nav{
+	width: 100%;
+	background: #C81724;
+	height: 54px;
+	line-height: 54px;
+	margin-bottom: 22px;
+}
+.in-nav li{
+	float: left;
+}
+.in-nav li a{
+	display: block;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0 45px;
+}
+.in-nav li a.active-nav,
+.in-nav li a:hover{
+	background: #1E1E1E;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~底部开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer{
+	width: 100%;
+	text-align: center;
+	height: 96px;
+	background: #1E1E1E;
+	padding-top: 23px;
+	color: #414141;
+}
+.in-footer a{
+	line-height: 20px;
+	color: #ffffff;
+	padding-right: 29px;
+}
+.in-footer a i{
+	display: inline-block;
+	width: 14px;
+	margin:-1px 15px 0 16px;
+	vertical-align: middle;
+	background: url("../images/list-ghost.png") 0 -148px no-repeat;
+}
+.in-footer a:first-child i{
+	height: 13px;
+}
+.in-footer a:nth-of-type(2) i{
+	height: 9px;
+	background-position: -48px -150px;
+}
+.in-footer a:nth-of-type(3) i{
+	height: 15px;
+	background-position: -96px -147px;
+}
+.in-footer a:last-child i{
+	width: 18px;
+	height: 13px;
+	background-position: -141px -148px;
+}
+.footer p{
+	color: #ffffff;
+	margin-top: 10px;
+}

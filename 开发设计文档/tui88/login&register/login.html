@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>推客登陆</title>
+	<link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../src/css/reset.css">
+	<link rel="stylesheet" href="../dep/layer/skin/layer.css">
+	<link rel="stylesheet" href="../src/css/site-stage-layout-common.css">
+	<link rel="stylesheet" href="../src/css/login-regist/login.css">
+</head>
+<body>
+<!--未登录状态下的头部导航-->
+<div class="header clearfix">
+	<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+	<div class="unlogin fr">
+		<a href="#">注册</a>
+		<a href="#">登录</a>
+		<a href="#" style="display: none">返回登录</a>
+	</div>
+</div>
+<!--登录状态下的头部导航-->
+<div class="header clearfix" style="display: none">
+	<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+	<div class="nav fl">
+		<a href="#" class="current-nav">个人中心</a>
+		<a href="#">任务大厅</a>
+	</div>
+	<div class="enter fr">
+		<a href="#">欢迎您，荔枝</a>
+		<a href="#">帮助中心</a>
+		<a href="#">退出</a>
+	</div>
+</div>
+<!-- 主要内容部分-->
+<div class="main-wrap clearfix">
+	<div class="login-bg-wrap">
+		<div class="login-con content">
+			<h2>登录</h2>
+			<div class="account-login">
+				<div class="input-group">
+					<span>用户名:</span><input class="phone-number" type="text" placeholder="请输入手机号或者昵称">
+					<div class="insure-name insure">请输入账号</div>
+				</div>
+				<div class="input-group">
+					<span>密码:</span><input class="psd" type="password" placeholder="请输入密码">
+					<div class="insure-psd insure">请输入密码</div>
+				</div>
+				<div class="remember-forget-psd">
+					<label>
+						<input type="checkbox">记住密码
+					</label>
+					<a href="#" target="_blank">忘记密码?</a>
+				</div>
+				<button type="submit" class="btn-login btn bg-main color-fff">登 录</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 底部-->
+<div class="footer">
+	copyright@tui88.com版权所有
+</div>
+<script src="../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../dep/layer/layer.js"></script>
+<script src="../dep/js/wom-tool.js"></script>
+<script src="../src/js/login-regist/login.js"></script>
+</body>
+</html>

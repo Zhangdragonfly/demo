@@ -1,0 +1,221 @@
+@charset "utf-8";
+body{
+	min-width: 1200px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格导航开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.publish-type .dropdown,
+.price-sort .dropdown
+{
+	margin: 6px 17px 0 6px;
+	width: 106px;
+	border: 1px solid #B7B7B7;
+	padding: 2px 5px;
+	border-radius: 2px;
+	cursor: pointer;
+	height: 30px;
+	line-height: 24px;
+	box-shadow: inset 2px 2px 5px #dfdfdf;
+}
+.price-sort .dropdown{
+	min-width: 216px;
+	margin-right: 0;
+}
+.publish-type .dropdown a,
+.price-sort .dropdown a
+{
+	display: block;
+	color: #989898;
+}
+
+.publish-type .dropdown .caret,
+.price-sort .dropdown .caret
+{
+	background: url("../../images/list-ghost.png") -285px -75px no-repeat;
+	width: 9px;
+	height: 6px;
+	border: 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 0 0 10px;
+}
+.publish-type .dropdown-menu
+{
+	min-width: 106px;
+}
+.price-sort .dropdown-menu{
+	min-width: 216px;
+}
+.publish-type .dropdown-menu li,
+.price-sort .dropdown-menu li
+{
+	line-height: 30px;
+	padding: 0 5px 0 10px;
+	cursor: pointer;
+	color: #989898;
+}
+.publish-type .dropdown-menu li:hover,
+.price-sort .dropdown-menu li:hover
+{
+	color: #C81624;
+	background: #eee;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格body部分开始~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table-item tbody tr{
+	height: 114px;
+	color: #3c3c3c;
+}
+.table-item tbody tr td{
+	vertical-align: middle;
+}
+.table .account{
+	padding: 8px 0;
+	position: relative;
+}
+.account dl{
+	margin-left: 10px;
+}
+.account dt{
+	width: 64px;
+	height: 64px;
+	margin-right: 8px;
+	position: relative;
+}
+.account dt i{
+	width: 16px;
+	height: 15px;
+	background: url("../../images/list-ghost.png") -283px -52px no-repeat;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.account dt a{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.account dt a img{
+	position: absolute;
+	top: -172px;
+	left: -180px;
+}
+.account dd{
+	text-align: left;
+	margin-top: 10px;
+	position: relative;
+}
+.account dd a:hover{
+	color: #C81624;
+	text-decoration: underline;
+}
+.account dd .ewm-ID{
+	text-align: left;
+	margin-top: 5px;
+	position: relative;
+	color: #a2a2a2;
+	cursor: pointer;
+}
+.account .ewm-ID i{
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	background: url("../../images/list-ghost.png") -326px -81px no-repeat;
+	vertical-align: middle;
+}
+.account .ewm-ID img{
+	position: absolute;
+	left: 12px;
+	top: 15px;
+	display: none;
+}
+.table-item .account .ewm-ID:hover img{
+	display: block;
+}
+.refer-price li{
+	line-height: 20px;
+}
+.refer-price li span{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	color: #3c3c3c;
+}
+.refer-price li i{
+	color: #C81624;
+	display: inline-block;
+	width: 61px;
+	text-align: left;
+}
+.refer-price li em{
+	color: #bdbdbd;
+}
+.table-item .table .collect{
+	position: relative;
+	vertical-align: middle;
+}
+.collect a{
+	text-align: center;
+	line-height: 30px;
+	color: #C81624;
+	display: inline-block;
+	width: 98px;
+	text-align: left;
+}
+.collect a label{
+	font-weight: normal;
+}
+.collect .detail,
+.collect .add-car
+{
+	display: block;
+	color: #C81624;
+	cursor: pointer;
+}
+.collect .detail i{
+	margin-left: 14px;
+}
+.collect i{
+	display: inline-block;
+	width: 14px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 15px;
+	background: url("../../images/list-ghost.png") -317px -3px no-repeat;
+}
+.add-media i{
+	width: 15px;
+	background-position: -317px -30px;
+}
+.add-car i{
+	display: inline-block;
+	width: 16px;
+	height: 14px;
+	vertical-align: middle;
+	background: url("../../images/list-ghost.png") -316px -60px no-repeat;
+}
+.checked-all-resource{
+	cursor: pointer;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~购物车开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.resource-table .tbody tr{
+	padding: 16px 0;
+	border-bottom: 1px solid #E8E8E8;
+}
+.resource-table .table tbody tr td{
+	border: 0 none;
+	vertical-align: middle;
+}
+.resource-table tbody tr{
+	border-bottom: 1px solid #ECECEC;
+}
+.resource-table .ewm-ID i{
+	display: none;
+}
+.ad-type span{
+	display: block;
+	line-height: 20px;
+}
+

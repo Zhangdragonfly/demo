@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>微信订单</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/ad-owner-user-admin/order-manage/weixin-order-list.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-top-wrap">
+            <div class="head-top clearfix login-cancel hidden">
+                <h3 class="welcome">欢迎来到沃米优选</h3>
+                <div class="enter clearfix">
+                    <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                    <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                    <a class="help" href="javascript:void(0)">帮助中心</a>
+                    <span class="tel">400-878-9551</span><i></i>
+                </div>
+            </div>
+            <div class="head-top clearfix login-success">
+                <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+                <div class="enter clearfix">
+                    <ul class="clearfix">
+                        <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                        <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                        <li>可用金额: <span>***</span></li>
+                        <li>冻结金额: <span>***</span></li>
+                        <li><a href="javascript:;">立即充值</a></li>
+                        <li><a href="javascript:;">帮助中心</a></li>
+                        <li>退出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head-bottom">
+            <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a class="active" href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">微信营销</a></li>
+                    <li><a href="javascript:void(0)">视频网红</a></li>
+                    <li><a href="javascript:void(0)">新浪微博</a></li>
+                    <li><a href="javascript:void(0)">解决方案</a></li>
+                    <li><a href="javascript:void(0)">案例中心</a></li>
+                    <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                当前位置：
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">订单管理</a></li>
+                <li class="active color-main">微信订单</li>
+            </ol>
+        </div>
+    </div>
+    <!-- 主要内容部分 -->
+    <div class="content-wrap clearfix">
+        <!--左侧导航栏-->
+        <div class="content-sidebar fl shadow">
+            <ul>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>活动管理</span>
+                    <dl>
+                        <dd><a href="#">微信活动</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon rotate"></i>
+                    <span class="title"><i class="icon"></i>订单管理</span>
+                    <dl class="show">
+                        <dd><a href="#" class="on-click">微信订单</a></dd>
+                        <dd><a href="#">微博订单</a></dd>
+                        <dd><a href="#">视频订单</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>媒体库管理</span>
+                    <dl>
+                        <dd><a href="javascript:;">微信 </a></dd>
+                        <dd><a href="javascript:;">微博</a></dd>
+                        <dd><a href="javascript:;">视频</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>素材管理</a>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>财务管理</span>
+                    <dl>
+                        <dd><a href="#">全部流水</a></dd>
+                        <dd><a href="#">消费记录</a></dd>
+                        <dd><a href="#">充值记录</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>消息中心</a>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>基础资料</a>
+                </li>
+            </ul>
+        </div>
+        <!--右侧内容-->
+        <div class="content fr">
+            <div class="con-top shadow clearfix">
+                <span class="order-status fl">订单状态：</span>
+                <div class="dropdown fl">
+                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="show-default fl">全部</span>
+                        <span class="caret fr"></span>
+                    </div>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>全部</li>
+                        <li>待提交</li>
+                        <li>待支付</li>
+                        <li>待接单</li>
+                        <li>已拒单</li>
+                        <li>已流单</li>
+                        <li>已取消</li>
+                        <li>已完成</li>
+                        <li>待执行链接</li>
+                        <li>待效果截图</li>
+                        <li>待审核</li>
+                        <li>审核失败</li>
+                        <li>执行中</li>
+                    </ul>
+                </div>
+                <div class="search-quick clearfix fl">
+                    <div class="dropdown fl">
+                        <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="show-default fl">投放账号/ID</span>
+                            <span class="caret fr"></span>
+                        </div>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>投放账号/ID</li>
+                            <li>活动名称</li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control fl">
+                </div>
+                <div class="order-time fl font-14 font-500">
+                    投放时间 :
+                    <input type="text" id="order-start-time" class="input-section text-input datetimepicker" readonly="readonly"/>
+                    <span class="line"></span>
+                    <input type="text" id="order-end-time" class="input-section text-input datetimepicker" readonly="readonly"/>
+                </div>
+                <button class="search-btn btn btn-danger bg-main"><i></i>搜索</button>
+            </div>
+            <h4><span>总计：</span><i class="red">2847</i>个</h4>
+            <div class="table shadow">
+                <table class="table-info">
+                    <thead>
+                        <tr>
+                            <th>订单ID</th>
+                            <th>投放账号</th>
+                            <th>投放位置</th>
+                            <th>投放金额（元）</th>
+                            <th>投放时间</th>
+                            <th>订单状态</th>
+                            <th>执行结果</th>
+                            <th>活动名称</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="order-account">
+                            <div class="order-info-config" style="display: none">
+                                {
+                                "order_uuid":"1474354874XSMhgRS",
+                                "pub_type":1,
+                                "pos":"m_1",
+                                "order_status":-1,
+                                "order_status_label":"待提交",
+                                "execute_result":"[show-empty]",
+                                "operate_action":"[update_order,cancel_order]"
+                                }
+                            </div>
+                        </td>
+                        <td class="account-ID clearfix">
+                            <dl class="clearfix">
+                                <dt class="fl">
+                                    <a href="#">
+                                        <img src="../../src/images/demo.jpg" alt="">
+                                    </a>
+                                    <i></i>
+                                </dt>
+                                <dd class="fl">
+                                    <a class="ID-name synopsis" href="#" data-str="6" data-title="咩咩咩咩咩咩咩咩咩" data-value = '11111'>咩咩咩咩咩咩咩咩咩</a>
+                                    <div class="ewm-ID">
+                                        <i class="ewm"></i>
+                                        <em>hrekghk</em>
+                                        <img src="../../src/images/demo.jpg" alt="" height="80px" width="80px">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </td>
+                        <td class="pos"></td>
+                        <td class="sum">56868</td>
+                        <td>
+                            <span class="start-time">2015.03.23</span><br/>
+                            ~<br/>
+                            <span class="end-time">2015.03.29</span>
+                        </td>
+                        <td class="order-status-show">
+                        </td>
+                        <td class="execute-result">
+                            <ul>
+                                <li data-btn="btn-show-empty">/</li>
+                                <li class="red btn-show-execute-link" data-btn="btn-show-execute-link" data-toggle="modal" data-target="#modal-show-execute-link">执行链接</li>
+                                <li class="red btn-show-effect-shots" data-btn="btn-show-effect-shots" data-toggle="modal" data-target="#modal-show-effect-shots">效果截图</li>
+                            </ul>
+                        </td>
+                        <td><span class="active-full-name synopsis" data-str="7" data-title="双十一计划54757">双十一计划6856</span></td>
+                        <td class="operate">
+                            <ul class="clearfix">
+                                <li class="red btn-update-order" data-btn="btn-update-order"><a class="red" href="#">修改</a></li>
+                                <li class="red btn-pay-order" data-btn="btn-pay-order"><a class="red" href="">支付</a></li>
+                                <li class="red btn-cancel-order" data-btn="btn-cancel-order">取消</li>
+                                <li class="red btn-show-report" data-btn="btn-show-report">查看报告</li>
+                                <li class="red btn-arrange-order-detail" data-btn="btn-arrange-order-detail" data-toggle="modal" data-target="#modal-arrange-order-detail">详情</li>
+                                <li class="red btn-direct-order-detail" data-btn="btn-direct-order-detail" data-toggle="modal" data-target="#modal-arrange-order-more-detail">详情</li>
+                                <li class="red btn-arrange-order-more-detail" data-btn="btn-arrange-order-more-detail" data-toggle="modal" data-target="#modal-direct-order-detail">详情</li>
+                                <li class="red btn-to-verify-execute-link" data-btn="btn-to-verify-execute-link" data-toggle="modal" data-target="#modal-to-verify-execute-link">确认执行</li>
+                                <li class="red btn-invalid-order-info" data-btn="btn-invalid-order-info" data-toggle="modal" data-target="#modal-invalid-order-info">原因</li>
+                                <li class="red btn-show-execute-link" data-btn="btn-show-execute-link" data-toggle="modal" data-target="#modal-show-execute-link">执行链接</li>
+                                <li class="red btn-show-effect-shots" data-btn="btn-show-effect-shots" data-toggle="modal" data-target="#modal-show-effect-shots">效果截图</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="order-account">
+                            <div class="order-info-config" style="display: none">
+                                {
+                                "order_uuid":"1478846874XSMhgRS",
+                                "pub_type":2,
+                                "pos":"s_1",
+                                "order_status":0,
+                                "order_status_label": "待支付",
+                                "execute_result":"[show_effect_shots,show_execute_link]",
+                                "operate_action":"[pay_order,cancel_order]"
+                                }
+                            </div>
+                        </td>
+                        <td class="account-ID clearfix">
+                            <dl class="clearfix">
+                                <dt class="fl">
+                                    <a href="#">
+                                        <img src="../../src/images/demo.jpg" alt="">
+                                    </a>
+                                    <i></i>
+                                </dt>
+                                <dd class="fl">
+                                    <a class="ID-name synopsis" href="#" data-str="6" data-title="咩咩咩咩咩咩咩咩咩" data-value = '11111'>咩咩咩咩咩咩咩咩咩</a>
+                                    <div class="ewm-ID">
+                                        <i class="ewm"></i>
+                                        <em>hrekghk</em>
+                                        <img src="../../src/images/demo.jpg" alt="" height="80px" width="80px">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </td>
+                        <td class="pos"></td>
+                        <td class="sum">56868</td>
+                        <td>
+                            <span class="start-time">2015.03.23</span><br/>
+                            ~<br/>
+                            <span class="end-time">2015.03.29</span>
+                        </td>
+                        <td class="order-status-show">
+                        </td>
+                        <td class="execute-result">
+                            <ul>
+                                <li data-btn="btn-show-empty">/</li>
+                                <li class="red btn-show-execute-link" data-btn="btn-show-execute-link" data-toggle="modal" data-target="#modal-show-execute-link">执行链接</li>
+                                <li class="red btn-show-effect-shots" data-btn="btn-show-effect-shots" data-toggle="modal" data-target="#modal-show-effect-shots">效果截图</li>
+                            </ul>
+                        </td>
+                        <td><span class="active-full-name synopsis" data-str="7" data-title="双十一计划54757">双十一计划6856</span></td>
+                        <td class="operate">
+                            <ul class="clearfix">
+                                <li class="red btn-update-order" data-btn="btn-update-order"><a class="red" href="#">修改</a></li>
+                                <li class="red btn-pay-order" data-btn="btn-pay-order"><a class="red" href="">支付</a></li>
+                                <li class="red btn-cancel-order" data-btn="btn-cancel-order">取消</li>
+                                <li class="red btn-show-report" data-btn="btn-show-report">查看报告</li>
+                                <li class="red btn-arrange-order-detail" data-btn="btn-arrange-order-detail" data-toggle="modal" data-target="#modal-arrange-order-detail">详情</li>
+                                <li class="red btn-direct-order-detail" data-btn="btn-direct-order-detail" data-toggle="modal" data-target="#modal-arrange-order-more-detail">详情</li>
+                                <li class="red btn-arrange-order-more-detail" data-btn="btn-arrange-order-more-detail" data-toggle="modal" data-target="#modal-direct-order-detail">详情</li>
+                                <li class="red btn-to-verify-execute-link" data-btn="btn-to-verify-execute-link" data-toggle="modal" data-target="#modal-to-verify-execute-link">确认执行</li>
+                                <li class="red btn-invalid-order-info" data-btn="btn-invalid-order-info" data-toggle="modal" data-target="#modal-invalid-order-info">原因</li>
+                                <li class="red btn-show-execute-link" data-btn="btn-show-execute-link" data-toggle="modal" data-target="#modal-show-execute-link">执行链接</li>
+                                <li class="red btn-show-effect-shots" data-btn="btn-show-effect-shots" data-toggle="modal" data-target="#modal-show-effect-shots">效果截图</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="no-order">暂无订单</div>
+            </div>
+            <!--分页-->
+            <div class="table-footer clearfix">
+                <div class="page-wb fl system_page">
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                    <em> ... </em>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                    <div class="count fl">
+                        <i class="fl">前往</i>
+                        <input type="text" name="tiaozhuan" class="text fl now_pages">
+                        <i class="fl">页</i>
+                        <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--侧边栏联系方式-->
+    <div class="side-bar">
+        <ul>
+            <li class="tel">
+                <div class="tel-con detail">
+                    <span></span>
+                    <p>客服电话</p>
+                    <p>400-878-9551</p>
+                </div>
+                <i></i>
+            </li>
+            <li class="qq">
+                <div class="qq-con detail">
+                    <span></span>
+                    <p>客服QQ</p>
+                    <p>2544745674</p>
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+                </div>
+                <i></i>
+            </li>
+            <li class="weixin">
+                <div class="weixin-con detail">
+                    <p>微信扫一扫</p>
+                    <span></span>
+                </div>
+                <i></i>
+            </li>
+            <li class="top">
+                <i></i>
+            </li>
+        </ul>
+    </div>
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer font-12">
+            <ul>
+                <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+                <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+                <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+                <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+            </ul>
+            <div class="footer-bot">
+                <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+            </div>
+        </div>
+    </div>
+    <!-- 效果截图modal-->
+    <div id="modal-show-effect-shots" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">效果截图</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <div class="effect-shots-pic clearfix">
+                        <span class="fl">截图：</span>
+                        <div class="pic-show fl">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 执行链接modal-->
+    <div id="modal-show-execute-link" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">执行链接</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <div class="link-address clearfix">
+                        <span class="fl">链接：</span>
+                        <a class="fl" href="#">www.baidu.com</a>
+                    </div>
+                    <div class="effect-shots-pic clearfix">
+                        <span class="fl">截图：</span>
+                        <div class="pic-show fl">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 确认执行链接modal-->
+    <div id="modal-to-verify-execute-link" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">执行链接</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <div class="link-address">
+                        <span>链接：</span>
+                        <a href="#">www.baidu.com</a>
+                    </div>
+                    <div class="effect-shots-pic clearfix">
+                        <span class="fl">截图：</span>
+                        <div class="pic-show fl">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                            <img src="../../src/images/demo.jpg" alt="" height="94px" width="74px">
+                        </div>
+                    </div>
+                    <ul class="radio-select clearfix">
+                        <li><i class="selected"></i><span>确认</span></li>
+                        <li><i></i><span>反馈</span></li>
+                    </ul>
+                    <div class="feedback">
+                        <span>反馈：</span>
+                        <textarea name="" class="form-control" maxlength="100"></textarea>
+                        <ul class="clearfix">
+                            <li class="fl">如有问题请联系客服</li>
+                            <li class="fr">您还可以输入<i class="count-num red">100</i>字</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-danger submit-btn">提交</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 原创约稿执行前的详情modal-->
+    <div id="modal-arrange-order-detail" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">详情</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <div class="active-name clearfix">
+                        <span class="fl">活动名称：</span>
+                        <span class="active-name-show fl">双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划双十一计划</span>
+                    </div>
+                    <div class="carry-out-time">
+                        <span>预计执行时间：</span>
+                        <span>2018.11.09&nbsp;11:20</span>
+                    </div>
+                    <div class="requirements">
+                        <span>预约需求：</span>
+                        <div class="requirements-con"></div>
+                    </div>
+                    <div class="attach-file clearfix">
+                        <span class="fl">附件：</span>
+                        <ul class="clearfix fl">
+                            <li>文件名称</li>
+                            <li>文件名称</li>
+                            <li>文件名称文件名称</li>
+                        </ul>
+                    </div>
+                    <div class="feedback-time">
+                        <span>预计反馈时间：</span>
+                        <span>2018.11.09&nbsp;11:20</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 原创约稿执行中的详情modal-->
+    <div id="modal-arrange-order-more-detail" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">详情</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <div class="activ-name">
+                        <span class="fl">活动名称：</span>
+                        <span class="active-name-show fl">双十一计划</span>
+                    </div>
+                    <div class="carry-out-time">
+                        <span>执行时间：</span>
+                        <span>2018.11.09&nbsp;11:20</span>
+                    </div>
+                    <div class="carry-out-sum">
+                        <span>执行金额：</span>
+                        <span>436537</span>
+                    </div>
+                    <div class="requirements">
+                        <span>预约需求：</span>
+                        <div class="requirements-con"></div>
+                    </div>
+                    <div class="attach-file clearfix">
+                        <span class="fl">附件：</span>
+                        <ul class="clearfix fl">
+                            <li>文件名称</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 直投订单详情modal-->
+    <div id="modal-direct-order-detail" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">详情</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <div class="activ-name clearfix">
+                        <span class="fl">活动名称：</span>
+                        <span class="active-name-show fl">双十一计划</span>
+                    </div>
+                    <div class="carry-out-time">
+                        <span>执行时间：</span>
+                        <span>2018.11.09&nbsp;11:20</span>
+                    </div>
+                    <div class="article-to-lead clearfix">
+                        <span class="fl">文章导入：</span>
+                        <a class="fl" href="#">www.baidu.com</a>
+                    </div>
+                    <div class="title clearfix">
+                        <span class="fl">标题：</span>
+                        <span class="title-name fl">无</span>
+                    </div>
+                    <div class="author">
+                        <span>作者：</span>
+                        <span>美婷婷</span>
+                    </div>
+                    <div class="cover-pic">
+                        <span>封面图片：</span>
+                        <button class="btn btn-danger">查看</button>
+                        <p>封面图片显示在正文中</p>
+                    </div>
+                    <div class="text-content requirements">
+                        <span>正文内容：</span>
+                        <div class="text-content requirements-con"></div>
+                    </div>
+                    <div class="org-text clearfix">
+                        <span class="fl">原文链接：</span>
+                        <a class="fl" href="#">http://wom.51wom.local/index.php?r=ad-owner%2Fweixin-plan%2Fconfirm&plan_uuid=1480908421vXz971S</a>
+                    </div>
+                    <div class="abstract clearfix">
+                        <span class="fl">摘要：</span>
+                        <p class="fl">无</p>
+                    </div>
+                    <div class="prove-quality attach-file clearfix">
+                        <span class="fl">证明品质：</span>
+                        <ul class="clearfix fl">
+                            <li>文件名称</li>
+                        </ul>
+                    </div>
+                    <div class="curry-on-remarks clearfix">
+                        <span class="fl">投放备注：</span>
+                        <p class="fl">无</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 原因展示modal-->
+    <div id="modal-invalid-order-info" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="red fl">原因</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body">
+                    <div class="reason-con clearfix">
+                        <span class="modal-body-title reason fl">原 因：</span>
+                        <div class="reason-show fl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../dep/js/jquery-1.10.2.min.js"></script>
+    <script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+    <script src="../../dep/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../../dep/datetimepicker/datetime.js"></script>
+    <script src="../../dep/layer/layer.js"></script>
+    <script src="../../src/js/site-stage-layout-common.js"></script>
+    <script src="../../src/js/ad-owner-user-admin/weixin-order-list.js"></script>
+</body>
+</html>

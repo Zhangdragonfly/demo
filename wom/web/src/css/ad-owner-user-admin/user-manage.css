@@ -1,0 +1,295 @@
+@charset "utf-8";
+body{
+    background: #f5f5f5;
+}
+.breadcrumb{
+    background: #f5f5f5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+    background: #f5f5f5;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    height: 640px;
+    margin-left: 15px;
+    border-top: 2px solid #c81624;
+    padding: 38px 0 0 44px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+.content h3{
+    font-size: 16px;
+    margin-bottom: 34px;
+}
+.content .info-title{
+    display: inline-block;
+    width: 66px;
+    text-align: right;
+    font-weight: 500;
+    margin-right: 16px;
+}
+.content input{
+    outline: none;
+    width: 330px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-indent: 1em;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .column{
+    margin-bottom: 24px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~基础信息~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content .phone-number .modify-phone-number{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.content .phone-number .modify-phone-number:hover{
+    text-decoration: underline;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~企业信息~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content .enterprise-info{
+    margin-left: 80px;
+}
+.content .enterprise-info .company-synopsis{
+    margin-bottom: 8px;
+}
+.content .enterprise-info .company-synopsis textarea{
+    width: 330px;
+    height: 176px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding:5px 0 0 10px;
+    outline: none;
+    resize: none;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .enterprise-info .company-synopsis textarea:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .enterprise-info .tips{
+    font-size: 12px;
+    text-align: right;
+}
+.content .btn-save-basic-data{
+    width: 330px;
+    height: 42px;
+    display: block;
+    margin: 11px auto 0;
+}
+.modify-phone-number .tips,
+.content-modify-password .tips,
+.content-set-paypassword .tips{
+    font-size: 12px;
+    color: #c61620;
+    padding: 0 10px;
+    background: #fff;
+    position: absolute;
+    display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~修改手机号~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modify-phone-number .modal-header{
+    width: 96%;
+    margin: 0 auto;
+}
+.modify-phone-number .modal-content{
+    width: 480px;
+}
+.modify-phone-number .modal-dialog{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: -131px 0 0 -240px;
+}
+.modify-phone-number .modal-body{
+    padding-top: 28px;
+}
+.modify-phone-number .modal-body .column{
+    position: relative;
+    margin-bottom: 26px;
+}
+.modify-phone-number .modal-body .column .info-title{
+    display: inline-block;
+    width: 105px;
+    text-align: right;
+}
+.modify-phone-number .modal-body input{
+    outline: none;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-indent: 1em;
+    margin-left: 6px;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.modify-phone-number .modal-body input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.modal-body .new-phone-number .input-phone-number{
+    width: 330px;
+}
+.modal-body .info-title{
+    font-weight: 500;
+}
+.modify-phone-number .modal-body .new-phone-number .tips{
+    position: absolute;
+    bottom: -8px;
+    right: 15px;
+}
+.modal-body .code-insure .verify-code{
+    width: 180px;
+}
+.modal-body .code-insure .get-code,
+.modal-body .code-insure .unclick{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 3px;
+    cursor: pointer;
+    float: right;
+}
+.modal-body .code-insure .unclick {
+    background: #d2d2d2;
+    display: none;
+}
+.modal-body .code-insure .tips{
+    position: absolute;
+    top: 31px;
+    left:170px;
+}
+.modify-phone-number .btn-save-modify-phone-number{
+    width: 328px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px 118px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~修改登录密码~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-modify-password,
+.content-set-paypassword{
+    padding:0;
+}
+.content-modify-password h2,
+.content-set-paypassword h2{
+    margin: 45px 0 30px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.content-modify-password .info-title{
+    width: 82px;
+}
+.content-modify-password .column,
+.content-set-paypassword .column{
+    text-align: center;
+    position: relative;
+}
+.content-modify-password .btn-save-modify-password,
+.content-set-paypassword .btn-save-set-paypassword{
+    width: 330px;
+    height: 40px;
+    display: block;
+    margin-left: 384px;
+}
+.content-modify-password .tips{
+    /*display: block;*/
+    top:30px;
+    left:570px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~新设支付密码~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-set-paypassword .column{
+    position: relative;
+}
+.content-set-paypassword .info-title{
+    width: 96px;
+}
+.content-set-paypassword .phone-number{
+    position: relative;
+}
+.content-set-paypassword .set-paypassword .tips{
+    top: 30px;
+    left: 606px;
+}
+.content-set-paypassword .confirm-paypassword .tips{
+    top: 30px;
+    left: 600px;
+}
+.content-set-paypassword .phone-number .tips{
+    top:32px;
+    left: 580px;
+}
+.content-set-paypassword .code-insure{
+    text-align: left;
+    width: 580px;
+    margin: 0 0 24px 280px;
+}
+.content-set-paypassword .code-insure .tips{
+    top:32px;
+    left: 166px;
+}
+.content-set-paypassword .code-insure .verify-code{
+    width: 180px;
+}
+.content-set-paypassword .code-insure .get-code,
+.content-set-paypassword .code-insure .unclick{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.content-set-paypassword .code-insure .unclick {
+    background: #d2d2d2;
+    margin-right: 136px;
+    display: none;
+}
+.content-set-paypassword .btn-save-set-paypassword{
+    margin-left: 392px;
+}

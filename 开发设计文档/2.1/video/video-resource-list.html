@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>视频资源列表页</title>
+	<link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../dep/layer/skin/layer.css">
+	<link rel="stylesheet" href="../src/css/reset.css">
+	<link rel="stylesheet" href="../src/css/media-resource-list-common.css">
+	<link rel="stylesheet" href="../src/css/media-stage-layout-common.css">
+	<link rel="stylesheet" href="../src/css/video/video-resource-list.css">
+</head>
+<body>
+	<!-- 顶部开始-->
+	<div class="top clearfix">
+		<span class="fl">欢迎您来到沃米优选！自媒体价值发现者</span>
+		<div class="fr">
+			<a href="#" class="btn btn-danger">广告主入口</a>
+			<a href="#" class="btn btn-danger">媒体主入口</a>
+			<a href="#">帮助中心</a>
+		</div>
+	</div>
+	<!-- 头部开始-->
+	<div class="header clearfix">
+		<h1 class="fl"><a href="#">沃米优选</a></h1>
+		<div class="search-key fl clearfix">
+			<div class="dropdown fl">
+				<div type="button" data-type="wx" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="false">
+					<span>视频网红</span>
+					<span class="caret"></span>
+				</div>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li>视频网红</li>
+					<li>微信公众号</li>
+					<li>新浪微博</li>
+				</ul>
+			</div>
+			<input class="fl" type="text" placeholder="输入账号名称和ID">
+			<div class="btn fr search-media"><span></span></div>
+		</div>
+		<div class="fr contact-img"><span class="phone-num"></span></div>
+	</div>
+	<!-- 导航开始-->
+	<div class="nav">
+		<div class="in-nav">
+			<ul class="clearfix">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">微信营销</a></li>
+				<li><a href="#" class="active-nav">视频网红</a></li>
+				<li><a href="#">新浪微博</a></li>
+				<li><a href="#">解决方案</a></li>
+				<li><a href="#">案例中心</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">帮助中心</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 条件选择-->
+	<div class="condition">
+		<div class="condition-filter">
+			<div class="condition-classify">
+				<div class="filter-item filter-item-li filter-ID-sign clearfix">
+					<h3>分类：</h3>
+					<span class="filter-unlimit filter-active">不限</span>
+					<ul class="clearfix">
+						<li><i>名人/艺人</i></li>
+						<li><i>段子手</i></li>
+						<li><i>娱乐搞笑</i></li>
+						<li><i>时尚搭配</i></li>
+						<li><i>美容美妆</i></li>
+						<li><i>游戏/动漫</i></li>
+						<li><i>体育/健身</i></li>
+						<li><i>美食</i></li>
+						<li><i>母婴/育儿</i></li>
+						<li><i>汽车</i></li>
+						<li><i>其他</i></li>
+					</ul>
+					<span class="limit-six">支持多选（最多选择6个）</span>
+				</div>
+				<div class="filter-item filter-item-li filter-area clearfix">
+					<h3>地域：</h3>
+					<span class="filter-unlimit filter-active">不限</span>
+					<ul class="clearfix">
+						<li><i>上海</i></li>
+						<li><i>杭州</i></li>
+						<li><i>南京</i></li>
+						<li><i>北京</i></li>
+						<li><i>深圳</i></li>
+						<li><i>广州</i></li>
+						<li><i>成都</i></li>
+						<li><i>其他</i></li>
+					</ul>
+					<span class="limit-three">支持多选（最多选择3个）</span>
+				</div>
+				<div class="filter-item filter-item-li filter-platform clearfix">
+					<h3>平台：</h3>
+					<span class="filter-unlimit filter-active">不限</span>
+					<ul class="clearfix">
+						<li><i>花椒</i></li>
+						<li><i>美拍</i></li>
+						<li><i>秒拍</i></li>
+						<li><i>斗鱼</i></li>
+						<li><i>映客</i></li>
+						<li><i>一直播</i></li>
+					</ul>
+				</div>
+				<div class="filter-item filter-item-li filter-sex clearfix">
+					<h3>性别：</h3>
+						<span class="filter-unlimit filter-active">不限</span>
+					<ul class="clearfix">
+						<li><i>男</i></li>
+						<li><i>女</i></li>
+					</ul>
+				</div>
+				<div class="filter-item filter-item-li filter-value clearfix">
+					<h3>参考报价：</h3>
+					<span class="filter-unlimit filter-active">不限</span>
+					<ul class="clearfix">
+						<li><i data-min="1" data-max="2000" data-label="2000元以下">2000元以下</i></li>
+						<li><i data-min="2000" data-max="5000" data-label="2000-5000">2000-5000元</i></li>
+						<li><i data-min="5000" data-max="10000" data-label="5000-10000">5000-1万元</i></li>
+						<li><i data-min="10000" data-max="50000" data-label="10000-50000">1万-5万元</i></li>
+						<li><i data-min="50000" data-max="100000" data-label="50000-100000">5万-10万元</i></li>
+						<li><i data-min="100000" data-max="n" data-label="100000元以上">10万元以上</i></li>
+					</ul>
+					<div class="filter-price filter-price-button">
+						<input type="text" placeholder="￥">
+						<i>-</i>
+						<input type="text" placeholder="￥">
+						<span>确定</span>
+					</div>
+				</div>
+				<div class="filter-item filter-item-li filter-fans clearfix">
+					<h3>粉丝数：</h3>
+					<span class="filter-unlimit filter-active">不限</span>
+					<ul class="clearfix">
+						<li><i data-min="1" data-max="5000" data-label="5000以下">5000以下</i></li>
+						<li><i data-min="5000" data-max="10000" data-label="5000-10000">5000-1万</i></li>
+						<li><i data-min="10000" data-max="30000" data-label="10000-30000">1-3万</i></li>
+						<li><i data-min="30000" data-max="50000" data-label="30000-50000">3-5万</i></li>
+						<li><i data-min="50000" data-max="100000" data-label="50000-100000">5-10万</i></li>
+						<li><i data-min="100000" data-max="n" data-label="100000以上">10万以上</i></li>
+					</ul>
+					<div class="filter-price filter-fans-btn">
+						<input type="text">
+						<i>-</i>
+						<input type="text">
+						<span>确定</span>
+					</div>
+				</div>
+			</div>
+			<div class="condition-selected clearfix">
+				<h3 class="fl">已选择：</h3>
+				<ul class="clearfix fl">
+					<li class="selected-last-li">
+						<span>全部删除</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 表格开始-->
+	<div class="table-item">
+		<div class="table-title clearfix">
+			<ul class="clearfix title-select fl ">
+				<li class="table-active">全部账号</li>
+				<li>主推账户</li>
+			</ul>
+			<div class="total-resource fl"><span>共计</span><i>3456</i><span>个资源</span></div>
+		</div>
+		<table class="table-head">
+			<thead style="height: 76px;">
+			<tr id="scrollTh">
+				<th>选择</th>
+				<th>平台账号</th>
+				<th>平台</th>
+				<th>主打平台ID</th>
+				<th class="thead-title">
+					<span>粉丝数</span>
+					<div class="sort-icon">
+						<i class="up"></i>
+						<i class="down"></i>
+					</div>
+					<div class="explain-title">
+						<em></em>
+						<em></em>
+						<div class="explain-content">
+							<h3>粉丝数</h3>
+							<p>网红在该平台上的粉丝数量。</p>
+						</div>
+					</div>
+				</th>
+				<th class="thead-title">
+					<span>参考报价</span>
+					<div class="sort-icon">
+						<i class="up"></i>
+						<i class="down"></i>
+					</div>
+					<div class="explain-title">
+						<em></em>
+						<em></em>
+						<div class="explain-content">
+							<h3>参考报价</h3>
+							<p>网红在该平台上的活动参考价。</p>
+						</div>
+					</div>
+				</th>
+				<th class="thead-title">
+					<span>平均观看人数</span>
+					<div class="sort-icon">
+						<i class="up"></i>
+						<i class="down"></i>
+					</div>
+					<div class="explain-title">
+						<em></em>
+						<em></em>
+						<div class="explain-content">
+							<h3>平均观看人数</h3>
+							<p>网红在该平台上发布视频的平均观看人数。</p>
+						</div>
+					</div>
+				</th>
+				<th class="thead-title">
+					<span>价格有效期</span>
+					<div class="explain-title">
+						<em></em>
+						<em></em>
+						<div class="explain-content">
+							<h3>价格有效期</h3>
+							<p>网红在该平台上的参考价的有效期。</p>
+						</div>
+					</div>
+				</th>
+				<th>
+					<span>操作</span>
+				</th>
+			</tr>
+			</thead>
+		</table>
+		<table class="table">
+			<tbody>
+			<tr id="scrollTd">
+				<td width="62px" class="select-account">
+					<input type="checkbox" id="account-checkbox-1">
+				</td>
+				<td width="210px" class="account clearfix">
+					<dl class="clearfix">
+						<dt class="fl">
+							<a href="#">
+								<img src="../src/images/demo.jpg" alt="">
+							</a>
+						</dt>
+						<dd class="fl">
+							<a class="ID-name synopsis" href="#" data-str="6" data-title="咩咩咩咩咩咩咩咩咩" data-value = '11111'>咩咩咩咩咩咩咩咩咩</a>
+							<div class="sex-address">
+								<i class="sex-icon-g sex-icon-b"></i>
+								<span>男</span>
+								<i class="address-icon"></i>
+								<span>上海</span>
+							</div>
+						</dd>
+					</dl>
+				</td>
+				<td width="96px"><i class="platform-icon"></i></td>
+				<td width="140px">
+					<div class="info-json" style="display:none">
+						{
+						"media_uuid": 1111,
+						"follower_num":111.1,
+						"platform":4,
+						"orig_video_price":23456,
+						"offline_price": 22221,
+						"sex_type":1
+						}
+					</div>
+					<span>ID:14422</span>
+				</td>
+				<td width="140px"><span>180.6</span>万</td>
+				<td width="180px" class="refer-price">
+					<ul>
+						<li>
+							<span>线上直播：</span>
+							<i>1000</i>
+						</li>
+						<li>
+							<span>线下活动：</span>
+							<i>10000</i>
+						</li>
+					</ul>
+				</td>
+				<td width="110px">117</td>
+				<td width="120px">2016-9-30</td>
+				<td width="140px" class="collect">
+					<a class="detail" href="#">
+						<i></i>
+						<span>详情</span>
+					</a>
+					<a class="add-media" href="#" data-toggle="modal" data-target="#newMedia">
+						<i></i>
+						<span>加入媒体库</span>
+					</a>
+					<a href="#">
+						<label for="account-checkbox-1" class="add-appointment">
+							<i></i>
+							<span>预约</span>
+						</label>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td width="62px" class="select-account">
+					<input type="checkbox" id="account-checkbox-2">
+				</td>
+				<td width="210px" class="account clearfix">
+					<dl class="clearfix">
+						<dt class="fl">
+							<a href="#">
+								<img src="../src/images/demo.jpg" alt="">
+							</a>
+						</dt>
+						<dd class="fl">
+							<a class="ID-name synopsis" href="#" data-str="6" data-title="啊啊啊啊啊啊" data-value = '11112'>啊啊啊啊啊啊</a>
+							<div class="sex-address">
+								<i class="sex-icon-g"></i>
+								<span>女</span>
+								<i class="address-icon"></i>
+								<span>上海</span>
+							</div>
+						</dd>
+					</dl>
+				</td>
+				<td width="96px"><i class="platform-icon platform-icon-mp"></i></td>
+				<td width="140px">
+					<div class="info-json" style="display:none">
+						{
+						"media_uuid": 1111,
+						"follower_num":78.1,
+						"platform":5,
+						"orig_video_price":23456,
+						"offline_price": 3333,
+						"sex_type":2
+						}
+					</div>
+					<span>ID:14422</span>
+				</td>
+				<td width="140px"><span>180.6</span>万</td>
+				<td width="180px" class="refer-price">
+					<ul>
+						<li>
+							<span>线上直播：</span>
+							<i>1000</i>
+						</li>
+						<li>
+							<span>线下活动：</span>
+							<i>10000</i>
+						</li>
+					</ul>
+				</td>
+				<td width="110px">117</td>
+				<td width="120px">2016-9-30</td>
+				<td width="140px" class="collect">
+					<a class="detail" href="#">
+						<i></i>
+						<span>详情</span>
+					</a>
+					<a class="add-media" href="#" data-toggle="modal" data-target="#newMedia">
+						<i></i>
+						<span>加入媒体库</span>
+					</a>
+					<a href="#">
+						<label for="account-checkbox-2" class="add-appointment">
+							<i></i>
+							<span>预约</span>
+						</label>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td width="62px" class="select-account">
+					<input type="checkbox" id="account-checkbox-3">
+				</td>
+				<td width="210px" class="account clearfix">
+					<dl class="clearfix">
+						<dt class="fl">
+							<a href="#">
+								<img src="../src/images/demo.jpg" alt="">
+							</a>
+						</dt>
+						<dd class="fl">
+							<a class="ID-name synopsis" href="#" data-str="6" data-title="qsqsqssddd" data-value = '11113'>qsqsqssddd</a>
+							<div class="sex-address">
+								<i class="sex-icon-g"></i>
+								<span>女</span>
+								<i class="address-icon"></i>
+								<span>上海</span>
+							</div>
+						</dd>
+					</dl>
+				</td>
+				<td width="96px"><i class="platform-icon platform-icon-hn"></i></td>
+				<td width="140px">
+					<div class="info-json" style="display:none">
+						{
+						"media_uuid": 1111,
+						"follower_num":78.1,
+						"platform":3,
+						"orig_video_price":23456,
+						"offline_price": 3333,
+						"sex_type":2
+						}
+					</div>
+					<span>ID:14422</span>
+				</td>
+				<td width="140px"><span>180.6</span>万</td>
+				<td width="180px" class="refer-price">
+					<ul>
+						<li>
+							<span>线上直播：</span>
+							<i>1000</i>
+						</li>
+						<li>
+							<span>线下活动：</span>
+							<i>10000</i>
+						</li>
+					</ul>
+				</td>
+				<td width="110px">117</td>
+				<td width="120px">2016-9-30</td>
+				<td width="140px" class="collect">
+					<a class="detail" href="#">
+						<i></i>
+						<span>详情</span>
+					</a>
+					<a class="add-media" href="#">
+						<i></i>
+						<span>加入媒体库</span>
+					</a>
+					<a href="#">
+						<label for="account-checkbox-3" class="add-appointment">
+							<i></i>
+							<span>预约</span>
+						</label>
+					</a>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		<div class="table-footer clearfix">
+			<form action="">
+				<input class="checked-all-resource-input" type="checkbox"
+					   id="check-all">
+				<label class="checked-all-resource" for="check-all">全选
+				</label>
+			</form>
+			<div class="page-wb fl system_page">
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+				<em> ... </em>
+				<a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+
+				<div class="count fl">
+					<i class="fl">前往</i>
+					<input type="text" name="tiaozhuan" class="text fl now_pages">
+					<i class="fl">页</i>
+					<span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 新建媒体库弹出层-->
+	<div id="newMedia" class="modal modal-message fade in" aria-hidden="true" data-
+		 backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">新建媒体库</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<div class="new-media-name">
+						<span>媒体库名称：</span>
+						<input type="text" class="form-control"
+							   placeholder="请输入新的媒体库名称">
+						<button class="btn btn-danger">保存
+						</button>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<ul>
+						<li>我的媒体库特权</li>
+						<li>1、创建专属个人资源管理库</li>
+						<li>2、帮助您高效地管理自己的自媒体资源</li>
+						<li>3、资源库中的资源随时共享</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 添加媒体库弹出层-->
+	<div id="addMedia" class="modal modal-message fade in" aria-hidden="true" data-
+		 backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">添加到我的媒体库</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<div class="dropdown first-dropdown">
+						<a type="button" class="clearfix" data-
+						   type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="fl">选择媒体库</span>
+							<span class="caret fr"></span>
+						</a>
+						<ul class="dropdown-menu selected-option"
+							role="menu">
+							<li>选择媒体库</li>
+							<li>新建媒体库</li>
+						</ul>
+					</div>
+					<div class="media-tab">
+						<div class="selected-media">
+							<div type="button" class="clearfix in-selected-media" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="fl">请选择已有的媒体库</span>
+								<span class="caret fr"></span>
+							</div>
+							<div class="dropdown-menu" role="menu">
+								<input type="text" class="form-control" placeholder="搜索已有的媒体库名称">
+								<span class="search-icon"></span>
+								<div class="media-name">
+									<ul>
+										<li>请选择</li>
+										<li>媒体库2</li>
+										<li>媒体库3</li>
+										<li>媒体库4</li>
+										<li>媒体库1</li>
+										<li>媒体库2</li>
+										<li>媒体库3</li>
+										<li>媒体库4</li>
+										<li>媒体库1</li>
+										<li>媒体库2</li>
+										<li>媒体库3</li>
+										<li>媒体库4</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<input type="text" style="display: none" class="form-control add-new-media-name" placeholder="请输入新的媒体库名称">
+					</div>
+					<button class="btn btn-danger">保存</button>
+				</div>
+				<div class="modal-footer">
+					<ul>
+						<li>我的媒体库特权</li>
+						<li>1、创建专属个人资源管理库</li>
+						<li>2、帮助您高效地管理自己的自媒体资源</li>
+						<li>3、资源库中的资源随时共享</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 侧边栏联系方式 -->
+	<div class="contact">
+		<ul>
+			<li class="contact-shopping-cart">
+				<i></i>
+				<em>0</em>
+			</li>
+			<li>
+				<div class="contact-bg">
+					<i></i>
+				</div>
+				<span class="contact-way">联系电话：400-878-9551</span>
+			</li>
+			<li>
+				<div class="contact-bg">
+					<i></i>
+				</div>
+				<span class="contact-way">联系QQ：800187006</span>
+			</li>
+			<li>
+				<div class="contact-bg">
+					<i></i>
+				</div>
+				<span class="ewm-pic"><img src="../src/images/wechatcode.png" alt=""></span>
+
+			</li>
+		</ul>
+	</div>
+	<!-- 购物车开始-->
+	<div class="shopping">
+		<div class="shopping-column fl">
+			<span><i></i></span>
+		</div>
+		<div class="shopping-resource fl">
+			<div class="resource-head">
+				<span>已选账号：<i>0</i>个</span>
+				<span class="btn btn-danger delete-all"><i></i>一键清空</span>
+			</div>
+			<div class="resource-table">
+				<table class="table">
+					<tbody>
+						<!--<td class="clearfix">
+							<div class="pic-img fl">
+								<a href="#"><img src="../src/images/demo.jpg" alt=""></a>
+								<i class="car-platform-icon"></i>
+							</div>
+							<ul class="fr ID-info">
+								<li><a class="synopsis" data-str="6" data-title="咩咩咩咩咩咩咩咩">咩咩咩咩咩咩咩咩</a><i class="sex-icon-g sex-icon-g"></i></li>
+								<li><span>粉丝数：</span><i>180.0</i>万</li>
+							</ul>
+						</td>
+						<td><span>线下活动：</span><i>10000</i></td>
+						<td><span class="shopping-resource-del"></span></td>-->
+					</tbody>
+				</table>
+			</div>
+			<div class="shopping-selected">
+				<ul class="clearfix">
+					<li>
+						<span>预计投放金额：</span>
+						<i class="count-sum">0</i>
+						<em>元</em>
+					</li>
+					<li class="fans-sum">
+						<span>覆盖粉丝量：</span>
+						<i>0</i>
+						<em>个</em>
+					</li>
+				</ul>
+				<button class="btn add-shopping-selected btn-danger" style="margin-right: 107px">加入媒体库</button>
+				<button class="btn put-in-resource btn-danger">立即预约</button>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="in-footer">
+			<a href="#"><i></i><span></span>关于我们</a>|
+			<a href="#"><i></i><span></span>案例中心</a>|
+			<a href="#"><i></i><span></span>解决方案</a>|
+			<a href="#"><i></i><span></span>帮助中心</a>|
+		</div>
+		<p>Copyright ©2016 www.51wom.com All Rights Reserved 沃米优选：自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+	</div>
+	<script src="../dep/js/jquery-1.10.2.min.js"></script>
+	<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+	<script src="../dep/js/jquery.fly.min.js"></script>
+	<script src="../src/js/video/video-resource-list.js"></script>
+	<script src="../src/js/media-resource-list-common.js"></script>
+	<script src="../dep/layer/layer.js"></script>
+</body>
+</html>

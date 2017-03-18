@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人中心-消息中心</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/wom.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/media-vendor-user-admin/message-center.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <div class="head-top-wrap">
+        <div class="head-top clearfix login-cancel hidden">
+            <h3 class="welcome">欢迎来到沃米优选</h3>
+            <div class="enter clearfix">
+                <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                <a class="help" href="javascript:void(0)">帮助中心</a>
+                <span class="tel">400-878-9551</span><i></i>
+            </div>
+        </div>
+        <div class="head-top clearfix login-success">
+            <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+            <div class="enter clearfix">
+                <ul class="clearfix">
+                    <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                    <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                    <li>可用金额: <span>***</span></li>
+                    <li>冻结金额: <span>***</span></li>
+                    <li><a href="javascript:;">立即充值</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li>退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a class="active" href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">微信营销</a></li>
+                <li><a href="javascript:void(0)">视频网红</a></li>
+                <li><a href="javascript:void(0)">新浪微博</a></li>
+                <li><a href="javascript:void(0)">解决方案</a></li>
+                <li><a href="javascript:void(0)">案例中心</a></li>
+                <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="bread">
+        <ol class="breadcrumb font-500">
+            当前位置：
+            <li><a href="#">首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li class="active color-main">消息中心</li>
+        </ol>
+    </div>
+</div>
+<!-- 主要内容部分 -->
+<div class="content-wrap clearfix">
+    <!--左侧导航栏-->
+    <div class="content-sidebar fl shadow">
+        <ul>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>订单管理</span>
+                <dl>
+                    <dd><a href="#">微信订单</a></dd>
+                    <dd><a href="#">微博订单</a></dd>
+                    <dd><a href="#">视频订单</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>账号管理</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>财务管理</span>
+                <dl>
+                    <dd><a href="#">全部流水</a></dd>
+                    <dd><a href="#">消费记录</a></dd>
+                    <dd><a href="#">充值记录</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title active" href="javascript:;"><i class="icon"></i>消息中心</a>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>基础资料</a>
+            </li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <div class="content fr">
+        <div class="con-top shadow clearfix">
+            <div class="send-time-wrap fl font-500">
+                <span>发送时间</span> :
+                <input class="start-time input-section text-input datetimepicker" readonly="readonly" placeholder="请选择开始时间">
+                <span class="line">——</span>
+                <input class="end-time input-section text-input datetimepicker" readonly="readonly" placeholder="请选择结束时间">
+            </div>
+            <button class="btn-search btn btn-danger bg-main fr"><i></i>搜索</button>
+        </div>
+        <div class="table shadow">
+            <table>
+                <thead>
+                    <tr>
+                        <th>选择</th>
+                        <th>消息标题</th>
+                        <th>发送时间</th>
+                        <th>消息状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="msg-title">5.20凌晨2点之后平台信息维护中</td>
+                        <td class="send-time">2016.5.24 9:00</td>
+                        <td class="msg-status">未读</td>
+                        <td class="operate">
+                            <a class="view-msg" href="#view-msg" data-toggle="modal">查看</a>
+                            <a class="delete-msg" href="javascript:;">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="msg-title">5.20凌晨2点之后平台信息维护中</td>
+                        <td class="send-time">2016.5.24 9:00</td>
+                        <td class="msg-status">未读</td>
+                        <td class="operate">
+                            <a class="view-msg" href="#view-msg" data-toggle="modal">查看</a>
+                            <a class="delete-msg" href="javascript:;">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="msg-title">5.20凌晨2点之后平台信息维护中</td>
+                        <td class="send-time">2016.5.24 9:00</td>
+                        <td class="msg-status">未读</td>
+                        <td class="operate">
+                            <a class="view-msg" href="#view-msg" data-toggle="modal">查看</a>
+                            <a class="delete-msg" href="javascript:;">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="no-msg">暂无消息</div>
+        </div>
+        <!-- 新建媒体库modal框 -->
+        <div id="view-msg" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="fl color-main">查看消息</h4>
+                        <span class="close fr" data-dismiss="modal">x</span>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="msg-title">沃米2.0上线</h2>
+                        <p class="date-time">时间 : <span>2016.12.24</span></p>
+                        <div class="msg-con">
+                            女生最不该说的四句话！！
+                            如果要学会说话
+                            首先就要学会闭嘴
+                            有些话，不该说
+                            因为每个女生都高贵优雅
+                            请永远不要贬低了自己
+                            高情商的女生都很会说话，但是如果要学会说话，首先就要学会闭嘴。因为有些话不是不能说，而是不该说。
+                            “我觉得自己不太好看”
+                            几乎所有女生都说过这句话，即使是曾有“香港第一美女”的关之琳、曾有“台湾第一美女”的萧蔷，到了四五十岁也纷纷感叹容颜易逝。
+
+                            爱美是所有女生的天性，没有人希望自己最好看，因为大家都希望自己更好看，但，永远不要说“我好丑”、“我不好看”。
+                            身体发肤受之父母，容貌由基因决定，你可以追求更好的自己，但请不要贬低现在的自己。
+
+                            真正有修养的女生从来不比较容貌，她懂得服装搭配，也懂得保养皮肤，她知书达理，她的气质是由内而外的，永远散发着迷人的魅力。
+                            “你是不是喜欢别的女生了”
+
+                            怀疑，是大多数感情破裂的起源之一。永远不要主动去纠缠一个人，更不要主动去怀疑谁，不要把愚蠢留给自己，让男生来数落你。
+
+                            如果你爱他，就请充分信任他。这样，即使他真的错了，你也有底气说，“我一直相信你，而你却背叛我。”然后扬长而去，把懊悔留给人渣。
+                            聪明的女生在爱情里从来不吵也不闹，她会学习做菜，或是学习插花，学习一切美好的事物，努力让自己变得独一无二，让男生离不开你半步，你才赢得了最好的爱情。
+                            “我和你妈掉水里，你救谁”
+                            婆媳关系，是每个女生都会遇到的问题。你问第一次，男生觉得你可爱，但你再问，就会显得你幼稚了。
+                            最好的关系是，婆婆爱儿子，儿子爱你，你爱婆婆，这样才会良性循环。婆婆也是家人，永远不要和家人去争对错、争高低。
+
+                            有责任的女生，会问自己为这个家付出了多少，而不是问老公你比较爱谁。
+                            “我都想买，可是好贵”
+                            买买买是所有女生的爱好，从我们是小女孩开始，到七老八十，总有看不完的好东西想买。
+                            女生有点欲望，没什么不好。但你永远别说“好贵，我买不起”。
+                            用什么档次的东西，通常决定了你是什么样的女生。是每天去超市挑特价、买地摊货，还是拎着名牌包、踩着好品质的高跟鞋让别人艳羡呢？
+                            经济独立很重要，如果现在买不起，那就请为自己挣钱，你肯多努力，你就配得起多贵的东西。
+
+                            记住，每个女生都可以优雅高贵，在面对自己、爱情、家庭、金钱的时候，永远不要贬低了自己。
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--分页-->
+        <div class="table-footer clearfix">
+            <div class="check-all fl"><input type="checkbox">全选</div>
+            <div class="page-wb fl system_page">
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                <em> ... </em>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                <div class="count fl">
+                    <i class="fl">前往</i>
+                    <input type="text" name="tiaozhuan" class="text fl now_pages">
+                    <i class="fl">页</i>
+                    <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                </div>
+            </div>
+        </div>
+        <!--批量操作-->
+        <div class="batch-operate clearfix">
+            <button class="delete btn btn-danger bg-main fr">删除</button>
+            <button class="has-read-remark btn btn-danger bg-main fr">标记为已读</button>
+        </div>
+    </div>
+</div>
+
+<!--侧边栏联系方式-->
+<div class="side-bar">
+    <ul>
+        <li class="tel">
+            <div class="tel-con detail">
+                <span></span>
+                <p>客服电话</p>
+                <p>400-878-9551</p>
+            </div>
+            <i></i>
+        </li>
+        <li class="qq">
+            <div class="qq-con detail">
+                <span></span>
+                <p>客服QQ</p>
+                <p>2544745674</p>
+                <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+            </div>
+            <i></i>
+        </li>
+        <li class="weixin">
+            <div class="weixin-con detail">
+                <p>微信扫一扫</p>
+                <span></span>
+            </div>
+            <i></i>
+        </li>
+        <li class="top">
+            <i></i>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<div class="footer-wrap">
+    <div class="footer font-12">
+        <ul>
+            <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+            <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+            <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+            <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+        </ul>
+        <div class="footer-bot">
+            <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+        </div>
+    </div>
+</div>
+<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../../dep/datetimepicker/jquery.datetimepicker.js"></script>
+<script src="../../dep/datetimepicker/datetime.js"></script>
+<script src="../../dep/layer/layer.js"></script>
+<script src="../../dep/js/wom-tool.js"></script>
+<script src="../../src/js/media-vendor-user-admin/media-vendor-admin-common.js"></script>
+<script src="../../src/js/media-vendor-user-admin/message-center.js"></script>
+</body>
+</html>

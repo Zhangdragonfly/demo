@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+.active-status{
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.red{
+    color: #c81624;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 72px;
+    border-top: 2px solid #c81624;
+    padding-top: 12px;
+    position: relative;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~���ݲ���ͷ������~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-head,
+.content-head-search
+{
+    height: 67px;
+    border-top: 2px solid #C81622;
+    line-height: 66px;
+    margin-bottom: 13px;
+}
+.content-head li{
+    float: left;
+    padding: 0 14px;
+    margin-right: 15px;
+}
+.content-head li em{
+    color: #C81622;
+}
+.content-head .btn-pay{
+    float: right;
+    margin: 13px 0 0 0;
+}
+.content-head .btn-pay a{
+    display: block;
+    width: 88px;
+    height: 40px;
+    border-radius: 4px;
+    background: #C81624;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.content-head-search{
+    height: 70px;
+}
+.fin-type{
+    margin: 0 24px 0 14px;
+}
+.fin-type .dropdown{
+    margin-top: 14px;
+    width: 110px;
+    height: 40px;
+    line-height: 34px;
+}
+.fin-type .dropdown ul
+{
+    min-width: 110px;
+}
+.fin-type .dropdown .caret{
+    margin-top: 14px;
+}
+.content-head-search .condition-area{
+    margin-left: 45px;
+}
+.trade-way .dropdown{
+    width: 130px;
+}
+.trade-way .dropdown ul{
+    min-width: 130px;
+}
+.trade-time input{
+    width: 228px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.btn-search{
+    height: 38px;
+    font-size: 16px;
+    margin: 14px 16px 0 0;
+}
+.btn-search i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url(../../images/media-lib-ghost.png) no-repeat -105px -58px;
+}
+.table-info{
+    text-align: center;
+    padding: 0 18px;
+}
+.table-info thead tr th{
+    line-height: 46px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+.table-info tbody tr td{
+    line-height: 76px;
+    font-size: 12px;
+}
+tbody tr td span{
+    color: #CFCFCF;
+    cursor: pointer;
+}
+.account-ID dl{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.account-ID dt,
+.account-ID dt a
+{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.account-ID dt a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-ID dt i{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/plan_active.png") -183px -23px no-repeat;
+}
+.account-ID dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.account-ID .ID-name{
+    font-size: 14px;
+}
+.account-ID .ewm{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../images/plan_active.png") -163px -23px no-repeat;
+}
+.account-ID dd{
+    margin: 6px 0 0 10px;
+    text-align: left;
+}
+.account-ID .ewm-ID{
+    position: relative;
+}
+.account-ID .ewm-ID em{
+    color: #bcbcbc;
+}
+.ewm-ID img{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: none;
+}
+.trade-time-td{
+    color: #b2b2b2;
+}
+.no-resource {
+    width: 1000px;
+    height: 108px;
+    text-align: center;
+    line-height: 108px;
+    display: none;
+}

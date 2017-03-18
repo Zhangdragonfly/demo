@@ -1,0 +1,386 @@
+@charset "utf-8";
+body,.breadcrumb{
+    background: #f5f5f5;
+}
+/*~~~填写注册信息~~~*/
+
+/*选择媒体主还是广告主*/
+.choose-identity{
+    margin-bottom: 28px;
+}
+.choose-identity li i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 8px;
+    cursor: pointer;
+    background: url(../../images/plan_active.png) -156px 0 no-repeat;
+}
+.choose-identity li .choosed {
+    background-position: -125px 0;
+}
+.choose-identity li span{
+    display: inline-block;
+    height: 14px;
+    line-height:14px;
+}
+.choose-identity .ad-owner{
+     margin-left: 178px;
+ }
+.choose-identity .media-vendor{
+    margin-left: 100px;
+}
+.content-wrap{
+    height: 764px;
+    background: #f5f5f5;
+    padding-top: 34px;
+}
+.content-wrap h3 {
+    text-align: center;
+    color: #1e1e1e;
+    font-size: 22px;
+    font-family: "微软雅黑";
+}
+.content{
+    width: 1200px;
+    height: 644px;
+    margin:32px auto 0;
+    box-shadow: 0 0 10px #d0d0d0;
+    border-radius: 6px;
+    background: #fff;
+}
+.content .top-line{
+    display: block;
+    border-radius: 10px;
+    height: 4px;
+    background: #c81724;
+}
+.content .step{
+    width: 796px;
+    height: 104px;
+    margin: 36px auto 0;
+    position: relative;
+}
+.content .step span{
+    display: block;
+    width: 410px;
+    height: 40px;
+    line-height: 40px;
+    color: #fbf5f2;
+    font-size: 14px;
+    text-align: center;
+}
+.content .step .fill{
+    height: 39px;
+     position: absolute;
+     top:1px;
+     left: 0;
+     background: url("../../images/login-ghost.png") no-repeat;
+    z-index: 999;
+ }
+.content .step .complete{
+    position: absolute;
+    top:0;
+    right: 0;
+    background: url("../../images/login-ghost.png") 0 -48px no-repeat;
+}
+.content form{
+    width: 550px;
+    height: 424px;
+    margin:0 auto;
+}
+.content .input-group{
+    margin-bottom: 16px;
+    position: relative;
+}
+.content .input-group .tips{
+    position: absolute;
+    bottom: -8px;
+    right: 15px;
+    font-size: 12px;
+    color: #c61620;
+    padding: 0 10px;
+    background: #fff;
+    display: none;
+}
+.content .code-insure .tips{
+    bottom: -8px;
+    right: 216px;
+}
+.content .input-group .title{
+    display: inline-block;
+    width: 82px;
+    text-align: right;
+    font-size: 14px;
+    color: #1e1e1e;
+    font-weight: 500;
+    position: relative;
+}
+.content .input-group .title i{
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    background: url("../../images/login-ghost.png") -281px -216px no-repeat;
+}
+
+.content .input-group input{
+    width: 438px;
+    height: 48px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    text-indent: 1em;
+    margin-left: 10px;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .input-group input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content .code-insure .title i{
+    left: -6px;
+}
+.content .code-insure input{
+    width: 232px;
+}
+.content .code-insure .get-code,
+.content .code-insure .unclick{
+    display: inline-block;
+    width: 192px;
+    height: 48px;
+    float: right;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 14px;
+}
+.content .code-insure .unclick{
+    background: #d2d2d2;
+    display: none;
+}
+.content .agree input{
+    width: 12px;
+    height: 12px;
+    margin:0 4px 0  92px;
+}
+.content .agree span{
+    color: #1e1e1e;
+    font-size: 12px;
+    font-family: "STSong";
+}
+.content .agree span a{
+    color: #c8161d;
+}
+.content .agree .agree_serve{
+    margin:10px 0 0 92px;
+    color: #c61620;
+    font-weight: 600;
+    display: none;
+}
+.content .last-func{
+    width: 440px;
+    height: 46px;
+    line-height: 34px;
+    margin: 30px 0 0 90px;
+}
+.content .last-func:hover{
+    color: #fff;
+}
+.content .last-func:visited,
+.content .last-func:link{
+    color: #fff;
+}
+
+/*~~~~~注册完成~~~~~*/
+.content .step .has-complete{
+    height: 39px;
+    top: 1px;
+    background: url("../../images/login-ghost.png") no-repeat;
+}
+.content .con-detail{
+    width: 800px;
+    margin: 0 auto;
+}
+.con-detail .detail-top .left-img{
+    width: 128px;
+    height: 128px;
+    margin-left: 60px;
+    background: url("../../images/login-ghost.png") -375px -153px no-repeat;
+}
+.con-detail .detail-top .right-con{
+    margin-left: 72px;
+}
+.right-con p{
+    margin-bottom: 27px;
+    color: #1e1e1e;
+    font-weight: 500;
+}
+.right-con p:nth-child(1){
+    font-size: 26px;
+}
+.right-con p:nth-child(2){
+     font-size: 18px;
+ }
+.right-con .your-email{
+    color: #c61822;
+}
+.right-con p:nth-child(3){
+     font-size: 16px;
+}
+.right-con p:nth-child(3) a{
+    margin-left: 28px;
+    color: #c81820;
+}
+.con-detail .detail-bot{
+    margin-top: 37px;
+}
+.con-detail .detail-bot .left-img{
+    width: 440px;
+    height: 280px;
+    background: url("../../images/bind-weixin.png") no-repeat;
+    position: relative;
+    background-size: 440px 280px;
+}
+.left-img .weixin-qr-code{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+}
+.left-img .weixin-qr-code iframe{
+    width: 210px;
+    height: 210px;
+}
+.con-detail .detail-bot .right{
+    margin-left: 42px;
+}
+.detail-bot .right span{
+    font-weight: 500;
+}
+.detail-bot .right span:nth-child(1){
+    display: block;
+    margin:20px 0;
+    font-size:24px;
+    color: #c91827;
+}
+.detail-bot .right span:nth-child(2){
+    font-size: 16px;
+    color: #555555;
+}
+
+/*找回密码*/
+.content .step .step-one,
+.content .step .step-two{
+    color: #c81624;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.content .step .psd-complete{
+    color: #c81624;
+}
+.content .step .psd-bg-complete{
+    background: url("../../images/login-ghost.png") no-repeat;
+    height: 39px;
+    top:1px;
+}
+
+/*重置完成*/
+.content .complete{
+    width: 450px;
+    margin: 0 auto;
+}
+.content .complete .img{
+    width: 128px;
+    height: 128px;
+    background: url("../../images/login-ghost.png") no-repeat -374px -153px;
+
+}
+.content .complete .con{
+    margin-left: 72px;
+}
+.complete .con h3{
+    margin: 32px 0 14px;
+    font-size: 28px;
+}
+.complete .con .kill-time{
+    font-size: 14px;
+    border-bottom: 1px solid #c81624;
+}
+.complete .con .back{
+    margin-top: 10px;
+    color: #1e1e1e;
+    font-weight: 500;
+}
+.complete .con .back a{
+    margin-left: 30px;
+}
+.complete .con .back a:hover,
+.complete .con .back a:link{
+    color: #c81624;
+}
+.err_msg{
+    color: #c61620;
+    margin: 10px 0 0 90px;
+    font-size: 14px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.mb-20{
+    margin-bottom: 20px;
+}
+.modal-dialog{
+    width: 1112px;
+    height: 610px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -305px 0 0 -556px;
+}
+.modal-content{
+    width: 1112px;
+    height: 610px;
+}
+.modal-header{
+    background: #F4F4F4;
+    color: #797A7E;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.modal-header .close {
+    margin-top: 6px;
+}
+.modal-body{
+    padding: 12px 20px;
+    height: 470px;
+    overflow: hidden;
+    overflow-y: scroll;
+    line-height: 21px;
+    font-size: 12px;
+    color: #797A7C;
+}
+.modal-footer{
+    text-align: center;
+    border-top: 0 none;
+}
+.modal-footer .btn-agree{
+    width: 380px;
+    height: 45px;
+    background: #c61620;
+    color: #ffffff;
+    border: 0 none;
+    border-radius: 5px;
+    font-family: '微软雅黑';
+    font-weight: bold;
+}

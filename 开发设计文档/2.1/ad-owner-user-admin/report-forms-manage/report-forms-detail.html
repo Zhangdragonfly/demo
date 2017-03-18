@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>报表管理-查看报表</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/wom.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/ad-owner-user-admin/report-forms-manage/report-forms-detail.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <div class="head-top-wrap">
+        <div class="head-top clearfix login-cancel hidden">
+            <h3 class="welcome">欢迎来到沃米优选</h3>
+            <div class="enter clearfix">
+                <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                <a class="help" href="javascript:void(0)">帮助中心</a>
+                <span class="tel">400-878-9551</span><i></i>
+            </div>
+        </div>
+        <div class="head-top clearfix login-success">
+            <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+            <div class="enter clearfix">
+                <ul class="clearfix">
+                    <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                    <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                    <li>可用金额: <span>***</span></li>
+                    <li>冻结金额: <span>***</span></li>
+                    <li><a href="javascript:;">立即充值</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li>退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a class="active" href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">微信营销</a></li>
+                <li><a href="javascript:void(0)">视频网红</a></li>
+                <li><a href="javascript:void(0)">新浪微博</a></li>
+                <li><a href="javascript:void(0)">解决方案</a></li>
+                <li><a href="javascript:void(0)">案例中心</a></li>
+                <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="bread">
+        <ol class="breadcrumb font-500">
+            当前位置：
+            <li><a href="#">首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">报表管理</a></li>
+            <li class="active color-main">查看报表</li>
+        </ol>
+    </div>
+</div>
+<!-- 主要内容部分 -->
+<div class="content-wrap">
+    <!--基本信息-->
+    <div class="base-info shadow">
+        <div class="info-top clearfix">
+            <div class="account-pic fl">
+                <img src="../../src/images/demo.jpg" alt="">
+            </div>
+            <div class="account-con-info fl">
+                <span class="name">同道大叔</span>
+                <span class="id plain-text-length-limit" data-limit="10">people-rmw</span>
+                <span class="check-link">检测链接 : <a href="http://www.51wom.com">http://www.51wom.com/</a></span>
+            </div>
+            <button class="create-report btn btn-danger bg-main fr">生成报告</button>
+        </div>
+        <div class="data-sum-show info-bottom clearfix">
+            <div class="data-show-l fl">
+                <ol class="clearfix">
+                    <li>
+                        <div class="sum-data-type">5600</div>
+                        <span class="sum-type">阅读数</span>
+                    </li>
+                    <li>
+                        <span class="sum-data-type">100</span>
+                        <span class="sum-type">点赞数</span>
+                    </li>
+                    <li>
+                        <span class="sum-data-type">24次</span>
+                        <span class="sum-type">检测次数</span>
+                    </li>
+                </ol>
+            </div>
+            <div class="time-show-r fl">
+                <ul class="clearfix">
+                    <li>
+                        <span class="time-pic"></span>
+                        <span class="time-typ">文章发布时间 :</span>
+                        <span class="time-num">2016.12.24 10:00</span>
+                    </li>
+                    <li>
+                        <span class="time-pic"></span>
+                        <span class="time-typ">开始检测时间 :</span>
+                        <span class="time-num">2016.12.24 10:00</span>
+                    </li>
+                    <li>
+                        <span class="time-pic"></span>
+                        <span class="time-typ">检测时间周期 :</span>
+                        <span class="time-num">48</span> 小时
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--数据走势-->
+    <div class="data-trend shadow">
+        <div class="con-header clearfix">
+            <h3 class="headline fl"><i></i>数据走势</h3>
+        </div>
+        <div class="view-chart">阅读数累计视图</div>
+        <div class="read-num-chart" id="read-num-chart"></div>
+        <div class="view-chart agree-view-chart">点赞数累计视图</div>
+        <div class="agree-num-chart" id="agree-num-chart"></div>
+    </div>
+    <!--文章内容-->
+    <div class="article-con shadow clearfix">
+        <div class="con-header clearfix">
+            <h3 class="headline fl"><i></i>文章内容</h3>
+        </div>
+        <div class="key-words-con fl">
+            <span>文章关键词</span>
+            <div class="key-words" >
+                <div id="key-words"></div>
+            </div>
+        </div>
+        <div class="key-words-rank-con fl">
+            <span>关键词排名前五</span>
+            <div class="key-words-rank" id="key-words-rank"></div>
+        </div>
+
+    </div>
+    <!--数据详情-->
+    <div class="data-detail shadow">
+        <div class="con-header clearfix">
+            <h3 class="headline fl"><i></i>数据详情</h3>
+        </div>
+        <table class="table-data-detail">
+            <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>当前阅读数</th>
+                    <th>新增阅读数</th>
+                    <th>当前点赞数</th>
+                    <th>新增点赞数</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>2016.12.11 1200</td>
+                    <td>1200</td>
+                    <td>1200</td>
+                    <td>300</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--分页-->
+        <div class="table-footer clearfix">
+            <div class="page-wb fl system_page">
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                <em> ... </em>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                <div class="count fl">
+                    <i class="fl">前往</i>
+                    <input type="text" name="tiaozhuan" class="text fl now_pages">
+                    <i class="fl">页</i>
+                    <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--侧边栏联系方式-->
+<div class="side-bar">
+    <ul>
+        <li class="tel">
+            <div class="tel-con detail">
+                <span></span>
+                <p>客服电话</p>
+                <p>400-878-9551</p>
+            </div>
+            <i></i>
+        </li>
+        <li class="qq">
+            <div class="qq-con detail">
+                <span></span>
+                <p>客服QQ</p>
+                <p>2544745674</p>
+                <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+            </div>
+            <i></i>
+        </li>
+        <li class="weixin">
+            <div class="weixin-con detail">
+                <p>微信扫一扫</p>
+                <span></span>
+            </div>
+            <i></i>
+        </li>
+        <li class="top">
+            <i></i>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<div class="footer-wrap">
+    <div class="footer font-12">
+        <ul>
+            <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+            <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+            <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+            <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+        </ul>
+        <div class="footer-bot">
+            <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+        </div>
+    </div>
+</div>
+<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../../dep/datetimepicker/jquery.datetimepicker.js"></script>
+<script src="../../dep/datetimepicker/datetime.js"></script>
+<script src="../../dep/js/echarts.min.js"></script>
+<script src="../../dep/js/echarts-wordcloud.min.js"></script>
+<script src="../../dep/js/circles.js"></script>
+<script src="../../dep/layer/layer.js"></script>
+<script src="../../dep/js/wom-tool.js"></script>
+<script src="../../src/js/site-stage-layout-common.js"></script>
+<script src="../../src/js/ad-owner-user-admin/report-forms-detail.js"></script>
+</body>
+</html>

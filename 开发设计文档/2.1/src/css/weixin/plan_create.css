@@ -1,0 +1,62 @@
+
+/*~~~~~~~~~~~~~~~~~~~活动内容~~~~~~~~~~~~~~~~~~~*/
+.active-content{
+	width: 1200px;
+	height: 650px;
+	margin: 0 auto 40px;
+	background: #ffffff;
+	border-top: 4px solid #C81624;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	text-align: center;
+	color: #1D1D1D;
+}
+.active-name{
+	margin: 25px auto 15px;
+}
+.active-name em{
+	display: inline-block;
+	width: 18px;
+}
+.active-name i,
+.content-sum span:nth-of-type(1) i
+{
+	color: #C81624;
+	font-weight: bold;
+}
+.active-name input{
+	display: inline-block;
+	height: 46px;
+	width: 418px;
+	color: #C9C9C9;
+	margin-right: 25px;
+}
+.count-num em{
+	color: #C81624;
+}
+.count-num{
+	color: #C9C9C9;
+}
+.content-sum textarea{
+	width: 562px;
+	height: 204px;
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	resize: none;
+}
+.content-sum span:nth-of-type(1),
+.content-sum span:nth-of-type(1) i
+{
+	vertical-align: top;
+}
+.content-sum .count-num{
+	display: block;
+	margin-left: 510px;
+}
+.active-content .btn{
+	width: 440px;
+	height: 46px;
+	background: #C81624;
+	margin: 15px 0 0 -36px;
+}

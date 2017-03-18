@@ -1,0 +1,463 @@
+@charset "utf-8";
+.red{
+    color: #c81624;
+}
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 70px;
+    border-top: 2px solid #c81624;
+    padding-top: 16px;
+}
+.table{
+    width: 1000px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+.red{
+    color: #c81624;
+}
+.green{
+    color: #48C819;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~左侧导航~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-sidebar li .icon{
+    background: url("../../images/media-lib-ghost.png") no-repeat;
+}
+.content-sidebar li:nth-child(1) {
+    background-position: -19px -10px;
+}
+.content-sidebar li:nth-child(2) .icon{
+    background-position: -19px -72px;
+}
+.content-sidebar li:nth-child(3) .icon{
+    background-position: -19px -107px;
+}
+.content-sidebar li:nth-child(4) .icon{
+    background-position: -16px -138px;
+}
+.content-sidebar li:nth-child(5) .icon{
+    background-position: -19px -172px;
+}
+.content-sidebar li:nth-child(6) .icon{
+    background-position: -19px -205px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分头部搜索~~~~~~~~~~~~~~~~~~~~~~~~~`*/
+.order-status{
+    line-height: 36px;
+    margin-left: 10px;
+}
+.con-top{
+    margin-bottom: 20px;
+}
+.con-top .media-lib-name{
+    margin-left: 16px;
+}
+.con-top .detail-name{
+    margin-left: 46px;
+}
+.con-top div input{
+    width: 148px;
+    height: 38px;
+    outline:none;
+    border-radius: 4px;
+    padding:0 8px ;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top div input::-webkit-input-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input::-moz-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top .btn{
+    height: 38px;
+    font-size: 16px;
+    float: right;
+    margin-right: 14px;
+}
+.con-top .btn-search i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url("../../images/media-lib-ghost.png") no-repeat -105px -58px;
+}
+.con-top .create{
+    width: 134px;
+    padding:0 0 0 8px;
+    line-height: 34px;
+}
+.con-top .create i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 4px;
+    background: url("../../images/media-lib-ghost.png") no-repeat -105px -14px;
+}
+.dropdown{
+    width: 115px;
+    height: 38px;
+    margin:0 8px 0 14px;
+    color: #aaa;
+}
+.dropdown .show-default{
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 6px;
+}
+.dropdown .caret{
+    margin: 14px 6px 0 0;
+}
+.dropdown-menu{
+    min-width: 108px;
+}
+.order-time .line{
+    margin:0;
+}
+.order-account{
+    margin-right: 8px;
+}
+.con-top .order-time input{
+    width: 146px;
+    text-align: left;
+}
+.con-top .btn-search{
+    width: 84px;
+    margin-left: 8px;
+}
+.content h4{
+    line-height: 40px;
+    text-align: right;
+}
+.condition-area input{
+    margin-right: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~*/
+.table table{
+    width: 968px;
+    margin: 0 auto;
+
+}
+.table table thead tr{
+    height: 62px;
+}
+.table table tr th{
+    text-align: center;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+.table table tr td{
+    text-align: center;
+    font-size: 12px;
+}
+.table table tr td:nth-of-type(7) div{
+    cursor: pointer;
+    margin-left:6px;
+}
+.table table tr td .execute-link-stay{
+    margin-bottom: 4px;
+}
+
+.table table tr{
+    height: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.account-ID dl{
+    display: inline-block;
+    vertical-align: middle;
+    width: 162px;
+}
+.account-ID dt,
+.account-ID dt a
+{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.account-ID dt a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-ID dt i{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/plan_active.png") -183px -23px no-repeat;
+}
+.account-ID dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.account-ID .ewm{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../images/plan_active.png") -163px -23px no-repeat;
+}
+.account-ID dd{
+    margin: 6px 0 0 10px;
+    text-align: left;
+}
+.ewm-ID{
+    position: relative;
+}
+.ewm-ID img{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: none;
+}
+.no-border{
+    border: none;
+}
+.refer-price li .pos{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+.refer-price li span:nth-of-type(2){
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+}
+.refer-price li span em{
+    color: #999999;
+}
+.opetate a{
+    display: block;
+    color: #939393;
+    line-height: 24px;
+}
+.no-order {
+    width: 1000px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    display: none;
+}
+.check-status .dropdown{
+    color: #323232;
+    border: none;
+    width: 80px;
+    margin-left: 50px;
+    display: none;
+}
+.check-status .dropdown ul{
+    min-width: 90px;
+}
+.out-shelves{
+    display: none;
+}
+.check-status .current-status{
+    display: block;
+}
+.red{
+    color: #c81822;
+}
+.green{
+    color: #69cd49;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.modal-content{
+    width: 716px;
+    padding: 0 15px;
+}
+.modal-content .modal-title{
+    font-weight: 600;
+    font-size: 16px;
+}
+.modal-content h4{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.modal-content .modal-body-title{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+.modal-content .btn-opetate-order{
+    text-align: center;
+}
+.modal-content .btn-opetate-order button{
+    width: 72px;
+    height: 36px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+.modal-content input,
+.modal-content textarea{
+    outline: none;
+    resize: none;
+    border-radius: 4px;
+    padding:5px 0 0 5px;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.modal-content input{
+    padding: 0 0 0 5px;
+}
+.modal-content input:focus,
+.modal-content textarea:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+
+.pic-show img{
+    margin-right: 34px;
+    border-radius: 6px;
+}
+.link-address{
+    margin-bottom: 20px;
+}
+/*#perform-verify .modal-content{
+    height: 450px;
+}*/
+.radio-select{
+    margin: 10px 0 10px 48px;
+}
+.radio-select li{
+    float: left;
+    margin-right: 35px;
+}
+.radio-select i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    cursor: pointer;
+    background: url(../../images/plan_active.png) -156px 0 no-repeat;
+}
+.radio-select .selected{
+    background-position: -125px 0;
+}
+.feedback{
+    display: none;
+}
+.feedback span{
+    vertical-align: top;
+}
+.feedback textarea{
+    display: inline-block;
+    width: 600px;
+    height: 142px;
+    resize: none;
+}
+.feedback ul{
+    margin-left: 48px;
+    font-size: 12px;
+    color: #CACACA;
+}
+.submit-btn{
+    display: block;
+    background: #c81822;
+    width: 84px;
+    height: 40px;
+    margin-left: 280px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~接单弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-header{
+    border-bottom: 0 none;
+    padding: 0px;
+}
+.modal-header .close{
+    margin-top: 12px;
+}
+#modal-on-shelves .modal-content,
+#modal-out-shelves .modal-content
+{
+    width: 424px;
+    height: 234px;
+}
+#modal-on-shelves .modal-dialog,
+#modal-out-shelves .modal-dialog
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -117px 0 0 -211px;
+}
+#modal-on-shelves .modal-content h4,
+#modal-out-shelves .modal-content h4
+{
+    margin: 35px 0 45px 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~原因~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-invalid-order-info .modal-dialog{
+    margin: -171px 0 0 -240px;
+}
+#modal-invalid-order-info .modal-content{
+    width: 480px;
+}
+#modal-invalid-order-info .reason-con .reason{
+    width: 68px;
+}
+#modal-invalid-order-info .reason-con .reason-area{
+    width: 370px;
+    height:230px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    text-indent: 2em;
+    padding-top: 5px;
+}
+#modal-invalid-order-info .modal-body{
+    padding:15px 0;
+}

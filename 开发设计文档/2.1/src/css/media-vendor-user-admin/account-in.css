@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+body,.breadcrumb{
+    background: #f5f5f5;
+}
+.red,
+.set-font-color
+{
+    color: #c71523;
+}
+/*.green{
+    color: #49C614;
+}*/
+/*~~~~~~~~~~~~~~~~~~~~~~~账号入驻~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-wrap{
+    text-align: center;
+}
+.fill-in-info,
+.info-content,
+.table-wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fill-in-info h2
+{
+    text-align: center;
+    font-weight: 600;
+    line-height: 60px;
+}
+.wechat-name,.order-remark{
+    margin-top: 5px;
+}
+.info-content{
+    width: 1200px;
+    margin: 10px 0 0px 0;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+    border-top: 2px solid #c71523;
+}
+.info-type{
+    margin-bottom: 25px;
+}
+.info-type input{
+    display: inline-block;
+    width: 435px;
+    height: 46px;
+}
+.info-type span{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 30px;
+}
+.info-type span i,
+.table-wrap h2 i
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+.info-type .btn{
+    width: 98px;
+    height: 48px;
+    background: #C81624;
+    font-size: 16px;
+    margin-right: 18px;
+}
+.info-type em{
+    cursor: pointer;
+}
+.fans-nuber-pic{
+    text-align: left;
+}
+/*上传图片样式*/
+.file-list{
+    margin-top: 15px;
+    padding-left: 134px;
+}
+.file-list li{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 8px;
+}
+.file-list li img{
+    width: 92px;
+    height: 112px;
+    border-radius: 4px;
+}
+.file-list li .delete-pic{
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    border-radius: 50%;
+    background: #ca1622;
+    transition: all .5s;
+}
+.file-list li .delete-pic:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.file-list li .delete-pic i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
+    background: url("../../images/phone.png") no-repeat -398px -30px;
+}
+.file-list .progress{
+    margin-bottom: 4px;
+}
+.file-list .progress .bar{
+    width: 0;
+    margin-right: 0;
+}
+.file-list .progress .percent{
+    margin-right: 0;
+     width: auto;
+}
+
+
+.order-remark span:nth-of-type(1){
+    vertical-align: top;
+    margin-right: 14px;
+}
+.order-remark span:nth-of-type(2){
+    display: block;
+    text-align: right;
+    font-size: 12px;
+}
+.order-remark textarea{
+    display: inline-block;
+    width: 396px;
+    height: 148px;
+    resize: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~table样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table-wrap h2{
+    line-height: 64px;
+    font-size: 14px;
+    text-align: left;
+}
+.pos-table{
+    width: 100%;
+    background: #ffffff;
+    padding: 0 14px;
+    text-align: center;
+}
+.pos-table table{
+    width: 100%;
+}
+.pos-table table tr{
+    border-bottom: 1px solid #999999;
+}
+.pos-table table th{
+    line-height: 78px;
+    text-align: center;
+}
+.pos-table tbody tr{
+    height: 92px;
+    vertical-align: middle;
+    border-bottom: 1px solid #E5E5E5;
+}
+.pub-type ul{
+    width: 380px;
+    margin-left: 200px;
+}
+.pub-type li{
+    float: left;
+    margin-right: 56px;
+}
+.pub-type li i{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+    background: url("../../images/plan_active.png") -156px 0 no-repeat;
+}
+.pub-type li i.current-pub-type{
+    background-position: -125px 0;
+}
+.price input{
+    display: inline-block;
+    width: 164px;
+    height: 46px;
+    margin-right: 20px;
+}
+.btn-submit{
+    width: 440px;
+    height: 46px;
+    margin: 45px 0 60px 0;
+    background: #C81624;
+    font-size: 16px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~查看示例图片~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-view-example .modal-dialog{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin: -185px 0 0 -240px;
+}
+#modal-view-example .modal-content{
+    width: 480px;
+    padding:0;
+}
+#modal-view-example .modal-content img{
+    width: 450px;
+    height: 280px;
+}

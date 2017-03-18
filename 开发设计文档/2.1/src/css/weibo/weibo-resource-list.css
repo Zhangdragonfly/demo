@@ -1,0 +1,206 @@
+@charset "utf-8";
+body{
+	min-width: 1200px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格导航开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.sort-condition .dropdown
+{
+	margin: 6px 17px 0 6px;
+	width: 106px;
+	border: 1px solid #B7B7B7;
+	padding: 2px 5px;
+	border-radius: 2px;
+	cursor: pointer;
+	height: 30px;
+	line-height: 24px;
+	box-shadow: inset 2px 2px 5px #dfdfdf;
+}
+.sort-condition .dropdown{
+	min-width: 166px;
+	margin-right: 0;
+}
+.sort-condition .dropdown a
+{
+	display: block;
+	color: #989898;
+}
+.sort-condition .dropdown .caret
+{
+	background: url("../../images/list-ghost.png") -285px -75px no-repeat;
+	width: 9px;
+	height: 6px;
+	border: 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 0 0 10px;
+}
+.sort-condition .dropdown-menu{
+	min-width: 166px;
+}
+.sort-condition .dropdown-menu li
+{
+	line-height: 30px;
+	padding: 0 5px 0 10px;
+	cursor: pointer;
+	color: #989898;
+}
+.sort-condition .dropdown-menu li:hover
+{
+	color: #C81624;
+	background: #eee;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格body部分开始~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table-item tbody tr{
+	height: 114px;
+	color: #3c3c3c;
+}
+.table-item tbody tr td{
+	vertical-align: middle;
+}
+.table .account{
+	padding: 8px 0;
+	position: relative;
+}
+.account a{
+	display: inline-block;
+	width: 130px;
+	text-align: left;
+	margin-bottom: 10px;
+	position: absolute;
+	left: 50%;
+	top: 35px;
+	color: #3c3c3c;
+	margin-left: -65px;
+}
+.account a:hover{
+	text-decoration: none;
+	color: #C81624;
+}
+.account a i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+	margin-left: 6px;
+	background: url("../../images/list-ghost.png") -169px -147px no-repeat;
+}
+.account a i.yellow-on{
+	background-position: -191px -147px;
+}
+.account a i.red-on{
+	background-position: -213px -147px;
+}
+.account ul{
+	width: 130px;
+	position: absolute;
+	left: 50%;
+	bottom: 35px;
+	margin-left: -65px;
+}
+.account li{
+	float: left;
+	font-size: 12px;
+	height: 16px;
+	line-height: 14px;
+	padding: 0 6px;
+	margin-right: 4px;
+	border: 1px solid #C81624;
+	border-radius: 3px;
+}
+.refer-price li{
+	line-height: 20px;
+}
+.refer-price li span{
+	display: inline-block;
+	width: 52px;
+	text-align: right;
+	color: #3c3c3c;
+}
+.refer-price li i{
+	display: inline-block;
+	width: 61px;
+	text-align: left;
+}
+.refer-price li em{
+	color: #bdbdbd;
+}
+.table-item .table .collect{
+	position: relative;
+	vertical-align: middle;
+}
+.collect a{
+	text-align: center;
+	line-height: 30px;
+	color: #C81624;
+	display: inline-block;
+	width: 98px;
+	text-align: left;
+}
+.collect a label{
+	font-weight: normal;
+}
+.collect .detail,
+.collect .add-car
+{
+	display: block;
+	color: #C81624;
+	cursor: pointer;
+}
+.collect .detail i{
+	margin-left: 14px;
+}
+.collect i{
+	display: inline-block;
+	width: 14px;
+	height: 15px;
+	vertical-align: middle;
+	margin-right: 15px;
+	background: url("../../images/list-ghost.png") -317px -3px no-repeat;
+}
+.add-media i{
+	width: 15px;
+	background-position: -317px -30px;
+}
+.add-order i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	background: url("../../images/list-ghost.png") -254px -110px no-repeat;
+}
+.remark{
+	position: relative;
+}
+.remark span{
+	display: block;
+}
+.remark .explain-title{
+	top: 80px;
+	width: 100%;
+	margin-left: -80px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~购物车开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.resource-table .tbody tr{
+	padding: 16px 0;
+	border-bottom: 1px solid #E8E8E8;
+}
+.resource-table .table tbody tr td{
+	border: 0 none;
+	height: 72px;
+	vertical-align: middle;
+	position: relative;
+}
+.resource-table .account a{
+	top: 15px;
+}
+.resource-table .account ul{
+	bottom: 15px;
+}
+.resource-table tbody tr{
+	border-bottom: 1px solid #ECECEC;
+}
+.ad-type span{
+	display: block;
+	line-height: 20px;
+}
+

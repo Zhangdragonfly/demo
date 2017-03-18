@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 72px;
+    border-top: 2px solid #c81624;
+    padding-top: 12px;
+}
+.table{
+    width: 1000px;
+    margin-top: 16px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+/*内容部分头部搜索*/
+.con-top .media-lib-name{
+    margin-left: 16px;
+}
+.con-top .detail-name{
+    margin-left: 46px;
+}
+.con-top div input{
+    width: 148px;
+    height: 45px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    text-indent: 1em;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top div input::-webkit-input-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input::-moz-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top .search-btn,
+.con-top .create{
+    height: 45px;
+    font-size: 16px;
+}
+.con-top .search-btn i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url("../../../images/media-lib-ghost.png") no-repeat -105px -58px;
+}
+.con-top .create{
+    width: 134px;
+    padding:0 0 0 8px;
+    line-height: 45px;
+}
+.con-top .create i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 7px;
+    background: url("../../../images/media-lib-ghost.png") no-repeat -105px -14px;
+}
+.dropdown{
+    width: 108px;
+    height: 45px;
+    margin: 0 4px 0 6px;
+    color: #aaa;
+}
+.dropdown .show-default{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 14px;
+}
+.dropdown .caret{
+    margin: 18px 6px 0 0;
+}
+.dropdown-menu{
+    min-width: 108px;
+}
+.order-time .line{
+    margin:0;
+}
+.order-account{
+    margin-right: 4px;
+}
+.con-top .order-time input{
+    width: 132px;
+    text-align: left;
+}
+.con-top .search-btn{
+    width: 94px;
+    margin-left: 5px;
+}
+/*~~~~~表格部分~~~~~*/
+.table table{
+    width: 968px;
+    margin: 0 auto;
+}
+.table table tr{
+    height: 92px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.table table thead{
+    height: 62px;
+}
+.table table thead tr{
+    height: 62px;
+}
+.table table tr th{
+    text-align: center;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+.table table tr td{
+    text-align: center;
+    font-size: 14px;
+}
+.table table tr .ruan-ad-price,
+.table table tr .tiny-task-price{
+    color: #999999;
+}
+.table table tr td span{
+    color: #c81822;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.account-platform dl{
+    display: inline-block;
+}
+.account-platform dt{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-platform dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.sex-icon-g
+{
+    display: inline-block;
+    width: 17px;
+    height: 22px;
+    vertical-align: middle;
+    margin: 4px 0 2px 0;
+    background: url("../../../images/list-ghost.png") -129px -182px no-repeat;
+}
+.sex-icon-b{
+    background-position: -156px -184px;
+}
+
+.platform-icon{
+    display: inline-block;
+    width: 35px;
+    height: 17px;
+    vertical-align: middle;
+    margin: -2px 0 0 8px;
+    background: url("../../../images/list-ghost.png") 0 -183px no-repeat;
+}
+.platform-icon-mp{
+    background-position: -40px -183px;
+}
+.platform-icon-dy{
+    background-position: -80px -182px;
+}
+.platform-icon-hj{
+    background-position: 0 -205px;
+}
+.platform-icon-hn{
+    background-position: -41px -205px;
+}
+.platform-icon-yk{
+    background-position: -80px -205px;
+}
+.platform-icon-tb{
+    background-position: -108px -227px;
+}
+.platform-icon-yzb,
+.platform-icon-xm
+{
+    width: 49px;
+    margin-left: 10.5px;
+}
+.platform-icon-yzb{
+    background-position: 0 -227px;
+}
+.platform-icon-xm{
+    background-position: -54px -227px;
+}
+
+.edit{
+    color: #c81822;
+    margin-right: 10px;
+}
+.edit:hover,
+.edit:link{
+    color: #c81822;
+}
+.no-order{
+    width: 1000px;
+    height:108px;
+    text-align: center;
+    line-height:108px;
+    display: none;
+}
+/*~~~~~新建媒体库modal样式~~~~~*/
+.modal-content{
+    width: 480px;
+    height: 498px;
+}
+.modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -249px 0 0 -240px;
+}
+.modal-header{
+    width: 456px;
+    margin: 0 auto;
+    padding-right: 0;
+}
+.modal-header h4{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.modal-header .close{
+    margin-top: 4px;
+}
+.modal-body{
+    height: 430px;
+    line-height: 30px;
+    font-size: 12px;
+    text-indent: 2em;
+    overflow: scroll;
+}
+.modal-body .create-media-lib{
+    margin-left: 20px;
+}
+.modal-body .create-media-lib input{
+    width: 310px;
+    margin-left: 0;
+}
+.new-media-lib::-webkit-input-placeholder{
+    font-weight: normal;
+    color: #ccc;
+}
+.new-media-lib::-moz-placeholder{
+    font-weight: normal;
+    color: #ccc;
+}
+
+

@@ -1,0 +1,111 @@
+.active-status{
+    line-height: 45px;
+    margin-left: 15px;
+}
+@charset "utf-8";
+
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.red{
+    color: #c81624;
+    cursor: pointer;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分头部搜索~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-head,
+.content-head-search
+{
+    height: 67px;
+    border-top: 2px solid #C81622;
+    line-height: 66px;
+    margin-bottom: 13px;
+}
+.content-head li{
+    float: left;
+    padding: 0 14px;
+    margin-right: 15px;
+}
+.content-head li em{
+    color: #C81622;
+}
+.content-head .btn-pay{
+    float: right;
+    margin: 13px 0 0 0;
+}
+.content-head .btn-pay a{
+    display: block;
+    width: 88px;
+    height: 40px;
+    border-radius: 4px;
+    background: #C81624;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.content-head-search{
+    height: 70px;
+}
+.pay-type{
+    margin: 0 24px 0 14px;
+}
+.pay-type .dropdown{
+    margin-top: 14px;
+    width: 110px;
+    height: 40px;
+    line-height: 34px;
+}
+.pay-type .dropdown ul
+{
+    min-width: 110px;
+}
+.pay-type .dropdown .caret{
+    margin-top: 14px;
+}
+.trade-time{
+    margin-left: 14px;
+}
+.trade-time input{
+    width: 224px;
+    height: 40px;
+    display: inline-block;
+}
+.btn-search{
+    height: 38px;
+    font-size: 16px;
+    margin: 14px 16px 0 0;
+}
+.btn-search i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url(../../images/media-lib-ghost.png) no-repeat -105px -58px;
+}
+.table-info{
+    text-align: center;
+    padding: 0 18px;
+}
+.table-info thead tr th{
+    line-height: 46px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+.table-info tbody tr td{
+    line-height: 76px;
+}
+

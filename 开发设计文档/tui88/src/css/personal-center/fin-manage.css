@@ -1,0 +1,152 @@
+/*
+@name: tui88-base-info.css
+@author: maotingting
+*/
+.show{
+    display: block;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分~~~~~~~~~~~~~~~~~~~~~*/
+.main{
+	min-height: 1000px;
+}
+.content{
+    height: 98%;
+    margin-left: 248px;
+}
+.fin-tb-info,
+.con-header{
+	width: 99%;
+	height: 82px;
+	min-width: 1100px;
+	background: #FFFFFF;
+	padding: 0 100px;
+}
+.con-header ul{
+	height: 82px;
+}
+.con-header li{
+	float: left;
+	line-height: 82px;
+	margin-right: 25%;
+}
+.con-header .last{
+	margin-right: 0;
+}
+.con-header li i{
+	color: #bf1f1f;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~~*/
+.fin-table h4{
+	color: #2F4052;
+	line-height: 40px;
+}
+.fin-tb-info{
+	height: 640px;
+	padding: 0;
+}
+.search-con{
+	background: #FFFFFF;
+}
+.in-search-con{
+	width: 98%;
+	height: 66px;
+	margin: 0 auto;
+	border-bottom: 1px solid #E5E5E5;
+}
+.search-con span{
+	line-height: 66px;
+	margin: 0 6px;
+}
+.search-con .form-control{
+	width: 114px;
+	height: 36px;
+	display: inline-block;
+}
+table{
+	width: 100%;
+	text-align: center;
+	line-height: 58px;
+	background: #FFFFFF;
+}
+thead th{
+	text-align: center;
+	border-bottom: 1px solid #C0C5CB;
+}
+tbody td{
+	border-bottom: 1px solid #EBEDEC;
+	font-size: 12px;
+}
+tbody td a:hover,
+tbody td a:visited,
+tbody td a:active,
+tbody td a{
+	color: #2F9FDF;
+}
+tbody td a i{
+	display: inline-block;
+	width: 15px;
+	height: 12px;
+	vertical-align: middle;
+	margin-right: 8px;
+	background: url(../../images/tui88-ghost.png) -2px -294px no-repeat;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~modal收款凭证~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-header{
+    border-bottom: 1px solid #C0C5CB;
+}
+.modal-footer{
+    border: 0;
+}
+.modal-content{
+    height: 306px;
+    padding: 0 10px;
+}
+.modal-dialog{
+    width: 494px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -153px 0 0 -247px;
+}
+.modal-header span{
+    color: #36526A;
+}
+.modal-header i.close{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    margin-top: 2px;
+    background: url("../../images/tui88-ghost.png") -122px -89px no-repeat;
+}
+.modal-header i.close:hover{
+    opacity: 1;
+}
+.sum-show{
+	color: #38526B;
+	line-height: 44px;
+	margin-bottom: 14px;
+}
+.pic{
+	display: inline-block;
+	width: 340px;
+}
+.pic-show span{
+	color: #38526B;
+	margin-left: 14px;
+	vertical-align: top;
+}
+.pic img{
+	border: 1px solid #C0C5CB;
+	border-radius: 4px;
+	vertical-align: top;
+	margin-right: 4px;
+}
+.remarks{
+	color: #FD0000;
+	line-height: 22px;
+	margin: 6px 0 0 86px;
+	width: 300px;
+	font-size: 12px;
+}

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>直接投放内容</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../dep/ueditor/ueditor.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../src/css/weixin/plan_order_direct_content.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-top-wrap">
+            <div class="head-top clearfix login-cancel hidden">
+                <h3 class="welcome">欢迎来到沃米优选</h3>
+                <div class="enter clearfix">
+                    <a class="entrance" href="../login&register/ad-login.html">广告主入口</a>
+                    <a class="entrance" href="../login&register/media-login.html">媒体主入口</a>
+                    <a class="help" href="javascript:void(0)">帮助中心</a>
+                    <span class="tel">400-878-9551</span><i></i>
+                </div>
+            </div>
+            <div class="head-top clearfix login-success">
+                <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+                <div class="enter clearfix">
+                    <ul class="clearfix">
+                        <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                        <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                        <li>可用金额: <span>***</span></li>
+                        <li>冻结金额: <span>***</span></li>
+                        <li><a href="javascript:;">立即充值</a></li>
+                        <li><a href="javascript:;">帮助中心</a></li>
+                        <li>退出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 导航-->
+        <div class="head-bottom">
+            <h1><a href="#"><img src="../src/images/logo.png" alt="沃米优选"></a></h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a class="active" href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">微信营销</a></li>
+                    <li><a href="javascript:void(0)">视频网红</a></li>
+                    <li><a href="javascript:void(0)">新浪微博</a></li>
+                    <li><a href="javascript:void(0)">解决方案</a></li>
+                    <li><a href="javascript:void(0)">案例中心</a></li>
+                    <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                当前位置：
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li class="active color-main">创建活动</li>
+            </ol>
+        </div>
+    </div>
+    <!--投放内容-->
+    <div class="edit-weixin-ad-content">
+        <div class="content clearfix">
+            <div class="content-left">
+                <div class="phone-clone">
+                    <h2 class="file-title">标题</h2>
+                    <div class="time-and-author">
+                        <span class="execute-time">执行时间</span>
+                        <span class="author-clone">作者</span>
+                    </div>
+                    <div class="article-content-clone"></div>
+                </div>
+            </div>
+            <button class="material-select btn btn-danger bg-main fr" data-target="#select-from-material-lib" data-toggle="modal"><i></i>从素材库选择</button>
+            <!-- 从素材库选择modal框 -->
+            <div id="select-from-material-lib" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>选择内容素材</h4>
+                            <div class="search-and-creat">
+                                <input type="text" placeholder="标题/作者">
+                                <button class="search-btn btn btn-danger bg-main font-16"><i></i>搜索</button>
+                                <button class="create-material btn btn-danger bg-main font-16" data-toggle="modal"><i></i>新建素材</button>
+                            </div>
+                            <!--<span class="close fr" data-dismiss="modal">x</span>-->
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>标题</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th>创建时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="material-list">
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="90px">
+                                            <div class="material-pic"><img src="../src/images/wzq.jpg" alt=""></div>
+                                        </td>
+                                        <td width="224px">
+                                            联合利华大结局爱丽丝阿里斯顿
+                                        </td>
+                                        <td class="material-choosed-td">
+                                            <div class="material-choosed">
+                                                <i class="fl"></i> 已选择
+                                            </div>
+                                        </td>
+                                        <td width="120px">2016.5.13</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger bg-main font-16" data-dismiss="modal">确定</button>
+                            <button class="btn btn-danger bg-main font-16" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-right">
+                <div class="file-content weixin-file-content">
+                    <div class="plan-name">
+                        <span class="file-content-title">活动名称：</span>
+                        <span>双十一活动</span>
+                    </div>
+                    <div class="throw-time">
+                        <span class="file-content-title"><i>*</i>执行时间：</span>
+                        <input type="text" class="startime input-section text-input datetimepicker" name="iStarTime" readonly="readonly"/> <em class="tips">选择当前时间2小时后,7天内</em>
+                        <p class="throw-time-tips color-main">建议您至少提前一天推广，否则流，拒单率高！</p>
+                        <i class="calendar-icon"></i>
+                    </div>
+                    <div class="article-address">
+                        <div>
+                            <span class="file-content-title">文章导入：</span>
+                            <input type="text" placeholder="可输入微信文章或后台预览链接">
+                            <button class="import btn btn-danger bg-main">导入</button>
+                        </div>
+                    </div>
+                    <div class="file-name">
+                        <span class="title file-content-title"><i>*</i>标题：</span>
+                        <input class="title-input" type="text" placeholder="请勿超过50个字,勿包含转发、分享等文字,以免被微信屏蔽造成损失">
+                        <span class="font-12 tips">您还可以输入<em class="color-main">50</em>字</span>
+                    </div>
+                    <div class="author-name">
+                        <span class="file-content-title">作者：</span>
+                        <input class="author-input" type="text">
+                        <span class="font-12 tips">您还可以输入<em class="color-main">8</em>字</span>
+                    </div>
+                    <div class="cover-pic">
+                        <!--<button class="btn btn-danger bg-main">上传图片</button>-->
+                        <div id="upload-single-img-container" class="plupload-container">
+                            <span class="file-content-title"><i>*</i>封面图片：</span>
+                            <!-- container  用来指定Plupload所创建的html结构的父容器，默认为pickfiles的父元素。该参数的值可以是一个元素的id,也可以是DOM元素本身。 -->
+                            <button id="upload-single-img-btn"  class="btn btn-danger bg-main">上传图片</button>
+                            <span class="tips"> 请选择1张封面图片,不要超过2M</span>
+                            <ul id="upload-single-img-file-list" class="file-list"></ul>
+                        </div>
+                    </div>
+                    <div class="cover-pic-show font-600">
+                        <label><input value="" type="checkbox"/>封面图片显示在正文中</label>
+                    </div>
+                    <div class="article-content clearfix">
+                        <span class="file-content-title fl"><i>*</i>正文内容：</span>
+                        <form action="server.php" method="post">
+                            <!-- 加载编辑器的容器 -->
+                            <script id="container" name="content" type="text/plain"></script>
+                        </form>
+                    </div>
+                    <div class="article-link">
+                        <div class="file-content-title">原文链接：</div>
+                        <input type="text" placeholder="微信文章阅读原文的链接地址">
+                    </div>
+                    <div class="summary">
+                        <span class="file-content-title fl">摘要：</span>
+                        <textarea name="" id="abstract" cols="30" rows="10" placeholder="选填,如果不填写会默认抓取正文前54个字"></textarea>
+                        <p class="tips message">您还可以输入<em>120</em>字</p>
+                    </div>
+                    <div class="quality-proof">
+                        <div id="upload-multiple-img-container" class="plupload-container">
+                            <span class="file-content-title">正品证明：</span>
+                            <button id="upload-multiple-img-btn"  class="btn btn-danger bg-main" href="javascript:;">上传图片</button>
+                            <span class="tips font-12">仅支持jpg、gif、png图片文件，文件小于2M,允许上传5张</span>
+                            <ul id="upload-multiple-img-file-list" class="file-list"></ul>
+                        </div>
+                        <p class="tips">若您推广的单品属于知名品牌,请务必上传该商品的正品证明(如产品许可证、营业执照截图等)</p>
+                    </div>
+                    <div class="plan-remark">
+                        <span class="file-content-title fl">投放备注：</span>
+                        <textarea class="remark-textarea" name="" id="" cols="30" rows="10" placeholder="选填,如果不填写会默认抓取正文前54个字"></textarea>
+                        <p class="tips message">您还可以输入<em>120</em>字</p>
+                    </div>
+                    <div class="agree font-12 clearfix">
+                        <input type="checkbox" value="1" name="is_ht_ok" class="check is_ht" checked="checked" disabled="disabled">
+                        <strong>我同意<a class="blue" target="_blank" href="#">《沃米优选服务条款》</a></strong>
+                    </div>
+                    <button class="save btn btn-danger bg-main">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--侧边栏联系方式-->
+    <div class="side-bar">
+        <ul>
+            <li class="tel">
+                <div class="tel-con detail">
+                    <span></span>
+                    <p>客服电话</p>
+                    <p>400-878-9551</p>
+                </div>
+                <i></i>
+            </li>
+            <li class="qq">
+                <div class="qq-con detail">
+                    <span></span>
+                    <p>客服QQ</p>
+                    <p>2544745674</p>
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+                </div>
+                <i></i>
+            </li>
+            <li class="weixin">
+                <div class="weixin-con detail">
+                    <p>微信扫一扫</p>
+                    <span></span>
+                </div>
+                <i></i>
+            </li>
+            <li class="top">
+                <i></i>
+            </li>
+        </ul>
+    </div>
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer font-12">
+            <ul>
+                <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+                <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+                <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+                <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+            </ul>
+            <div class="footer-bot">
+                <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dep/js/jquery-1.10.2.min.js"></script>
+    <script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+    <script src="../dep/layer/layer.js"></script>
+    <script src="../dep/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../dep/datetimepicker/datetime.js"></script>
+    <script src="../dep/ueditor/ueditor.config.js"></script>
+    <script src="../dep/ueditor/ueditor.all.min.js"></script>
+    <script src="../dep/plupload/plupload.full.min.js"></script>
+    <script src="../src/js/plupload.js"></script>
+    <script src="../src/js/site-stage-layout-common.js"></script>
+    <script src="../src/js/weixin/plan_order_direct_content.js"></script>
+</body>
+</html>

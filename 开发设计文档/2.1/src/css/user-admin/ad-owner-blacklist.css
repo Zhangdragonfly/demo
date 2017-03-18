@@ -1,0 +1,563 @@
+@charset "utf-8";
+
+/*用户中心页面公用*/ 
+a{color: #000;}
+a:hover{text-decoration: none;color: inherit;}
+a:focus{color: inherit;text-decoration: none;}
+.color-gray{color: #959595;}
+body{background: #f5f5f5;}
+.header{background: #fff;}
+.bread,
+.breadcrumb{background: #f5f5f5;}
+/*公用头部*/ 
+.common-title{
+	color: #959595;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0 12px 12px;
+}
+.common-title span{
+	display: inline-block;
+	float: left;
+	width: 25px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 4px;
+}
+/*我的收藏内容部分*/
+.shadow{
+	border: 1px solid #ddd;
+	box-shadow: 3px 3px 5px #eee;
+	background: #fff;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto 80px;
+}
+.content-sidebar {
+	height: 760px;
+}
+/*我的收藏右侧内容*/ 
+.content-right{
+	width: 1035px;
+	height: 760px;
+	margin-left: 15px;
+	padding:22px 10px;
+	float: left;
+}
+.content-right .tab{
+	height: 62px;
+	border-bottom: 2px solid #e8e8e8;
+	margin-bottom: 26px;
+}
+.content-right .group{
+	height: 62px;
+}
+.content-right .tab li{
+	height: 62px;
+	margin-left: 38px;
+	float: left;
+	cursor: pointer;
+}
+.content-right .tab li div{
+	width: 146px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border-radius: 6px;
+	font-weight: 600;
+	border: 1px solid #bebebe;
+	position: relative;
+}
+.content-right .tab li.click{
+	border-bottom: 2px solid #de2535; 
+}
+.content-right .tab li div.click{
+	background: #de2535;
+	color: #fff;
+	border: 2px solid #de2535; 
+}
+.content-right .tab .rect{
+	width: 14px;
+	height: 14px;
+	background: #de2535;
+	border-radius: 3px;
+	transform: rotateZ(45deg);
+	-webkit-transform:rotateZ(45deg);
+    -moz-transform:rotateZ(45deg);
+    -ms-transform:rotateZ(45deg);
+    -o-transform:rotateZ(45deg);
+	position: absolute;
+	top: 27px;
+	left: 50%;
+	margin-left: -10px;
+	display: none;
+}
+.content-right .tab .rect.show{
+	display: block;
+}
+.content-right .collection{
+	display: none;
+}
+.content-right .collection.show{
+	display: block;
+}
+.content-right .group{
+	padding: 22px 0 0 38px;
+}
+.content-right .group li{
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	float: left;
+	margin-right: 12px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.content-right .group .all{
+	width: 34px;
+	border: 1px solid #de2535;
+}
+.content-right .group .default{
+	width: 70px;
+	border: 1px solid #de2535;
+}
+.content-right .group .filter{
+	border-radius: 2px;
+}
+.content-right .group .filter.on{
+	color: #fff;
+	background: #de2535;
+}
+.content-right .group .operate-group{
+	float: right;
+	color: #21a4dc;
+}
+
+/*~~~~表格开始~~~~~*/
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th{
+	padding: 0;
+}
+.table-header ul li{
+	float: left;
+	width: 98px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	color: #ffffff;
+	border-right: 1px solid #ffffff;
+	background: #363636;
+	cursor: pointer;
+}
+.table-active,
+.table-header ul li:hover
+{
+	background: #C81624;
+}
+.table{
+	width: 100%;
+	text-align: center;
+	background: #FFFFFF;
+	border-top: 2px solid #dddddd;
+	font-size: 12px;
+}
+.table span,
+.table a{
+	font-size: 12px;
+}
+.content-right .table th{
+	height: 58px;
+	text-align: center;
+	vertical-align: middle;
+}
+.content-right .table th span{
+	font-weight: 600;
+}
+.table>tbody>tr>td{
+	vertical-align: middle;
+}
+.sort-icon{
+	position: relative;
+	display: inline-block;
+	right: 10px;
+	top: -3px;
+}
+.sort-icon i.up,
+.sort-icon i.down
+{
+	display: inline-block;
+	width: 10px;
+	height: 6px;
+	position: absolute;
+	background: url("../../../src/images/resource-list-ghost.png") -71px 0 no-repeat;
+	cursor: pointer;
+}
+.sort-icon i.up{
+	top: -10px;
+}
+.help{
+	display: inline-block;
+}
+.help .hlep-icon{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	background: url("../../../src/images/resource-list-ghost.png") -128px 0 no-repeat;
+}
+.table th i.down{
+	background-position: -71px -7px;
+}
+tbody tr{
+	height: 114px;
+}
+tbody tr:hover{
+	background: #fcf8e3;
+}
+tbody tr td{
+	vertical-align: middle;
+}
+.table .account{
+	width: 175px;
+	padding: 20px 0;
+}
+
+.account dt{
+	width: 65px;
+	height: 65px;
+	margin-right: 5px;
+	float: left;
+}
+.account dt a{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.account dt a img{
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	top: -128px;
+	left: -128px;
+}
+.account dd{
+	float: left;
+	padding-top: 10px;
+}
+.account dd a span{
+	display: inline-block;
+	width: 52px;
+	color: #21A4DC;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.account dd a i,
+.account dd a em{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin: 0 3px;
+	vertical-align: top;
+	background: url("../../../src/images/resource-list-ghost.png") 0px -54px no-repeat;
+}
+.account dd a em{
+	background-position: -22px -54px;
+}
+.account dd p{
+	text-align: left;
+	margin-top: 5px;
+	position: relative;
+}
+.account dd p a,
+.shopping-resource dd p a
+{
+	color: #A3A3A3;
+}
+.account dd p a{
+	display: inline-block;
+	width: 52px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.account dd p span,
+.shopping-resource dd p span
+
+{
+	display: inline-block;
+	width: 12px;
+	height: 11px;
+	cursor: pointer;
+	vertical-align: middle;
+	background: url("../../../src/images/resource-list-ghost.png") -72px -16px no-repeat;
+}
+.account dd p img{
+	width: 120px;
+    height: 120px;
+    position: absolute;
+    display: none;
+    top: 20px;
+    right: -15px;
+    z-index: 999;
+}
+.quote{
+	width: 228px;
+}
+.quote li{
+	line-height: 24px;
+}
+.quote li span{
+	text-align: right;
+	display: inline-block;
+	width: 80px;
+}
+.quote li i{
+	display: inline-block;
+	width: 80px;
+	text-align: left;
+}
+.quote li i,
+.wom-index
+{
+	color: #C71724;
+}
+.quote li del{
+	color: #979596;
+}
+.read-count{
+	color: #1FA4DC;
+}
+.table .collect{
+	width: 87px;
+	position: relative;
+	vertical-align: middle;
+}
+.collect a{
+	text-align: center;
+	line-height: 36px;
+	color: #22A5DB;
+}
+.collect .detail,
+.collect .add-car
+{
+	display: block;
+	color: #22A5DB;
+	cursor: pointer;
+	text-align: left;
+}
+.collect .detail i{
+	display: inline-block;
+    width: 19px;
+    height: 18px;
+    vertical-align: middle;
+    background: url("../../../src/images/center-ghost.png") -5px -57px no-repeat;
+}
+.add-collect{
+	width: 200px;
+	position: absolute;
+	right: 26px;
+	text-align: right;
+	display: none;
+}
+.add-car i{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	vertical-align: middle;
+	background: url("../../../src/images/center-ghost.png") -28px -57px no-repeat;
+}
+.add-collect a i{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	background: url("../../../src/images/resource-list-ghost.png") -153px 0 no-repeat;
+}
+.add-collect .add-black i{
+	background:url("../../../src/images/resource-list-ghost.png") -178px 0 no-repeat;
+	width: 13px;
+	height: 13px;
+} 
+/*分页*/
+.page-wb{
+	float: right;
+	margin-right: -10px;
+	color:#999;
+	height:36px;
+	line-height:36px;
+	margin-top: 20px;
+}
+.page-wb a,
+.page-wb .next{
+	position:relative;
+	float:left;
+	margin-left:-1px;
+	display:inline-table;
+	padding:0 14px;
+	border:solid 1px #ededed;
+	height:34px;
+	color:#3e3e3e;
+	background: #ffffff;
+	text-align:center;
+	line-height:34px;
+	cursor:pointer;
+	-webkit-transition:all .1s linear;
+	-moz-transition:all .1s linear;
+	-o-transition:all .1s linear;
+	transition:all .1s linear
+}
+.page-wb .count{
+	float: left;
+}
+.page-wb em{
+	width:19px;
+	height:34px;
+	line-height:34px;
+	font-weight:bold;
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+}
+.page-wb .on,
+.page-wb a:hover{
+	position:relative;
+	z-index:1;
+	background:#ea544a;
+	color:#fff;
+	border-color:#ea544a;
+	text-decoration:none
+}
+.page-wb .click_prev{}
+.page-wb .text{
+	border: solid 1px #ededed;
+	height: 35px;
+	text-align: center;
+	color:#999;
+	width: 52px;
+	padding: 5px
+}
+.page-wb .aok{
+	display: inline-block;
+	height:35px;
+	width:48px;
+	-webkit-border-radius:2px;
+	-webkit-background-clip:padding-box;
+	-moz-border-radius:2px;
+	-moz-background-clip:padding;
+	border-radius:2px;
+	background-clip:padding-box;
+	border:solid 1px #ededed;
+	text-align:center;line-height:35px;
+	cursor:pointer;color:#404040;
+	background: #C81624;
+	color: #ffffff;
+}
+.page-wb .aok:hover {
+	color: #ffffff;
+	border-color: #C81624;
+}
+.page-wb i{
+	font-style:normal;
+	vertical-align: middle;
+	line-height: 35px;
+	margin: 0 10px;
+}
+.page-wb .total{
+	font-weight:normal;
+	padding:0 10px;
+}
+.page-wb select{
+	margin:2px 10px 0 10px;
+	height:32px;
+} 
+
+/*管理分组弹框*/ 
+#collect-group .modal-dialog{
+	width: 561px;
+}
+#collect-group .modal-content{
+	margin-top: 30%;
+}
+#collect-group .modal-content h2{
+	text-align: center;
+}
+#collect-group .modal-body,
+#collect-group .modal-footer {
+	border: none;
+}
+#collect-group .modal-header{
+	width: 96%;
+	line-height: 20px;
+	margin: 0 auto;
+	font-weight: 600;
+}
+#collect-group .modal-body{
+	padding: 26px;
+}
+#collect-group .modal-body ul{
+	 width: 480px;
+}
+#collect-group .modal-body li{
+	width: 240px;
+	height: 40px;
+	float: left;
+	position: relative;
+}
+#collect-group .modal-body .check{
+	margin-right: 20px; 
+}
+#collect-group .modal-body label{
+	cursor: pointer;
+}
+#collect-group .modal-body label span{
+	font-weight: 600;
+}
+#collect-group .modal-body .set-group{
+	width: 92px;
+	height: 30px;
+	border: 1px solid #bebebe;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 30px;
+	color: #22a5db;
+	cursor: pointer;
+}
+#collect-group .sure{
+	margin: 0 auto;
+}
+#collect-group .sure a{
+	display: block;
+	width: 322px;
+	height: 45px;
+	line-height: 33px;
+	margin: 140px auto 40px; 
+}
+/*删除分组提示框样式*/
+.layui-layer-title,
+.layui-layer-setwin{
+	display: none;
+}
+.layui-layer-content{
+	font-weight: 600;
+}
+.layui-layer .layui-layer-btn{
+	text-align: center;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn0{
+	background: #c81624;
+	border-color: #c81624;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn1{
+	background: #21a4dc;
+	color: #fff;
+}

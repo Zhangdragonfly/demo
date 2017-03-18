@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+/*~~~~整体样式~~~~~*/
+.color-main{color: #de2535;}
+.color-pink{color: #ff8590;}
+.color-has-add-file{color: #12be44;}
+.color-focus{color:#969696;}
+.bg-main{background: #de2535;}
+.btn-danger{background: #de2535;}
+.btn-info{background:#21a4dc;}
+a{color: #000}
+a:hover{text-decoration: none;color: inherit;}
+a:focus{color: inherit;text-decoration: none;}
+.bg-table-head {background: #ecf1f2;}
+
+/*~~~~头部~~~~~*/
+/*用户信息*/
+.welcome-user{
+    width: 1200px;
+    margin: 0 auto;
+}
+.welcome-user .welcome{
+    float: left;
+    margin-left: 16px;
+}
+.welcome-user .welcome h2{
+    height: 34px;
+    line-height: 34px;
+}
+.welcome-user .user-info{
+    float: right;
+}
+.user-info li{
+    height: 34px;
+    line-height: 34px;
+    float: left;
+    margin-right: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.user-info li .quit:hover{
+    color: #de2535;
+}
+.user-name{
+    color: red;
+}
+.user-info a{
+    font-size: 14px;
+    font-weight: 500;
+}
+/*logo和导航*/
+.nav-wrap{
+    box-shadow: 0 5px 10px #ccc;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+}
+.logo-nav-fun{
+    width: 1200px;
+    height: 96px;
+    margin: 0 auto;
+
+}
+.logo-nav-fun .logo{
+    padding: 12px 0 0 36px;
+    float: left;
+}
+.logo-nav-fun .nav{
+    float: left;
+    margin-left: 240px;
+}
+.logo-nav-fun .nav li{
+    float: left;
+    margin-right:40px;
+    height: 96px;
+    line-height: 96px;
+}
+.logo-nav-fun .nav li a{
+    font-weight: 600;
+    font-size: 16px;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.logo-nav-fun .nav li a:hover{
+    color: #de2535;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.logo-nav-fun .nav li a.on{
+    color: #de2535;
+}
+.logo-nav-fun .user-function{
+    float: left;
+    margin-top: 30px;
+}
+.logo-nav-fun .user-function .throw-now{
+    margin-right: 20px;
+}
+/*面包屑*/
+.header .bread .breadcrumb{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    list-style: none;
+    padding: 20px 0;
+}
+.header .bread .breadcrumb li a:hover{
+    color: #de2535;
+}
+/*~~~~~~~~Step样式~~~~~~~*/
+.step{
+    margin-bottom: 90px;
+}
+.step-line{
+    height: 6px;
+    background: #cdcdcd;
+    border-radius: 4px;
+}
+.step-line li{
+    width: 299px;
+    height: 6px;
+    border-radius: 4px;
+    float: left;
+    position: relative;
+}
+.step-line li.active{
+    background: #de2535;
+}
+.step-line li span{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #cdcdcd;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -17px;
+    left: 126px;
+}
+.step-line li span.active{
+    background: #de2535;
+}
+.step-line li.obsolete{
+    background: #ff8590;
+}
+.step-line span.obsolete{
+    background: #ff8590;
+}
+.step-con {
+    margin-top: 30px;
+}
+.step-con li{
+    float: left;
+    width: 299px;
+    height: 20px;
+    color: #cdcdcd;
+    font-weight: 600;
+    text-align: center;
+    line-height: 20px;
+}
+.step-con li.active{
+    color: #de2535;
+}
+.step-con li.obsolete {
+    color: #ff8590;
+}
+
+/*侧边栏联系方式*/
+.side-bar{
+    width: 40px;
+    height:170px;
+    position: fixed;
+    top:50%;
+    right: 0;
+    margin-top: -85px;
+}
+.side-bar li{
+    width: 40px;
+    height:38px;
+    background: #4c4c4c;
+    margin-bottom: 6px;
+    border-radius: 6px 0 0 6px;
+    padding: 8px 0 0 10px;
+    cursor: pointer;
+    position: relative;
+}
+.side-bar li i{
+    display: block;
+    width: 22px;
+    height:22px;
+    background: red;
+}
+.side-bar .qq i{
+    background: url("../../images/contact-way.png") no-repeat -27px 0;
+}
+.side-bar .tel i{
+    background: url("../../images/contact-way.png") no-repeat -57px 0;
+}
+.side-bar .weixin i{
+    background: url("../../images/contact-way.png") no-repeat -87px 0;
+}
+.side-bar .top i{
+    background: url("../../images/contact-way.png") no-repeat -117px 4px;
+}
+.side-bar li .detail{
+    width: 150px;
+    height:158px;
+    box-shadow: 0 0 20px #ccc;
+    border: 1px solid #c6c6c6;
+    position: absolute;
+    top:0;
+    left: 46px;
+    background: #fff;
+    z-index: -1;
+}
+.side-bar li .detail span{
+    display:block;
+    width: 16px;
+    height: 20px;
+    margin:0 auto 10px;
+}
+.side-bar li .detail p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.side-bar li .qq-con{
+    padding-top: 20px;
+}
+.side-bar li .tel-con{
+    padding-top: 22px;
+}
+.side-bar li .qq-con a{
+    margin-left: 10px;
+    color: #c81624;
+}
+.side-bar li .qq-con span{
+    background: url("../../images/contact-way.png") no-repeat;
+}
+.side-bar li .tel-con span{
+    background: url("../../images/contact-way.png") no-repeat -148px 0;
+}
+.side-bar li .weixin-con span{
+    background: url("../../images/contact-way.png") no-repeat 0 -39px;
+}
+.side-bar li .tel-con span{
+    width:42px;
+    height: 42px;
+}
+.side-bar li .weixin-con span{
+    width: 115px;
+    height: 116px;
+}
+.side-bar li .weixin-con p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*~~~~尾部~~~~~*/
+.footer-wrap{
+    width: 100%;
+    background: #4f4f4f;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 28px;
+    text-align: center;
+}
+.footer li{
+    display: inline-block;
+    width: 120px;
+    border-right: 1px solid #cecece;
+}
+.footer li span{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin:0 10px 0 12px;
+    float: left;
+}
+.footer li a{
+    float: left;
+}
+.footer li.help{
+    border-right: none;
+}
+.footer li.about-us span{
+    background: url("../../images/ad-service-sprite.png") no-repeat -42px 0;
+}
+.footer li.contact-us span{
+    background: url("../../images/ad-service-sprite.png") no-repeat -68px 0;
+}
+.footer li.service span{
+    background: url("../../images/ad-service-sprite.png") no-repeat -94px 0;
+}
+.footer li.help span{
+    background: url("../../images/ad-service-sprite.png") no-repeat -118px 0;
+}
+.footer li a{
+    color: #cecece;
+}
+.footer li a:hover{
+    color: #fff;
+}
+.footer ul{
+    margin-bottom: 16px;
+}
+.footer-bot span{
+    margin-right: 10px;
+    color: #cecece;
+    font-size: 12px;
+}
+.footer-bot{
+    padding-bottom: 32px;
+}
+
+/*广告主用户中心导航样式*/
+.content-sidebar{
+    width: 150px;
+    height: 1207px;
+    float: left;
+}
+.content-sidebar ul li{
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 3em;
+    font-weight:600;
+    cursor: pointer;
+    border-bottom: 1px solid #e8e8e8;
+}
+.content-sidebar ul .unfold{
+    height: auto;
+}
+.content-sidebar .user-center{
+    font-weight: 600;
+}
+.content-sidebar .user-center:hover{
+    color: #de2535;
+}
+.content-sidebar ul li i{
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    background: url("../../images/center-ghost.png") no-repeat -56px -34px;
+}
+.content-sidebar ul li i.rotate{
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+}
+.content-sidebar ul li span{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+.content-sidebar ul li span:hover{
+    color:#de2535;
+}
+.content-sidebar ul li span.active{
+    color: #de2535;
+    background: #f5f5f5;
+}
+.content-sidebar dl{
+    display: none;
+}
+.content-sidebar dl dd{
+    text-indent: 4em;
+}
+.content-sidebar dl dd.active{
+    color: #de2535;
+    background: #f5f5f5;
+}
+.content-sidebar dl dd a{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+.content-sidebar ul li dl dd a:hover {
+    color: #de2535;
+    background: #f5f5f5;
+}

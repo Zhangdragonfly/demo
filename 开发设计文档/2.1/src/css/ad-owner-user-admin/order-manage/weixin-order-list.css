@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 70px;
+    border-top: 2px solid #c81624;
+    padding-top: 16px;
+}
+.table{
+    width: 1000px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+.red{
+    color: #c81624;
+}
+.green{
+    color: #48C819;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分头部搜索~~~~~~~~~~~~~~~~~~~~~~~~~`*/
+.order-status{
+    line-height: 36px;
+    margin-left: 10px;
+}
+.con-top .media-lib-name{
+    margin-left: 16px;
+}
+.con-top .detail-name{
+    margin-left: 46px;
+}
+.con-top div input{
+    width: 148px;
+    height: 38px;
+    outline:none;
+    border-radius: 4px;
+    padding:0 8px ;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top div input::-webkit-input-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input::-moz-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top .search-btn,
+.con-top .create{
+    height: 38px;
+    font-size: 16px;
+}
+.con-top .search-btn i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url("../../../images/media-lib-ghost.png") no-repeat -105px -58px;
+}
+.con-top .create{
+    width: 134px;
+    padding:0 0 0 8px;
+    line-height: 34px;
+}
+.con-top .create i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 4px;
+    background: url("../../../images/media-lib-ghost.png") no-repeat -105px -14px;
+}
+.dropdown{
+    width: 115px;
+    height: 38px;
+    margin:0 8px 0 6px;
+    color: #aaa;
+}
+.dropdown .show-default{
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 6px;
+}
+.dropdown .caret{
+    margin: 14px 6px 0 0;
+}
+.dropdown-menu{
+    min-width: 108px;
+}
+.order-time .line{
+    margin:0;
+}
+.order-account{
+    margin-right: 8px;
+}
+.con-top .order-time input{
+    width: 146px;
+    text-align: left;
+}
+.con-top .search-btn{
+    width: 84px;
+    margin-left: 8px;
+}
+.content h4{
+    line-height: 40px;
+    text-align: right;
+}
+.search-quick input{
+    margin-right: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~*/
+.table table{
+    width: 968px;
+    margin: 0 auto;
+
+}
+.table table thead tr{
+    height: 62px;
+}
+.table table tr th{
+    text-align: center;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+.table table tr td{
+    text-align: center;
+    font-size: 12px;
+}
+.table table tr td:nth-of-type(7) span,
+.table table tr td ul li
+{
+    cursor: pointer;
+}
+.table table tr{
+    height: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.account-ID dl{
+    display: inline-block;
+    vertical-align: middle;
+    width: 162px;
+}
+.account-ID dt,
+.account-ID dt a
+{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.account-ID dt a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-ID dt i{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../../../images/plan_active.png") -183px -23px no-repeat;
+}
+.account-ID dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.account-ID .ewm{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../../images/plan_active.png") -163px -23px no-repeat;
+}
+.account-ID dd{
+    margin: 6px 0 0 10px;
+}
+.ewm-ID{
+    position: relative;
+}
+.ewm-ID img{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: none;
+}
+.pos i,
+.sum
+{
+    color: #8D8D8D;
+}
+.no-border{
+    border: none;
+}
+.operate li{
+    display: inline-block;
+    color: #c81822;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.no-order,
+.operate li,
+.execute-result li
+{
+    display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~显示完整信息的样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.show-all-info{
+    position: absolute;
+    z-index: 5999;
+    border: solid 1px #C81624;
+    color: #C81624;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 0 5px;
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    margin: -37px 0 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~效果截图和执行链接弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-dialog{
+    width: 716px;
+    min-height: 288px;
+    padding: 0 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -139px 0 0 -358px;
+}
+.modal-content{
+    width: 716px;
+    min-height: 298px;
+    padding: 0 15px;
+}
+.effect-shots-pic .pic-show{
+    width: 570px;
+}
+.pic-show img{
+    margin-right: 34px;
+}
+.link-address{
+    margin-bottom: 20px;
+}
+.link-address a{
+    display: inline-block;
+    width: 600px;
+}
+.radio-select{
+    margin: 10px 0 10px 48px;
+}
+.radio-select li{
+    float: left;
+    margin-right: 35px;
+}
+.radio-select i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    cursor: pointer;
+    background: url(../../../images/plan_active.png) -156px 0 no-repeat;
+}
+.radio-select .selected{
+    background-position: -125px 0;
+}
+.feedback{
+    display: none;
+}
+.feedback span{
+    vertical-align: top;
+}
+.feedback textarea{
+    display: inline-block;
+    width: 600px;
+    height: 142px;
+    resize: none;
+}
+.feedback ul{
+    margin-left: 48px;
+    font-size: 12px;
+    color: #CACACA;
+}
+.submit-btn{
+    display: block;
+    background: #c81822;
+    width: 84px;
+    height: 40px;
+    margin-left: 280px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~详情弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-arrange-order-detail .modal-dialog,
+#modal-arrange-order-more-detail .modal-dialog
+{
+    width: 580px;
+    min-height: 460px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -230px 0 0 -295px;
+    line-height: 28px;
+}
+#modal-arrange-order-detail .modal-content,
+#modal-arrange-order-more-detail .modal-content
+{
+    width: 580px;
+    min-height: 460px;
+}
+#modal-arrange-order-detail .modal-body span:nth-of-type(1),
+#modal-arrange-order-more-detail .modal-body span:nth-of-type(1),
+#modal-direct-order-detail .modal-body span:nth-of-type(1)
+{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+.active-name-show{
+    display: inline-block;
+    width: 400px;
+    line-height: 36px;
+}
+.article-to-lead a,
+.title-name,
+.org-text a,
+.abstract p,
+.curry-on-remarks p
+{
+    display: inline-block;
+    width: 400px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+.requirements{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.requirements span{
+    vertical-align: top;
+}
+.requirements .requirements-con{
+    display: inline-block;
+    width: 390px;
+    height: 144px;
+    resize: none;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+.attach-file ul{
+    margin-top: 3px;
+    width: 400px;
+}
+.attach-file ul li {
+    float: left;
+    padding: 0 8px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 10px 5px 0;
+    border: 1px solid #C81622;
+    border-radius: 2px;
+
+}
+#modal-direct-order-detail .modal-dialog{
+    width: 580px;
+    min-height: 642px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -321px 0 0 -295px;
+    line-height: 36px;
+}
+#modal-direct-order-detail .modal-content{
+    width: 580px;
+    min-height: 642px;
+}
+#modal-direct-order-detail p{
+    display: inline-block;
+}
+.cover-pic .btn{
+    width: 62px;
+    height: 34px;
+    background: #C81622;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~原因弹出层~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-invalid-order-info .modal-dialog{
+    width: 480px;
+    height: 344px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -161px 0 0 -240px;
+    line-height: 36px;
+}
+#modal-invalid-order-info .modal-content{
+    width: 480px;
+    height: 344px;
+}
+.reason-con .reason{
+    width: 52px;
+}
+.reason-con .reason-show{
+    width: 348px;
+    height:230px;
+    text-indent: 2em;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+

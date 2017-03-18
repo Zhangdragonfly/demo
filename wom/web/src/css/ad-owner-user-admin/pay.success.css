@@ -1,0 +1,45 @@
+@charset "utf-8";
+body,.breadcrumb{
+    background: #f5f5f5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~充值成功~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content{
+    width: 1200px;
+    height: 610px;
+    margin: 0 auto 60px;
+    border-radius: 4px;
+    border-top: 4px solid #c81624;
+    padding-top: 74px;
+    position: relative;
+}
+.in-content{
+    width: 550px;
+    color: #1E1E1E;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -36px 0 0 -275px;
+}
+.pic-l{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    margin-right: 36px;
+    background: url("../../images/plan_active.png")0 -202px no-repeat;
+}
+.continue-operate h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.continue-operate ul li{
+    float: left;
+    font-size: 16px;
+    margin-right: 52px;
+}
+.continue-operate ul li:nth-of-type(1){
+    margin-right: 26px;
+}
+.continue-operate ul li a{
+    color: #C71722;
+}

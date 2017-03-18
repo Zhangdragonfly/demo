@@ -1,0 +1,222 @@
+.active-status{
+    line-height: 45px;
+    margin-left: 15px;
+}
+@charset "utf-8";
+
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.red{
+    color: #c81624;
+}
+.green{
+    color: #48C716;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 72px;
+    border-top: 2px solid #c81624;
+    padding-top: 12px;
+    position: relative;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+.content h3{
+    font-size: 18px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table-info{
+    padding: 0 16px;
+}
+.table thead tr th{
+    line-height: 52px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+.table tbody tr td{
+    text-align: center;
+    font-size: 12px;
+    height: 92px;
+    vertical-align: middle;
+}
+.table tr td:nth-of-type(7) span,
+.table tr .execute-result a
+{
+    cursor: pointer;
+}
+.account-ID dl{
+    display: inline-block;
+    vertical-align: middle;
+    width: 162px;
+}
+.account-ID dt,
+.account-ID dt a
+{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.account-ID dt a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-ID dt i{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/plan_active.png") -183px -23px no-repeat;
+}
+.account-ID dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.account-ID .ewm{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../images/plan_active.png") -163px -23px no-repeat;
+}
+.account-ID dd{
+    margin: 6px 0 0 10px;
+    text-align: left;
+}
+.ewm-ID{
+    position: relative;
+}
+.ewm-ID img{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: none;
+}
+.pos i,
+.sum
+{
+    color: #8D8D8D;
+}
+.no-border{
+    border: none;
+}
+
+.execute-result a{
+    display: block;
+}
+table tbody tr .execute-result a:hover,
+table tbody tr .execute-result a:active,
+table tbody tr .execute-result a:visited,
+table tbody tr .execute-result a:link
+{
+    color: #c81624;
+}
+.no-order,
+.execute-result a
+{
+    display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~显示完整信息的样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.show-all-info{
+    position: absolute;
+    z-index: 5999;
+    border: solid 1px #C81624;
+    color: #C81624;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 0 5px;
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    margin: -37px 0 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~效果截图和执行链接弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-dialog{
+    width: 716px;
+    min-height: 288px;
+    padding: 0 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -139px 0 0 -358px;
+}
+.modal-content{
+    width: 716px;
+    min-height: 298px;
+    padding: 0 15px;
+}
+.effect-shots-pic .pic-show{
+    width: 570px;
+}
+.pic-show img{
+    margin-right: 34px;
+}
+.link-address{
+    margin-bottom: 20px;
+}
+.link-address a{
+    display: inline-block;
+    width: 600px;
+}
+.radio-select{
+    margin: 10px 0 10px 48px;
+}
+.radio-select li{
+    float: left;
+    margin-right: 35px;
+}
+.radio-select i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    cursor: pointer;
+    background: url(../../images/plan_active.png) -156px 0 no-repeat;
+}
+.radio-select .selected{
+    background-position: -125px 0;
+}
+.feedback{
+    display: none;
+}
+.feedback span{
+    vertical-align: top;
+}
+.feedback textarea{
+    display: inline-block;
+    width: 600px;
+    height: 142px;
+    resize: none;
+}
+.feedback ul{
+    margin-left: 48px;
+    font-size: 12px;
+    color: #CACACA;
+}
+.submit-btn{
+    display: block;
+    background: #c81822;
+    width: 84px;
+    height: 40px;
+    margin-left: 280px;
+}

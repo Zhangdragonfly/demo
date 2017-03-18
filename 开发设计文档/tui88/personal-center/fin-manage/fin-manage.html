@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>财务管理</title>
+	<link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../../src/css/reset.css">
+	<link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+	<link rel="stylesheet" href="../../src/css/personal-center/fin-manage.css">
+</head>
+<body>
+	<!--未登录状态下的头部导航-->
+	<div class="header clearfix" style="display: none">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="unlogin fr">
+			<a href="#">注册</a>
+			<a href="#">登录</a>
+			<a href="#" style="display: none">返回登录</a>
+		</div>
+	</div>
+	<!--登录状态下的头部导航-->
+	<div class="header clearfix">
+		<h1 class="fl"><a href="#">TUI88最快捷的推广平台</a></h1>
+		<div class="nav fl">
+			<a href="#" class="current-nav">个人中心</a>
+			<a href="#">任务大厅</a>
+		</div>
+		<div class="enter fr">
+			<a href="#">欢迎您，荔枝</a>
+			<a href="#">帮助中心</a>
+			<a href="#">退出</a>
+		</div>
+	</div>
+	<!-- 主要内容部分-->
+	<div class="main clearfix">
+		<div class="sidebar fl">
+			<h2 class="font-18">推客中心</h2>
+			<ul class="menu">
+				<li><a class="first-nav" href="#"><i></i><span>任务管理</span><em>0</em></a></li>
+				<li class="personal-setting">
+					<a class="first-nav" class="" href="#"><i></i><span>个人设置</span><em></em></a>
+					<div class="menu-list">
+						<a href="#" class="">基础信息</a>
+						<a href="#">修改登录密码</a>
+						<a href="#">收款方式</a>
+					</div>
+				</li>
+				<li class="current-side-nav"><a class="first-nav" href="#"><i></i><span>财务管理</span></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<!-- 面包屑 -->
+			<div class="bread">
+				<ol class="breadcrumb font-500">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">推客中心</a></li>
+					<li class="active">财务管理</li>
+				</ol>
+			</div>
+			<div class="con-header">
+				<ul class="clearfix">
+					<li><span>佣金总收入：</span><i>2000元</i></li>
+					<li><span>近一个月佣金：</span><i>2000元</i></li>
+					<li class="last"><span>已收款金额：</span><i>2000元</i></li>
+				</ul>
+			</div>
+			<div class="fin-table">
+				<h4>佣金记录表</h4>
+				<div class="fin-tb-info">
+					<div class="search-con">
+						<div class="in-search-con">
+							<span>收款状态：</span>
+							<select class="form-control">
+								<option value="0">不限</option>
+								<option value="1">已收款</option>
+								<option value="2">未收款</option>
+							</select>
+						</div>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>任务名称</th>
+								<th>任务执行状态</th>
+								<th>任务金额（元）</th>
+								<th>收款状态</th>
+								<th>收款凭证</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>未收款</td>
+								<td>/</td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							<tr>
+								<td><a href="#">微信推广计划</a></td>
+								<td>执行成功</td>
+								<td>200</td>
+								<td>已收款</td>
+								<td><a href="#" data-toggle="modal" data-target="#paying-voucher"><i></i><span>查看</span></a></td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部-->
+	<div class="footer">
+		copyright@tui88.com版权所有
+	</div>
+	<!-- 收款凭证modal层-->
+	<div id="paying-voucher" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header clearfix"><span class="fl">收款凭证</span><i class="close fr" data-dismiss="modal"></i></div>
+				<div class="modal-body">
+					<ul class="sum-show clearfix">
+						<li class="fl"><span>应打款金额：</span><i>2000元</i></li>
+						<li class="fr"><span>本次打款金额：</span><i>2000元</i></li>
+					</ul>
+					<div class="pic-show">
+						<span>打款凭证：</span>
+						<div class="pic">
+							<img src="../../src/images/tui88-ghost.png" height="100px" width="90px" alt="" />
+						</div>
+						<p class="remarks">
+							备注：由于提交的执行结果和执行标准有差距，导致打款金额减少
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+	<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+	<script src="../../src/js/sidebar-common.js"></script>
+</body>
+</html>

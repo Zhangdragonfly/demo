@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- 填写原创需求 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>填写原创需求</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../src/css/weixin/plan_order_arrange_content.css">
+</head>
+<body>
+    <div class="header">
+        <!-- 头部-->
+        <div class="head-top-wrap">
+            <div class="head-top clearfix login-cancel hidden">
+                <h3 class="welcome">欢迎来到沃米优选</h3>
+                <div class="enter clearfix">
+                    <a class="entrance" href="../login&register/ad-login.html">广告主入口</a>
+                    <a class="entrance" href="../login&register/media-login.html">媒体主入口</a>
+                    <a class="help" href="javascript:void(0)">帮助中心</a>
+                    <span class="tel">400-878-9551</span><i></i>
+                </div>
+            </div>
+            <div class="head-top clearfix login-success">
+                <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+                <div class="enter clearfix">
+                    <ul class="clearfix">
+                        <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                        <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                        <li>可用金额: <span>***</span></li>
+                        <li>冻结金额: <span>***</span></li>
+                        <li><a href="javascript:;">立即充值</a></li>
+                        <li><a href="javascript:;">帮助中心</a></li>
+                        <li>退出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 导航-->
+        <div class="head-bottom">
+            <h1><a href="#"><img src="../src/images/logo.png" alt="沃米优选"></a></h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a class="active" href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">微信营销</a></li>
+                    <li><a href="javascript:void(0)">视频网红</a></li>
+                    <li><a href="javascript:void(0)">新浪微博</a></li>
+                    <li><a href="javascript:void(0)">解决方案</a></li>
+                    <li><a href="javascript:void(0)">案例中心</a></li>
+                    <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                当前位置：
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li class="active color-main">创建活动</li>
+            </ol>
+        </div>
+    </div>
+    <!-- 内容部分-->
+    <div class="content">
+        <div class="in-content">
+            <div class="active-name">
+                <div class="title-wrap"><span class="title">活动名称：</span></div>
+                <span>双十一活动</span>
+            </div>
+            <div class="plan-time">
+                <div class="title-wrap"><span class="title"><i></i>预计执行时间：</span></div>
+                <input type="text" class="form-control datetimepicker" placeholder="请选择开始时间"/>
+                <em></em><em></em>
+                <span class="line"></span>
+                <input type="text" class="form-control datetimepicker" placeholder="请选择结束时间"/>
+                <span class="plan-time-alert">选择合理的预计投放时间，便于媒体主预留时间</span>
+            </div>
+            <div class="content-sum">
+                <div class="title-wrap"><span class="title"><i></i>需求概述：</span></div>
+                <textarea name="" class="form-control" placeholder="让媒体主了解您需要干什么，越具体越好。请勿超过4000字" cols="" rows="" maxlength="4000"></textarea>
+                <span class="count-num">您还可以输入<em>4000</em>字</span>
+            </div>
+            <div class="attach-file">
+                <div class="title-wrap"><span class="title">附件：</span></div>
+                <button id="upload-file-btn" class="btn btn-danger">上传</button>
+                <p>您可以通过这里上传需求及其他信息，单文件不能大于20M，最多可上传10个。</p>
+                <ul id="upload-file-list" class="clearfix"></ul>
+            </div>
+            <div class="cut-time">
+                <div class="title-wrap"><span class="title">预计反馈时间：</span></div>
+                <input type="text" class="form-control datetimepicker" placeholder="请选择开始时间"/>
+                <span>请选择预约结果反馈截止时间</span>
+            </div>
+            <button class="btn btn-danger save-data">保存</button>
+        </div>
+    </div>
+    <!--侧边栏联系方式-->
+    <div class="side-bar">
+        <ul>
+            <li class="tel">
+                <div class="tel-con detail">
+                    <span></span>
+                    <p>客服电话</p>
+                    <p>400-878-9551</p>
+                </div>
+                <i></i>
+            </li>
+            <li class="qq">
+                <div class="qq-con detail">
+                    <span></span>
+                    <p>客服QQ</p>
+                    <p>2544745674</p>
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+                </div>
+                <i></i>
+            </li>
+            <li class="weixin">
+                <div class="weixin-con detail">
+                    <p>微信扫一扫</p>
+                    <span></span>
+                </div>
+                <i></i>
+            </li>
+            <li class="top">
+                <i></i>
+            </li>
+        </ul>
+    </div>
+
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer font-12">
+            <ul>
+                <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+                <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+                <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+                <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+            </ul>
+            <div class="footer-bot">
+                <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dep/js/jquery-1.10.2.min.js"></script>
+    <script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+    <script src="../dep/layer/layer.js"></script>
+    <script src="../dep/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../dep/datetimepicker/datetime.js"></script>
+    <script src="../dep/plupload/plupload.full.min.js"></script>
+    <script src="../src/js/plupload.js"></script>
+    <script src="../src/js/site-stage-layout-common.js"></script>
+    <script>
+        $(function(){
+            //输入剩余字数判断
+            $('.content-sum textarea').keyup(function(){
+                countNum(this,4000);
+            });
+            function countNum(_this,num){
+                var _value_len = $(_this).val().length;
+                var _count = Number(_value_len);
+                var _all_num_last = Number(num-_count);
+
+                $(_this).next().find('em').text(_all_num_last);
+            };
+            //点击保存判断
+            $('.save-data').click(function(){
+
+                var _start_time = $('.plan-time input:eq(0)').val();
+                var _end_time = $('.plan-time input:eq(1)').val();
+                var _text_value = $('.content-sum textarea').val();
+
+                if(_start_time == ''||_end_time == ''||_text_value == ''){
+                    layer.msg('内容未填写完整，请补充',{
+                        icon:0,
+                        time: 1500
+                    });
+                    return;
+                }
+            })
+        })
+    </script>
+</body>
+</html>

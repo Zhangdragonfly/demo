@@ -1,0 +1,202 @@
+@charset "utf-8";
+body{
+    background: #f5f5f5;
+}
+.content-wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content-wrap .base-info .info-top{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/*~~~~~~~基本信息展示~~~~~~~~~*/
+.info-top .account-pic{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 22px;
+}
+.info-top .account-pic img {
+    position: absolute;
+    left: -188px;
+    top: -176px;
+}
+.info-top .account-con-info{
+    margin-left: 18px;
+}
+.info-top .account-con-info .name{
+    font-size: 18px;
+    display: block;
+    font-weight: 600;
+}
+.info-top .account-con-info .id,
+.info-top .account-con-info .check-link{
+    color: #585858;
+    font-size: 14px;
+}
+.info-top .account-con-info .check-link a{
+    color: #585858;
+}
+.info-top .account-con-info .check-link a:hover{
+    text-decoration: underline!important;
+}
+.info-top .account-con-info .id{
+    margin-left: 2px;
+}
+.info-top .account-con-info .check-link{
+    margin-left: 32px;
+}
+.info-top .create-report{
+    margin-top: 4px;
+    font-size: 16px;
+}
+.info-bottom{
+    padding: 22px 0;
+}
+.info-bottom .data-show-l{
+    width: 640px;
+    height: 194px;
+    border-right: 1px solid #C1C1C1;
+}
+.info-bottom .data-show-r{
+    width: 550px;
+    height: 194px;
+}
+.info-bottom ol li{
+    float: left;
+    margin-left: 68px;
+    text-align: center;
+    padding-top: 14px;
+}
+.info-bottom .sum-data-type {
+    display: block;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    color: #C41A27;
+    line-height: 125px;
+    border: 2px solid #C41A27;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.info-bottom .time-show-r{
+    padding: 44px 0 0 80px;
+}
+.info-bottom .time-show-r li{
+    margin-bottom: 24px;
+    color: #676767;
+    font-size: 16px;
+}
+.info-bottom .time-show-r .time-pic{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.info-bottom .time-show-r li:nth-child(1) .time-pic{
+    background: url(../../../images/detial.png) -55px -151px no-repeat;
+}
+.info-bottom .time-show-r li:nth-child(2) .time-pic{
+    background: url(../../../images/detial.png) -78px -151px no-repeat;
+}
+.info-bottom .time-show-r li:nth-child(3) .time-pic{
+    background: url(../../../images/detial.png) -101px -151px no-repeat;
+}
+/*~~~~~~~~~~~数据走势~~~~~~~~~~~~~*/
+.data-trend{
+    height: 985px;
+    margin-top: 24px;
+}
+.content-wrap .shadow{
+    padding-top: 12px;
+    margin-bottom: 26px;
+}
+.shadow .con-header i{
+    display: inline-block;
+    width: 9px;
+    height: 21px;
+    vertical-align: middle;
+    margin:0 10px 0 24px;
+    background: url(../../../images/detial.png) 0 -154px no-repeat;
+}
+.shadow .con-header h3{
+    font-size: 18px;
+    line-height: 24px;
+}
+.data-trend .view-chart{
+    margin: 10px 50px 0 0;
+    text-align: right;
+    font-size: 16px;
+}
+.data-trend .agree-view-chart{
+    margin-top: 30px;
+}
+.data-trend .read-num-chart,
+.data-trend .agree-num-chart{
+    width: 1110px;
+    height: 420px;
+    margin: 0 auto;
+}
+/*~~~~~~~~~~~~文章内容~~~~~~~~~~~~*/
+.content-wrap .article-con{
+    height:374px;
+}
+.content-wrap .article-con .key-words,
+.content-wrap .article-con #key-words{
+    width:486px;
+    height: 236px;
+}
+.content-wrap .article-con .key-words{
+    background: #f4f4f4;
+}
+.content-wrap .article-con .key-words-rank{
+    width: 570px;
+    height: 236px;
+    background: pink;
+}
+.key-words-con span,
+.key-words-rank-con span{
+    display: block;
+    margin: 30px 0 16px 0;
+    font-weight: 600;
+}
+.article-con .key-words-con{
+    margin-left: 80px;
+}
+.article-con .key-words-rank-con{
+    margin-left: 40px;
+}
+/*~~~~~~~~~~~~数据详情~~~~~~~~~~~~*/
+.data-detail{
+    padding-bottom: 20px;
+}
+.data-detail .table-data-detail{
+    width: 1110px;
+    margin: 33px auto 0;
+}
+.data-detail .table-data-detail td,
+.data-detail .table-data-detail th{
+    width:230px;
+    text-align: center;
+    height: 38px;
+}
+.data-detail .table-data-detail th{
+    font-size: 16px;
+}
+.data-detail .table-data-detail tr:nth-child(2n){
+    background: #fcf3f4;
+}
+.data-detail .table-footer{
+    width: 1110px;
+    margin-top: 30px;
+}
+

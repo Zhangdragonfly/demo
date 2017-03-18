@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+/*用户中心页面公用*/ 
+a{color: #000;}
+a:hover{text-decoration: none;color: inherit;}
+a:focus{color: inherit;text-decoration: none;}
+.color-gray{color: #959595;}
+body{background: #f5f5f5;}
+.header{background: #fff;}
+.bread,
+.breadcrumb{background: #f5f5f5;}
+body,html{
+	overflow:-Scroll;
+	overflow-x:hidden;
+}
+/*公用头部*/ 
+.common-title{
+	color: #959595;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0 12px 12px;
+}
+.common-title span{
+	display: inline-block;
+	float: left;
+	width: 25px;
+	height: 20px;
+	line-height: 20px;
+	margin-right: 4px;
+}
+/*用户中心首页内容部分*/
+.shadow{
+	border: 1px solid #ddd;
+	box-shadow: 3px 3px 5px #eee;
+	background: #fff;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto 30px;
+}
+/*用户中心首页右侧内容*/ 
+.content-right{
+	margin-left: 15px;
+	float: left;
+}
+.person-info,
+.resource-account,
+.msg-list{
+	float: left;
+	height: 167px;
+}
+/*个人资料部分*/ 
+.person-info{
+	width: 410px;
+}
+.person-info div{
+	float: left;
+	height: 165px;
+}
+.person-info .portrait{
+	width: 102px;
+	margin-left: 20px;
+	padding-top: 35px;
+}
+.person-info .portrait img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid #de2535;
+}
+.person-info .welcome,
+.person-info .complete{
+	width: 140px;
+	padding-top: 50px;
+	margin-left: 18px;
+}
+.person-info .welcome{
+	width: 110px;
+}
+.person-info .welcome .welcome-user{
+	margin-bottom: 10px;
+}
+.welcome .email{
+	color: #959595;
+	margin-bottom: 38px;
+}
+.welcome .change-person-info a,
+.complete .perfect a{
+	font-weight: 600;
+	font-size: 14px;
+	color: #de2535;
+}
+.complete .rate{
+	width: 140px;
+	height: 20px;
+	margin: 10px 0 35px 0;
+	position: relative;
+}
+.complete .rate div{
+	width: 100px;
+	height: 20px;
+	border: 1px solid #de2535;
+	border-radius: 20px;
+}
+.complete .rate i{
+	line-height:20px;
+	padding-left: 6px;
+
+}
+.complete .rate span{
+	width: 75px;
+	height: 20px;
+	background: #de2535;
+	border-radius: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.resource-account{
+	width: 250px;
+	margin: 0 12px;
+}
+.collect-account span{
+    background: url("../../images/center-ghost.png") no-repeat -30px 0;
+}
+.resource-account ul li{
+	float: left;
+	width: 60px;
+	margin-left:17px;
+	text-align: center;
+}
+.resource-account ul li span{
+	display: block;
+}
+.resource-account ul .pic{
+	display: block;
+	width: 60px;
+	height: 60px;
+}
+.resource-account ul .collect{
+	color: #959595;
+	padding: 10px 0;
+}
+.resource-account ul .account{
+	color: #de2535;
+}
+.resource-account ul .weixin-pic{
+    background: url("../../images/center-ghost.png") no-repeat -250px 0;
+}
+.resource-account ul .weibo-pic{
+    background: url("../../images/center-ghost.png") no-repeat -317px 0;
+}
+.resource-account ul .video-pic{
+    background: url("../../images/center-ghost.png") no-repeat -383px 0;
+}
+
+.msg-list{
+	width: 350px;
+}
+.msg-title span{
+    background: url("../../images/center-ghost.png") no-repeat -62px 0;
+}
+.msg-list ul li {
+	font-size: 12px;
+	padding-left: 16px;
+}
+.msg-list ul li span{
+	font-size: 12px;
+}
+.msg-list ul li span.date{
+	margin-left: 14px;
+	color: #959595;
+}
+.msg-list ul li .brand{
+	color: #22a4de;
+}
+.msg-list ul li .no-execute{
+	color: #c91723;
+}
+.msg-list ul li .ready-execute{
+	color: #ffc466;
+}
+
+/*执行订单部分*/ 
+.execute-order,
+.recommend-resource,
+.recommend-case{
+	width: 1035px;
+	margin: 14px 0;
+}
+.execute-order{
+	height: 470px;
+}
+.more{
+	float: right;
+	margin-right: 10px;
+}
+.more:hover{
+	color: #de2535;
+	transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.common-title a{
+	display: block;
+	line-height: 20px;
+}
+.execute-title span{
+	height: 22px;
+    background: url("../../images/center-ghost.png") no-repeat 0 0;
+}
+.execute-con{
+	height: 430px;
+	border-top: 1px solid #e5e5e5; 
+}
+.execute-con .tab,
+.execute-con .tab-con{
+	float: left;
+}
+.execute-con .tab li {
+	width: 128px;
+	height: 143px;
+	padding-top: 30px;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	box-shadow: 3px 0 5px #ccc;
+	cursor: pointer;
+}
+.execute-con .tab li.active{
+	background: #de2535;
+}
+.execute-con .tab li span{
+	display: block;
+}
+.execute-con .tab li span.active{
+	color: #fff;
+}
+.execute-con .tab .pic{
+	display: block;
+	width: 36px;
+	height: 34px;
+	margin-left: 50px;
+}
+.execute-con .tab .execute{
+	color: #959595;
+	padding: 10px 0;
+}
+.execute-con .tab .account{
+	color: #de2535;
+}
+.execute-con .tab .weixin-pic{
+    background: url("../../images/center-ghost.png") no-repeat -122px -38px;
+}
+.execute-con .tab .weibo-pic{
+    background: url("../../images/center-ghost.png") no-repeat -166px -38px;
+}
+.execute-con .tab .video-pic{
+    background: url("../../images/center-ghost.png") no-repeat -213px -38px;
+}
+.execute-con .tab .weixin-pic.active{
+    background: url("../../images/center-ghost.png") no-repeat -122px 0;
+}
+.execute-con .tab .weibo-pic.active{
+    background: url("../../images/center-ghost.png") no-repeat -166px 0;
+}
+.execute-con .tab .video-pic.active{
+    background: url("../../images/center-ghost.png") no-repeat -213px 0;
+}
+.execute-con .tab-con{
+	width: 905px;
+	height: 438px;
+	padding: 20px 30px;
+	display: none;
+}
+.execute-con .tab-con.show{
+	display: block;
+}
+.tab-con .title{
+	width: 100%;
+	margin-bottom: 10px;
+	background: #f5f5f5;
+}
+.tab-con .title li,
+.order-con ul li{
+	width: 124px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+}
+.tab-con .title li{
+	font-weight: 600;
+}
+.tab-con ul .order-detail,
+.tab-con ul .execute-state{
+	width: 173px;
+}
+.tab-con .order-con .order{
+	border: 1px solid #e5e5e5;
+}
+.order-con .order-title{
+	height: 40px;
+	line-height: 40px;
+	background: #f5f5f5;
+	color: #aaa;
+}
+.order-title .order-date{
+	margin:10px 27px; 
+}
+.order-title .order-id{
+	color: #666;
+	margin-left: 10px;
+}
+.tab-con .order-con .order{
+	height: 160px;
+	margin-bottom: 10px;
+}
+.tab-con .order-con .order li{
+	height: 100px;
+	line-height: 100px;
+	border-right: 1px solid #e5e5e5;
+	font-size: 12px;
+}
+.tab-con .order ul .execute-state{
+	border-right: none;
+}
+.tab-con .order-con .order ul{
+	padding-top: 10px;
+}
+.tab-con .order-con .order li span{
+	display: block;
+	line-height: 20px;
+	font-size: 12px;
+}
+.tab-con .order-con .order .throw-num{
+	padding: 32px 8px;
+}
+/*推荐资源部分*/ 
+.recommend-resource{
+	height: 328px;
+}
+.recommend-resource .recommend-con li{
+	float: left;
+	width: 232px;
+	margin-left: 20px;
+	border: 1px solid #e5e5e5;
+	padding: 15px;
+}
+.recommend-resource .recommend-con .data-info{
+	margin-top: 30px;
+	border-bottom: 1px dashed #dcdcdc;
+}
+.recommend-con .data-info .account-name{
+	text-align: right;
+	margin-right: 6px;
+}
+.data-info li span{
+	font-weight: 600;
+}
+.recommend-title span{
+	height: 24px;
+	margin-top: -4px; 
+    background: url("../../images/center-ghost.png") no-repeat -93px 0;
+}
+.resource-detail{
+	border-bottom: 1px dashed #e5e5e5;
+	position: relative;
+}
+.resource-detail .profile{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	border: 1px solid #de2535;
+	overflow: hidden;
+	z-index: -1;
+}
+.resource-detail .profile img{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    top: -111px;
+    left: -111px;
+}
+.resource-detail .profile,
+.resource-detail .name-explain,
+.resource-detail .icon{
+	float: left;
+	margin-left: 10px;
+}
+.resource-detail .name-explain{
+	margin: 10px 0 10px 10px;
+}
+.resource-detail .data-info li{
+	width: 170px;
+	float: none;
+	margin-left: 20px;
+	border: none;
+	padding:0;
+	height: 34px;
+	line-height: 34px;
+}
+.resource-detail .name{
+	margin-bottom: 4px;
+}
+.resource-detail .name a,
+.resource-detail .explain a{
+	width: 80px;
+	height: 16px;
+	display: block;
+	font-size: 16px;
+	color: #72bde5;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.resource-detail .explain a{
+	font-size: 14px;
+	color: #a0a0a0;
+}
+.resource-detail .icon{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin: 28px 0 0 10px; 
+    background: url("../../images/center-ghost.png") no-repeat -30px -33px;
+}
+.resource-detail .wechat-code {
+    width: 134px;
+    position: absolute;
+    top: 48px;
+    left: 62px;
+    display: none;
+}
+.resource-detail .wechat-code img{
+	width: 100%;
+}
+.data-info li span{
+	display: block;
+    float: left;
+    width: 82px;
+}
+.recommend-con li .throw-now{
+	margin: 10px 0 0 58px;
+}
+/*案例推荐部分*/ 
+.recommend-case{
+	height: 200px;
+}
+.recommend-case .case-title span{
+    background: url("../../images/center-ghost.png") no-repeat 0 -33px;
+}
+.recommend-case ul {
+	margin-top: 20px;
+}
+.recommend-case ul li{
+	width: 232px;
+	height: 116px;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.recommend-case ul li img{
+	width: 100%;
+	height: 116px;
+}
+.recommend-case ul li .mask,
+.recommend-case ul li .mask-con{
+	width: 232px;
+	height: 116px;
+	position: absolute;
+	top: 84px;
+	left: 0;
+	background: #de2535;
+ 	opacity: .7;
+	filter:alpha(opacity=50);
+ 	-moz-opacity:.7;
+ 	-khtml-opacity:.7;
+}
+.recommend-case ul li .mask-con{
+	color: #fff;
+}
+.recommend-case .mask-con h4{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	padding-top: 2px;
+}
+.recommend-case .mask-con p{
+	font-size: 12px;
+	line-height: 18px;
+	padding:0 6px 10px;
+}

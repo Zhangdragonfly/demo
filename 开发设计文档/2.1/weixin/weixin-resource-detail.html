@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>微信账号详情页</title>
+	<link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+	<link rel="stylesheet" href="../src/css/reset.css">
+	<link rel="stylesheet" href="../src/css/site-stage-layout-common.css">
+	<link rel="stylesheet" href="../src/css/weixin/weixin-resource-detial.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<div class="head-top-wrap">
+			<div class="head-top clearfix">
+				<h3 class="welcome">欢迎来到沃米优选</h3>
+				<div class="enter clearfix">
+					<a class="entrance" href="ad-login.html">广告主入口</a>
+					<a class="entrance" href="media-login.html">媒体主入口</a>
+					<a class="help" href="javascript:void(0)">帮助中心</a>
+					<span class="tel">400-878-9551</span><i></i>
+				</div>
+			</div>
+			<div class="head-top clearfix login-success hidden">
+				<h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+				<div class="enter clearfix">
+					<ul class="clearfix">
+						<li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+						<li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+						<li>可用金额: <span>***</span></li>
+						<li>冻结金额: <span>***</span></li>
+						<li><a href="javascript:;">立即充值</a></li>
+						<li><a href="javascript:;">帮助中心</a></li>
+						<li>退出</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head-bottom">
+			<h1><a href="#"><img src="../src/images/logo.png" alt="沃米优选"></a></h1>
+			<div class="nav">
+				<ul class="clearfix">
+					<li><a class="active" href="javascript:void(0)">首页</a></li>
+					<li><a href="javascript:void(0)">微信营销</a></li>
+					<li><a href="javascript:void(0)">视频网红</a></li>
+					<li><a href="javascript:void(0)">新浪微博</a></li>
+					<li><a href="javascript:void(0)">解决方案</a></li>
+					<li><a href="javascript:void(0)">案例中心</a></li>
+					<li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 面包屑 -->
+		<div class="bread">
+			<ol class="breadcrumb font-500">
+				当前位置：
+				<li><a href="#">首页</a></li>
+				<li class="active color-main">微信列表-微信详情页</li>
+			</ol>
+		</div>
+	</div>
+	<!-- 账号基础信息-->
+	<div class="base-info w-1200 shadow">
+		<div class="account-info clearfix">
+			<div class="account-con fl clearfix">
+				<div class="account-pic fl">
+					<img src="../src/images/demo.jpg" alt="">
+				</div>
+				<div class="account-con-info fl">
+					<div class="account-name"><span>人民网</span><span class="fans-num">粉丝数：</span><i>63.7万</i></div>
+					<div class="wx_num"><span>微信号：<i>nduigshb</i></span></div>
+					<div class="wx_approve"><span>微信认证：</span><span>人民网股份有限公司</span></div>
+					<div class="account-intro"><span>简介：</span><p class="plain-text-length-limit" data-limit="30" data-title="来自腾讯微博认证资料：人民网，创办于1997年1月1日，是以新">来自腾讯微博认证资料：人民网，创办于1997年1月1日，是以新</p></div>
+				</div>
+				<div class="ewm clearfix">
+					<img src="../src/images/demo.jpg" width="111px" height="111px" alt="">
+					<span class="fr"></span>
+				</div>
+			</div>
+			<div class="account-property fl clearfix">
+				<div class="account-property-l fl">
+					<div class="account-classify resource-s">
+						<span>沃米分类</span>
+						<ul class="clearfix">
+							<li>时事新闻</li>
+							<li>新闻</li>
+							<li>新闻啊</li>
+							<li>实时</li>
+						</ul>
+					</div>
+					<div class="account-sign resource-s" style="display: none">
+						<span>资源标签</span>
+						<ul class="clearfix">
+							<li>时事新闻</li>
+							<li>新闻</li>
+						</ul>
+					</div>
+				</div>
+				<div class="account-relate-num resource-s fr">
+					<span>关联账号</span>
+					<a href="javascript:;"><i></i>人民网</a>
+					<a href="javascript:;"><i></i>人民网</a>
+				</div>
+			</div>
+		</div>
+		<div class="account-analyze">
+			<h5>账号分析：</h5>
+			<p><i></i>账号最多发布文章是<b>2014.10.12</b>，最近发布文章时间是<b>2016.03.23</b>，平均每月发布次数<b>15次；</b></p>
+			<p><i></i>最近30天内，总发布文章<b>240篇</b>，共发送<b>75次</b>，每次平均发布<b>8篇</b>，全部文章中超过<b>10万+</b>的文章有<b>43篇</b></p>
+			<p><i></i>最近30天内，平均每篇头条阅读数约为<b>12,342</b>，点赞数约为<b>7,234</b>，头条单次阅读成本<b>4.68元</b>，全部文章中超过<b>10万+</b>的文章有<b>43篇</b></p>
+		</div>
+	</div>
+	<!-- 账号价格-->
+	<div class="account-price w-1200 shadow">
+		<div class="con-header clearfix">
+			<span class="headline fl"><i></i>账号价格</span>
+			<div class="help-explain fl">
+				<i class="help-icon"></i>
+				<div class="help-explain-con">
+					<em></em>
+					<em></em>
+					<div class="explain-content">
+						<h3>账号价格</h3>
+						<p>1、投放位置展示四个位置，发布形式按照后台数据展示，当该位置不接单或者是参考价为0时，均用“—”表示。</p>
+						<p>2、平均阅读数按照位置分别展示近30天的阅读数平均数。【30天的计算是从今天开始，往前推3天。跟DTS一致。】</p>
+						<p>3、接单备注默认展示16个字内【初步定，后续根据实际页面设计效果可做调整】，多余用省略号展示，鼠标放上去展示全部。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="account-price-bd clearfix">
+			<div class="pos-price fl">
+				<table>
+					<thead>
+					<tr>
+						<th>投放位置</th>
+						<th>发布形式</th>
+						<th>参考价/元</th>
+						<th>平均阅读数</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>单图文</td>
+						<td>不接单</td>
+						<td>——</td>
+						<td>10W+</td>
+					</tr>
+					<tr>
+						<td>多图文第一条</td>
+						<td>只原创</td>
+						<td>1000</td>
+						<td>10W+</td>
+					</tr>
+					<tr>
+						<td>多图文第二条</td>
+						<td>只发布</td>
+						<td>1000</td>
+						<td>10W+</td>
+					</tr>
+					<tr>
+						<td>多图文第3~N条</td>
+						<td>只原创</td>
+						<td>1000</td>
+						<td>10W+</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="other-info">
+				<div class="price-indate resource-s">
+					<span>价格有效期</span>
+					<p>2012.02.23</p>
+				</div>
+				<div class="order-remarks resource-s">
+					<span>接单备注</span>
+					<p>接单备注接单备注接单备注接单备注接单备注接单备注接单备注接单备注接单备注接单备注接单备注接单备注</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 数据概要-->
+	<div class="data-summary w-1200 shadow">
+		<div class="con-header clearfix">
+			<span class="headline fl"><i></i>数据概要</span>
+			<div class="help-explain fl">
+				<i class="help-icon"></i>
+				<div class="help-explain-con">
+					<em></em>
+					<em></em>
+					<div class="explain-content">
+						<h3>数据概要</h3>
+						<p>数据概要：整体的反应该账号文章发布的质量及性价比。此数
+							据计算按照从今天开始往前推3天的近30天的数据开始计算。</p>
+						<p>1、发布总篇数：历史文章总数  从可检测到的最早文章开始
+							计算。</p>
+						<p>2、头条平均阅读数：最近30天头条阅读总数与最近30天头条发
+							布文章数的比值。</p>
+						<p>3、平均阅读数：最近30天总阅读数与发布文章数的比值。</p>
+						<p>4、平均点赞数：最近30天总点赞数/发布文章数的比值。</p>
+						<p>5、沃米指数：沃米指数基于微信公众号的粉丝数、文章数据、
+							近期价格，推出的指数系列，用于衡量微信的传播力、
+							活跃度和性价比详情见帮助中心沃米指数说明 。</p>
+						<p>6、10w+发布：近30天阅读数超过10w+的文章总数。</p>
+						<p>7、单词阅读成本：头条价格/头条平均阅读数 近30天，如头条
+							价格不接单或者头条平均阅读数大于10万+，
+							则单次阅读成本按照多图文二条价格/多图文二条的平均
+							阅读数，以此类推。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="data-sum-show clearfix">
+			<div class="data-show-l fl">
+				<ul class="clearfix">
+					<li>
+						<span class="data-pic"></span>
+						<span class="data-typ">头条平均阅读数</span>
+						<span class="data-num">100000</span>
+					</li>
+					<li>
+						<span class="data-pic"></span>
+						<span class="data-typ">发布总篇数</span>
+						<span class="data-num">100000</span>
+					</li>
+					<li>
+						<span class="data-pic"></span>
+						<span class="data-typ">平均阅读数</span>
+						<span class="data-num">100000</span>
+					</li>
+					<li>
+						<span class="data-pic"></span>
+						<span class="data-typ">平均点赞数</span>
+						<span class="data-num">100000</span>
+					</li>
+				</ul>
+			</div>
+			<div class="data-show-r fl">
+				<ol class="clearfix">
+					<li>
+						<div class="" id="sum-data-type"></div>
+						<span class="sum-type">沃米指数</span>
+					</li>
+					<li>
+						<span class="sum-data-type">10篇</span>
+						<span class="sum-type">10万+发布</span>
+					</li>
+					<li>
+						<span class="sum-data-type">1.39元</span>
+						<span class="sum-type">单词阅读成本</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- 运维情况-->
+	<div class="data-show-map w-1200 shadow">
+		<div class="con-header clearfix">
+			<span class="headline fl"><i></i>运维情况</span>
+			<div class="help-explain fl">
+				<i class="help-icon"></i>
+				<div class="help-explain-con">
+					<em></em>
+					<em></em>
+					<div class="explain-content">
+						<h3>运维情况</h3>
+						<p>运维情况：根据近一个月该账号发布文章的数量、发布的次数来突显本月该账号的活跃度。</p>
+						<p>1、30天发布总篇数：近30天发布历史文章总数。</p>
+						<p>2、30天发布总次数：近30天发布文章的次数。</p>
+						<p>3、每次发布文章数：近30天每次发布文章数（近30天发布总篇数/30天发布总次数）。</p>
+						<p>4、发稿量趋势：横坐标展示近一个月的日期（从今天开始往前推3天开始，展示6个段，每个段中有5个点。
+							纵坐标展示某天对应的发稿数 。若没发则展示发稿量为0）。鼠标移到对应的日期上，展示日期和对应的发稿数。</p>
+						<p>5、发布时间周分布：展示近30天的周一-周日，每天平均发稿数。</p>
+						<p>6、发布时间日发布：近30天0-24点每个时间段的发稿总数。0~24点  分8段。5点半到6点半之间发布认为是6时这个时段的，其他以此类推。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="total-data-map clearfix">
+			<div class="data-map-l fl">
+				<div class="art-data">
+					<ul class="clearfix">
+						<li>
+							<span class="art-num">10篇</span>
+							<span class="art-type">30天发布总篇数</span>
+						</li>
+						<li>
+							<span class="art-num">10篇</span>
+							<span class="art-type">30天发布总次数</span>
+						</li>
+						<li>
+							<span class="art-num">10篇</span>
+							<span class="art-type">每次发布文章数</span>
+						</li>
+					</ul>
+				</div>
+				<div class="read-num map-property">
+					<div class="con-header clearfix">
+						<span class="headline fl"><i></i>阅读数</span>
+					</div>
+					<div class="read-num-map" id="read-num-map"></div>
+				</div>
+				<div class="pub-date map-property">
+					<div class="con-header clearfix">
+						<span class="headline fl"><i></i>发布时间日分布</span>
+					</div>
+					<div class="pub-date-map" id="pub-date-map"></div>
+				</div>
+			</div>
+			<div class="data-map-r fr">
+				<div class="trend-data map-property">
+					<div class="con-header clearfix">
+						<span class="headline fl"><i></i>发稿量趋势</span>
+					</div>
+					<div class="trend-data-map" id="trend-data-map">
+
+					</div>
+				</div>
+				<div class="like-num map-property">
+					<div class="con-header clearfix">
+						<span class="headline fl"><i></i>点赞数</span>
+					</div>
+					<div class="like-num-map" id="like-num-map"></div>
+				</div>
+				<div class="pub-date-week map-property">
+					<div class="con-header clearfix">
+						<span class="headline fl"><i></i>发布时间周发布</span>
+					</div>
+					<div class="pub-date-week-map" id="pub-date-week-map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 文章-->
+	<div class="total-art clearfix">
+		<div class="hot-art w-592 shadow fl">
+			<div class="con-header clearfix">
+				<span class="headline fl"><i></i>30天最热文章</span>
+			</div>
+			<div class="total-hot-art">
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="lately-art w-592 shadow fr">
+			<div class="con-header clearfix">
+				<span class="headline fl"><i></i>最近发布</span>
+			</div>
+			<div class="total-hot-art">
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+				<div class="art-info">
+					<div class="art-head clearfix">
+						<a href="" class="title fl">我是大美人我是大美人</a>
+						<span class="date-time fr"> 2016.10.26&nbsp;10:27</span>
+					</div>
+					<p><a href="#" class="plain-text-length-limit" data-limit="28" data-title="我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人">我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人我是大美人</a></p>
+					<ul class="clearfix">
+						<li class="fl">多图文第一条</li>
+						<li class="fr">点赞数：<span>99999</span></li>
+						<li class="fr">阅读数：<span>10w+</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 更多-->
+	<div class="more-art">
+		<a href="#">查看更多>></a>
+	</div>
+	<!--侧边栏联系方式-->
+	<div class="side-bar">
+		<ul>
+			<li class="tel">
+				<div class="tel-con detail">
+					<span></span>
+					<p>客服电话</p>
+					<p>400-878-9551</p>
+				</div>
+				<i></i>
+			</li>
+			<li class="qq">
+				<div class="qq-con detail">
+					<span></span>
+					<p>客服QQ</p>
+					<p>2544745674</p>
+					<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+				</div>
+				<i></i>
+			</li>
+			<li class="weixin">
+				<div class="weixin-con detail">
+					<p>微信扫一扫</p>
+					<span></span>
+				</div>
+				<i></i>
+			</li>
+			<li class="top">
+				<i></i>
+			</li>
+		</ul>
+	</div>
+	<!--底部-->
+	<div class="footer-wrap">
+		<div class="footer font-12">
+			<ul>
+				<li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+				<li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+				<li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+				<li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+			</ul>
+			<div class="footer-bot">
+				<p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+			</div>
+		</div>
+	</div>
+	<script src="../dep/js/jquery-1.10.2.min.js"></script>
+	<script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+	<script src="../dep/js/echarts.min.js"></script>
+	<script src="../dep/js/circles.js"></script>
+	<script src="../src/js/site-stage-layout-common.js"></script>
+	<script src="../src/js/weixin/weixin-resource-detail.js"></script>
+</body>
+</html>

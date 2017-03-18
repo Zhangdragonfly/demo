@@ -1,0 +1,694 @@
+@charset "utf-8";
+/*~~~~~~~~~~~~~~~~~~~~~~~~登录前头部~~~~~~~~~~~~~~~~~~~~~~~~*/
+.head-top-wrap{
+    height: 42px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #dcdcdc;
+}
+.head-top{
+    min-width: 1200px;
+    line-height: 42px;
+    margin: 0 auto;
+}
+.head-top .welcome{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 24px;
+}
+.head-top .enter{
+    float: right;
+}
+.head-top .enter a{
+    float: left;
+}
+.head-top .enter .entrance{
+    display: inline-block;
+    width: 82px;
+    height: 28px;
+    color: #fff;
+    background: #c6151f;
+    text-align: center;
+    line-height: 28px;
+    margin: 7px 20px 0 0;
+    border-radius: 4px;
+}
+.head-top .enter .help{
+    margin-right: 16px;
+}
+.head-top .enter .help:hover{
+    color: #000;
+    text-decoration: underline!important;
+}
+.head-top .enter .tel{
+    float: right;
+    margin-right: 20px;
+}
+.head-top .enter i{
+    display: inline-block;
+    float: right;
+    width: 24px;
+    height:18px;
+    background: url("../images/login-ghost.png") -188px -255px no-repeat;
+    margin:12px 8px 0 0;
+}
+.head-bottom{
+    min-width: 1280px;
+    height: 96px;
+    margin:0 auto;
+    padding-top: 16px;
+    border-bottom: 1px solid #bebebe;
+}
+.head-bottom h1{
+    width: 217px;
+    height: 69px;
+    float: left;
+    margin-left: 38px;
+}
+.head-bottom .nav{
+    float: right;
+}
+.head-bottom .nav li{
+    float: left;
+    width: 75px;
+    height: 80px;
+    text-align: center;
+    line-height: 68px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.head-bottom .nav li a{
+    height: 80px;
+    display: block;
+}
+.head-bottom .nav a.active{
+    color:#c81624;
+    border-bottom: 4px solid #c81724;
+}
+.head-bottom .nav a:hover{
+    color:#c81624;
+    border-bottom: 4px solid #c81724;
+}
+.head-bottom .nav .about-us{
+    margin-right: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~登陆后的头部~~~~~~~~~~~~~~~~~~~~~*/
+.enter ul li{
+    float: left;
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.enter ul .username:hover,
+.enter ul .my-lib:hover{
+    color: #c81624;
+}
+
+.head-top .enter a{
+    float: none;
+}
+.head-top .enter a:hover{
+    text-decoration: underline!important;
+}
+.head-bottom{
+    background: #fff;
+}
+.breadcrumb{
+    background: #f5f5f5;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~面包屑~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.bread{
+    width: 1190px;
+    margin: 15px auto 25px;
+    background: #fff;
+}
+.breadcrumb{
+    padding: 0;
+    font-size: 12px;
+}
+.breadcrumb a{
+    color: #333;
+    font-size: 12px;
+}
+.breadcrumb a:hover{
+    color:#c81624;
+}
+.breadcrumb>li+li:before {
+    padding: 0;
+    color: #333;
+    content: ">\00a0";
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~侧边栏联系方式~~~~~~~~~~~~~~~~~~~~~~~*/
+.side-bar{
+    width: 40px;
+    position: fixed;
+    top:50%;
+    right: 0;
+    margin-top: -85px;
+}
+.side-bar li{
+    width: 40px;
+    height:38px;
+    background: #1e1e1e;
+    margin-bottom: 6px;
+    border-radius: 6px 0 0 6px;
+    padding: 2px 0 0 6px;
+    cursor: pointer;
+    position: relative;
+}
+.side-bar li i{
+    display: block;
+    width: 30px;
+    height:30px;
+    background: red;
+}
+.side-bar .tel i{
+    background: url("../images/login-ghost.png") no-repeat -435px 4px;
+}
+.side-bar .qq i{
+    background: url("../images/login-ghost.png") no-repeat -435px -50px;
+}
+.side-bar .weixin i{
+    background: url("../images/login-ghost.png") no-repeat -435px -102px;
+}
+.side-bar .top i{
+    background: url("../images/login-ghost.png") no-repeat -382px -106px;
+}
+.side-bar li .detail{
+    width: 150px;
+    height:158px;
+    box-shadow: 0 0 20px #ccc;
+    border: 1px solid #c6c6c6;
+    position: absolute;
+    top:0;
+    left: 46px;
+    background: #fff;
+    z-index: -1;
+}
+.side-bar li .detail span{
+    display:block;
+    width: 16px;
+    height: 20px;
+    margin:0 auto 10px;
+}
+.side-bar li .detail p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.side-bar li .qq-con{
+    padding-top: 20px;
+}
+.side-bar li .tel-con{
+    padding-top: 22px;
+}
+.side-bar li .qq-con a{
+    margin-left: 10px;
+    color: #c81624;
+}
+.side-bar li .qq-con span{
+    background: url("../images/contact-way.png") no-repeat;
+}
+.side-bar li .tel-con span{
+    background: url("../images/contact-way.png") no-repeat -148px 0;
+}
+.side-bar li .weixin-con span{
+    background: url("../images/contact-way.png") no-repeat 0 -39px;
+}
+.side-bar li .tel-con span{
+    width:42px;
+    height: 42px;
+}
+.side-bar li .weixin-con span{
+    width: 115px;
+    height: 116px;
+}
+.side-bar li .weixin-con p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~广告主用户中心导航样式~~~~~~~~~~~~~~~~~~*/
+.user-home:hover{
+    color: #de2535;
+}
+.content-sidebar ul li{
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    text-indent: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #e8e8e8;
+}
+.content-sidebar ul .fold{
+    height: auto;
+}
+.content-sidebar .user-center{
+    font-weight: 600;
+}
+.content-sidebar .user-center:hover{
+    color: #de2535;
+}
+.content-sidebar ul li .rotate-icon{
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 20px;
+    right: 18px;
+    background: url("../images/center-ghost.png") no-repeat -56px -34px;
+}
+.content-sidebar ul li i.rotate{
+    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+}
+.content-sidebar ul li .title{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+.content-sidebar ul li .title:hover{
+    color:#de2535;
+}
+.content-sidebar ul li .title.active{
+    color: #de2535;
+    background: #f5f5f5;
+}
+.content-sidebar dl{
+    display: none;
+}
+.content-sidebar dl dd{
+    text-indent: 4em;
+}
+.content-sidebar dl dd.active{
+    color: #de2535;
+    background: #f5f5f5;
+}
+.content-sidebar dl dd a{
+    display: block;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    color: #727272;
+    margin-left: -5px;
+    font-size: 14px;
+}
+.content-sidebar ul li dl dd a:hover {
+    color: #fff;
+    background: url("../images/media-lib-ghost.png") -4px -280px;
+}
+.on-click{
+    color: #fff!important;
+    background: url("../images/media-lib-ghost.png") -4px -280px;
+}
+.content-sidebar .icon{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 12px;
+    position: absolute;
+    top:14px;
+    left: 20px;
+}
+/*~~~~~~~~~广告主用户中心导航样式~~~~~~~*/
+.content-sidebar li:nth-child(1) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -10px;
+}
+.content-sidebar li:nth-child(2) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -40px;
+}
+.content-sidebar li:nth-child(3) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -72px;
+}
+.content-sidebar li:nth-child(4) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -107px;
+}
+.content-sidebar li:nth-child(5) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -59px -173px;
+}
+.content-sidebar li:nth-child(6) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -60px -138px;
+}
+.content-sidebar li:nth-child(7) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -16px -138px;
+}
+.content-sidebar li:nth-child(8) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -172px;
+}
+.content-sidebar li:nth-child(9) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -205px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~尾部~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer-wrap{
+    width: 100%;
+    background: #1e1e1e;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 28px;
+    text-align: center;
+}
+.footer li{
+    display: inline-block;
+    width: 120px;
+}
+.footer li i{
+    display: inline-block;
+    height: 10px;
+    width: 1px;
+    background: #404040;
+    margin-left: 10px;
+}
+.footer li span{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin:0 10px 0 12px;
+    float: left;
+    margin-top: 2px;
+}
+.footer li a{
+    float: left;
+}
+.footer li.help{
+    border-right: none;
+}
+.footer li.help i{
+    background: #1e1e1e;
+}
+.footer li.about-us span{
+    background: url("../images/login-ghost.png") no-repeat -194px -364px;
+}
+.footer li.contact-us span{
+    background: url("../images/login-ghost.png") no-repeat -238px -364px;
+}
+.footer li.service span{
+    background: url("../images/login-ghost.png") no-repeat -284px -364px;
+}
+.footer li.help span{
+    background: url("../images/login-ghost.png") no-repeat -326px -364px;
+}
+.footer li a{
+    color: #cecece;
+}
+.footer li a:hover{
+    color: #fff;
+}
+.footer ul{
+    margin-bottom: 16px;
+}
+.footer-bot p{
+    color: #cfcfcf;
+}
+.footer-bot p span{
+    font-family: "STSong";
+}
+.footer-bot{
+    padding-bottom: 32px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~分页样式~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table-footer{
+    width: 1000px;
+    margin: 0 auto 25px;
+}
+.table-footer .page-wb{
+    float: right;
+}
+.page-wb{
+    color:#999;
+    height:36px;
+    line-height:36px;
+}
+.page-wb a,
+.page-wb .next{
+    position:relative;
+    float:left;
+    margin-left:-1px;
+    display:inline-table;
+    padding:0 14px;
+    border:solid 1px #ededed;
+    height:34px;
+    color:#3e3e3e;
+    background: #ffffff;
+    text-align:center;
+    line-height:34px;
+    cursor:pointer;
+    -webkit-transition:all .1s linear;
+    -moz-transition:all .1s linear;
+    -o-transition:all .1s linear;
+    transition:all .1s linear
+}
+.page-wb em{
+    width:19px;
+    height:34px;
+    line-height:34px;
+    font-weight:bold;
+    display:inline-block;
+    float:left;
+    margin-left:10px;
+}
+.page-wb .on,
+.page-wb a:hover{
+    position:relative;
+    z-index:1;
+    background:#C81624;
+    color:#fff;
+    border-color:#C81624;
+    text-decoration:none
+}
+.page-wb .click_prev{}
+.page-wb .text{
+    border: solid 1px #ededed;
+    height: 35px;
+    text-align: center;
+    color:#999;
+    width: 52px;
+    padding: 5px;
+}
+.page-wb .aok{
+    height:35px;
+    width:48px;
+    -webkit-border-radius:2px;
+    -webkit-background-clip:padding-box;
+    -moz-border-radius:2px;
+    -moz-background-clip:padding;
+    border-radius:2px;
+    background-clip:padding-box;
+    border:solid 1px #ededed;
+    text-align:center;line-height:35px;
+    cursor:pointer;color:#404040;
+    background: #C81624;
+    color: #ffffff;
+}
+.page-wb .aok:hover {
+    color: #ffffff;
+    border-color: #C81624;
+}
+.page-wb i{
+    font-style:normal;
+    vertical-align: middle;
+    line-height: 35px;
+    margin: 0 10px;
+}
+.page-wb .total{
+    font-weight:normal;
+    padding:0 10px;
+}
+.page-wb select{
+    margin:2px 10px 0 10px;
+    height:32px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~提示框样式~~~~~~~~~~~~~~~~~~~~~~~*/
+.layui-layer-msg{
+    height: 102px!important;
+    text-align: center;
+    border-radius: 6px!important;
+    box-shadow: 0 0 20px #dddddd!important;
+}
+.layui-layer-dialog .layui-layer-padding {
+    padding: 38px 10px 20px 50px!important;
+    font-size: 19px!important;
+    font-weight: 500;
+    text-align: center!important;
+}
+.layui-layer-dialog .layui-layer-content .layui-layer-ico{
+    top: 36px!important;
+    left: 15px!important;
+}
+.layui-layer-title,
+.layui-layer-setwin{
+    display: none;
+}
+.layui-layer-content{
+    font-weight: 600;
+    font-size: 20px!important;
+    text-align: center;
+}
+.layui-layer .layui-layer-btn{
+    text-align: center;
+    padding-top: 15px;
+}
+.layui-layer .layui-layer-btn a{
+    line-height: 24px;
+    border-radius: 4px;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn0{
+    background: #c81624;
+    border-color: #c81624;
+    margin-right: 10px;
+}
+.layui-layer .layui-layer-btn .layui-layer-btn1{
+    background: #21a4dc;
+    color: #fff;
+    margin-left: 10px;
+}
+
+/*鼠标移入显示完整账号ID信息*/
+.show-all-info{
+    position: absolute;
+    z-index: 5999;
+    border: solid 1px #bfbfbf;
+    color: #353535;
+    background: #FFFFFF;
+    border-radius: 3px;
+    display: none;
+    font-size: 12px;
+    padding: 3px 4px;
+    margin: -37px 0 0 10px;
+    line-height: 14px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~标题字段解释~~~~~~~~~~~~~~~~~~~~~~*/
+.thead-title,
+.remark{
+    position: relative;
+    cursor: pointer;
+}
+.thead-title span{
+    display: inline-block;
+}
+.explain-title,
+.whole-remark{
+    width: 248px;
+    border: 1px solid #B8B8B8;
+    border-radius: 4px;
+    padding: 0 5px;
+    line-height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    margin-left: -124px;
+    background: #ffffff;
+    text-align: left;
+    font-size: 12px;
+    color: #484644;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.explain-title h3{
+    line-height: 35px;
+    font-size: 14px;
+    color: #C81624;
+    border-bottom: 1px solid #EBEBEB;
+}
+.explain-title em,
+.whole-remark em{
+    display: inline-block;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -19px;
+    right: 50%;
+    margin-left: -5px;
+}
+.explain-title p{
+    font-weight: normal;
+    margin: 5px 0;
+}
+.explain-title em:nth-of-type(1),
+.whole-remark em:nth-of-type(1){
+    border-bottom: 10px solid #B8B8B8;
+    top: -20px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~接单备注~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.whole-remark{
+    width: 240px;
+    left: 50%;
+    top: 65px;
+    margin-left: -111px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~用户中心阴影部分~~~~~~~~~~~~~~~~~~~~~*/
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~下拉菜单样式~~~~~~~~~~~~~~~~~~~~~*/
+.dropdown{
+    width: 126px;
+    height: 32px;
+    margin: 28px auto 0;
+    border: 1px solid #B7B7B7;
+    padding: 2px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 24px;
+}
+.dropdown-menu{
+    min-width: 126px;
+}
+.dropdown-menu li{
+    line-height: 32px;
+    padding: 0 5px 0 10px;
+    cursor: pointer;
+}
+.dropdown-menu li:hover{
+    color: #C81624;
+    background: #eee;
+}
+.dropdown .caret {
+    background: url(../../src/images/list-ghost.png) -285px -75px no-repeat;
+    width: 9px;
+    height: 8px;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 10px;
+}
+.order-time .line{
+    display: inline-block;
+    width: 20px;
+    margin-left: 10px;
+    height: 1px;
+    background: #c2c2c2;
+    vertical-align: middle;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~媒体主用户中心左侧导航~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.media-vendor-content-sidebar li:nth-child(1) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -10px;
+}
+.media-vendor-content-sidebar li:nth-child(2) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -72px;
+}
+.media-vendor-content-sidebar li:nth-child(3) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -107px;
+}
+.media-vendor-content-sidebar li:nth-child(4) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -16px -138px;
+}
+.media-vendor-content-sidebar li:nth-child(5) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -172px;
+}
+.media-vendor-content-sidebar li:nth-child(6) .icon{
+    background: url("../images/media-lib-ghost.png") no-repeat -19px -205px;
+}

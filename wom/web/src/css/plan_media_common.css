@@ -1,0 +1,54 @@
+html,body,.wrap{
+	height: 100%;
+}
+body,
+.breadcrumb{
+	background: #F5F5F5;
+}
+/*.wrap{
+	position: relative;
+}*/
+.bread{
+	margin-bottom: 0;
+}
+/*.footer-wrap{
+	position: absolute;
+	bottom: 0;
+}*/
+.set-font-color{
+	color: #c81624;
+}
+/*鼠标移入显示完整账号ID信息*/
+/*~~~~~~~~~~~~~~~~~~~步骤导航~~~~~~~~~~~~~~~~~~~*/
+.create-step{
+	width: 1200px;
+	margin: 30px auto 16px;
+	line-height: 40px;
+	color: #ffffff;
+	text-align: center;
+}
+.create-step ul li{
+	width: 300px;
+	float: left;
+	background: #D2D2D2;
+}
+.create-step .current-step{
+	background: #C81624;
+}
+.create-step li i{
+	display: inline-block;
+	width: 23px;
+	height: 40px;
+	float: right;
+	background: url('../images/plan_active.png') -141px -47px no-repeat;
+}
+.create-step .last-step i{
+	background-position: -175px -47px;
+}
+.create-step .last-step em{
+	display: inline-block;
+	width: 22px;
+	height: 40px;
+	float: right;
+	background: url('../images/plan_active.png') -176px -97px no-repeat;
+}

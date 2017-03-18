@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* ~~~~~主要内容部分~~~~*/
+.content{
+    height: 710px;
+    background:url("../../images/login-bkg.jpg") 70% 50% no-repeat;
+    position: relative;
+}
+.ad-login-con{
+    width: 776px;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    top:120px;
+    right:70px;
+    border-radius: 6px;
+    padding: 15px 0 0 7px;
+}
+.login-top{
+    width: 760px;
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.login-top span{
+    display: block;
+    width:32px;
+    height:32px;
+    float: left;
+    margin-left: 10px;
+    background: url("../../images/login-ghost.png") -230px -216px no-repeat;
+}
+.login-top h3{
+    color: #393939;
+    font-size: 14px;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 10px;
+}
+.login-bottom{
+    padding-top: 28px;
+}
+.login-bottom .weixin-login,
+.login-bottom .line,
+.login-bottom .account-login{
+    float: left;
+}
+.login-bottom .weixin-login{
+    width: 356px;
+    text-align: center;
+}
+.weixin-login-top{
+    width: 120px;
+    margin: 0 auto 6px;
+}
+.weixin-login h4{
+    color: #1e1e1e;
+    font-size: 18px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+}
+.weixin-login i{
+    display: inline-block;
+    float: left;
+    width: 28px;
+    height: 24px;
+    margin-right: 6px;
+    background: url("../../images/login-ghost.png") -186px -216px no-repeat;
+}
+
+.weixin-qr-code{
+    height:202px;
+    overflow: hidden;
+}
+.weixin-login p{
+    color: #1e1e1e;
+    margin-top: 6px;
+}
+.weixin-login .womi{
+    color: #c81724;
+}
+
+.login-bottom .line{
+    height: 198px;
+    width: 1px;
+    background: #e5e5e5;
+    margin-top: 28px;
+}
+
+.login-bottom .account-login{
+    margin-left: 33px;
+}
+.account-login .input-group{
+    margin-bottom: 15px;
+}
+.account-login .input-group span{
+    display: inline-block;
+    width: 51px;
+    text-align: right;
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.account-login .input-group input{
+    width: 288px;
+    height: 46px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    text-indent: 1em;
+    margin-left: 10px;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.account-login .input-group input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.account-login .input-group .insure{
+    position: absolute;
+    bottom:-6px;
+    font-size: 12px;
+    right: 10px;
+    color: #c71623;
+    background: #fff;
+    padding:0 10px;
+    /*display: none;*/
+}
+.account-login .remember-forget{
+    padding-left: 60px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.remember-forget input{
+    margin-right: 8px;
+}
+.remember-forget a{
+    float: right;
+    font-weight: 500;
+    color: #474747;
+    font-size: 12px;
+}
+.account-login button{
+    width: 287px;
+    height: 46px;
+    margin: 16px 0 0 61px;
+}
+.regist{
+    margin-top: 26px;
+}
+.regist a{
+    font-weight: 500;
+    font-size: 12px;
+}
+.regist a:hover{
+    color: #c81624;
+}
+.regist .regist-now:hover{
+    color: #c81624;
+    text-decoration: underline!important;
+}
+.regist .no-account{
+    font-weight: 500;
+}
+body .footer-wrap{
+    margin-top: 0;
+}

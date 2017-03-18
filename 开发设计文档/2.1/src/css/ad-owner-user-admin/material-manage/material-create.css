@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.create-material{
+    text-align: center;
+    font-size: 20px;
+}
+.content-wrap{
+    width: 1200px;
+    margin: 30px auto 38px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 690px;
+    margin:30px auto 32px;
+}
+.content em{color: #ca1622}
+.content input::-webkit-input-placeholder{
+    font-size: 12px;
+}
+.content .remark-info{
+    height: 400px;
+}
+.content input{
+    outline: none;
+    width: 484px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    text-indent: 1em;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content textarea{
+    width: 484px;
+    height: 142px;
+    outline: none;
+    padding: 10px 0 0 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-left: 4px;
+    resize:none;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content textarea::-webkit-input-placeholder{
+    font-size: 12px;
+}
+.content textarea:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.content p{
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.file-content div{
+    margin-bottom: 20px;
+}
+.file-content-title{
+    width: 90px;
+    display: inline-block;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 2px;
+}
+.file-content-title span em{
+    color:#de2535;
+}
+.file-content #container{
+    width: 484px;
+    min-height: 260px;
+    float: left;
+    margin-left: 3px;
+}
+.file-content #container div{
+    margin-bottom:0;
+}
+.file-content i{
+    color: #de2535;
+    margin-right: 2px;
+}
+.content .file-content .plan-name{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.content .tips{
+    color: #bdbdbd;
+    font-size: 12px;
+}
+.file-name input,
+.author-name input{
+    font-weight: normal;
+}
+.cover-pic-show{
+    padding-left: 94px;
+}
+.cover-pic-show input{
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+/*~~~~上传封面图片~~~~~*/
+.plupload-container .file-list{
+    margin-top: 15px;
+    padding-left: 86px;
+}
+.plupload-container .file-list li{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 8px;
+}
+.plupload-container .file-list li img{
+    width: 92px;
+    height: 112px;
+    border-radius: 4px;
+}
+.plupload-container .file-list li .delete-pic{
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    border-radius: 50%;
+    background: #ca1622;
+    transition: all .5s;
+}
+.plupload-container .file-list li .delete-pic:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.plupload-container .file-list li .delete-pic i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
+    background: url("../../../images/phone.png") no-repeat -398px -30px;
+}
+.plupload-container .file-list .progress{
+    margin-bottom: 4px;
+}
+.summary .message{
+    text-align: right;
+    padding-right: 108px;
+}
+.summary p span{
+    color: #de2535;
+    font-size: 12px;
+}
+.save{
+    width: 484px;
+    height:46px;
+    margin: 0 0 34px 94px;
+}

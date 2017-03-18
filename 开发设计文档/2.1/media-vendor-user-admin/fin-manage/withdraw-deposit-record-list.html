@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提现记录</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/media-vendor-user-admin/withdraw-deposit-record-list.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <div class="head-top-wrap">
+        <div class="head-top clearfix login-cancel hidden">
+            <h3 class="welcome">欢迎来到沃米优选</h3>
+            <div class="enter clearfix">
+                <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                <a class="help" href="javascript:void(0)">帮助中心</a>
+                <span class="tel">400-878-9551</span><i></i>
+            </div>
+        </div>
+        <div class="head-top clearfix login-success">
+            <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+            <div class="enter clearfix">
+                <ul class="clearfix">
+                    <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                    <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                    <li>可用金额: <span>***</span></li>
+                    <li>冻结金额: <span>***</span></li>
+                    <li><a href="javascript:;">立即充值</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li>退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a class="active" href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">微信营销</a></li>
+                <li><a href="javascript:void(0)">视频网红</a></li>
+                <li><a href="javascript:void(0)">新浪微博</a></li>
+                <li><a href="javascript:void(0)">解决方案</a></li>
+                <li><a href="javascript:void(0)">案例中心</a></li>
+                <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="bread">
+        <ol class="breadcrumb font-500">
+            当前位置：
+            <li><a href="#">首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">财务管理</a></li>
+            <li class="active color-main">提现记录</li>
+        </ol>
+    </div>
+</div>
+<div class="content-wrap clearfix">
+    <!--左侧导航栏-->
+    <div class="content-sidebar fl shadow">
+        <ul>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>订单管理</span>
+                <dl>
+                    <dd><a href="#">微信订单</a></dd>
+                    <dd><a href="#">微博订单</a></dd>
+                    <dd><a href="#">视频订单</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>账号管理</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon rotate"></i>
+                <span class="title active"><i class="icon"></i>财务管理</span>
+                <dl class="show">
+                    <dd><a href="#">全部流水</a></dd>
+                    <dd><a href="#" class="on-click">提现记录</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>消息中心</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <a class="title" href="javascript:;"><i class="icon"></i>个人设置</a>
+                <dl>
+                    <dd><a href="#">基础资料</a></dd>
+                    <dd><a href="#">修改登录密码</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <div class="content fr">
+        <div class="content-head shadow">
+            <ul class="clearfix">
+                <li><span>用户名：</span><span>荔枝</span></li>
+                <li><span>账户余额：</span><em>30000</em>元</li>
+                <li><span>可提现余额：</span><em>30000</em>元</li>
+                <li class="btn-pay"><a href="javascript:;">立即充值</a></li>
+            </ul>
+        </div>
+        <div class="content-head-search shadow clearfix">
+            <div class="trade-way fin-type clearfix fl">
+                <span class="fl">提现状态：</span>
+                <div class="dropdown fl">
+                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="show-default fl">不限</span>
+                        <span class="caret fr"></span>
+                    </div>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>待处理</li>
+                        <li>已完成</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="condition-area trade-time fl">
+                <span class="">提现时间：</span>
+                <input type="text" class="form-control datetimepicker">
+                ——
+                <input type="text" class="form-control datetimepicker">
+            </div>
+            <button class="btn-search btn btn-danger bg-main fr">
+                <i></i>
+                搜索
+            </button>
+        </div>
+        <div class="table-info shadow">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>流水号</th>
+                        <th>提现时间</th>
+                        <th>提现金额 (元)</th>
+                        <th>收款方式</th>
+                        <th>收款账号</th>
+                        <th>提现状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">支付宝</td>
+                        <td>18223812398</td>
+                        <td class="withdraw-status">待处理</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">支付宝</td>
+                        <td>18223812398</td>
+                        <td class="withdraw-status">已完成</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">银行卡</td>
+                        <td>6227001682736352765</td>
+                        <td class="withdraw-status">待处理</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">银行卡</td>
+                        <td>6227001682736352765</td>
+                        <td class="withdraw-status">已完成</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">支付宝</td>
+                        <td>18223812398</td>
+                        <td class="withdraw-status">待处理</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">支付宝</td>
+                        <td>18223812398</td>
+                        <td class="withdraw-status">已完成</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">银行卡</td>
+                        <td>6227001682736352765</td>
+                        <td class="withdraw-status">待处理</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">银行卡</td>
+                        <td>6227001682736352765</td>
+                        <td class="withdraw-status">已完成</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">支付宝</td>
+                        <td>18223812398</td>
+                        <td class="withdraw-status">待处理</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">支付宝</td>
+                        <td>18223812398</td>
+                        <td class="withdraw-status">已完成</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">银行卡</td>
+                        <td>6227001682736352765</td>
+                        <td class="withdraw-status">待处理</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016122510109428</td>
+                        <td>2016.12.25</td>
+                        <td>2400</td>
+                        <td class="collection-way">银行卡</td>
+                        <td>6227001682736352765</td>
+                        <td class="withdraw-status">已完成</td>
+                        <td class="operate"><a data-toggle="modal" href="#">详情</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="no-resource">暂无提现记录</div>
+        </div>
+        <!--分页-->
+        <div class="table-footer clearfix">
+            <div class="page-wb fl system_page">
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                <em> ... </em>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                <div class="count fl">
+                    <i class="fl">前往</i>
+                    <input type="text" name="tiaozhuan" class="text fl now_pages">
+                    <i class="fl">页</i>
+                    <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--支付宝提现详情modal框-->
+<div id="view-detail-alipay" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="fl color-main">提现详情</h4>
+                <span class="close fr" data-dismiss="modal">x</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <span class="view-detail-title">申请人 :</span>
+                        <span>郑荔芝</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">申请时间 :</span>
+                        <span>2016.5.27 <em>9:00</em></span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">申请提现金额 :</span>
+                        <span>1000</span>元
+                    </li>
+                    <li>
+                        <span class="view-detail-title">申请状态 :</span>
+                        <span class="alipay-apply-status">已完成</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">收款方式 :</span>
+                        <span>支付宝</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">收款人 :</span>
+                        <span>郑艺华</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">支付宝账号 :</span>
+                        <span>18812341234</span>
+                    </li>
+                    <div class="alipay-apply-status-complete">
+                        <li>
+                            <span class="view-detail-title">付款时间 :</span>
+                            <span>2016.12.25 <em>9:00</em></span>
+                        </li>
+                        <li>
+                            <span class="view-detail-title">实际付款金额 :</span>
+                            <span>2000</span>元
+                        </li>
+                        <li>
+                            <span class="view-detail-title">付款凭证 :</span>
+                            <span class="proof">凭证证明</span>
+                            <a class="proof-download" href="javascript:;">下载</a>
+                        </li>
+                        <li class="clearfix">
+                            <span class="view-detail-title fl">备注 :</span>
+                            <span class="remark-con fl">当今世界正处于大发展、大变革、大调整的时期，中国既有巨大机遇也面临着巨大的风险和挑战，面对全新的形势，如何加快改革发展，实现中华民族伟大复兴的中国梦，是中国共产党人需要破解的历史命题。以习近平同志为核心的党中央，以宏大的战略视野、巨大的政治担当和高超的驾驭能力，开启了彻底改变中国经济发展方式的深刻变革。在中国经济已经进入新常态的背景之下，这也是一场影响深远的新改革。</span>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--银行卡提现详情modal框-->
+<div id="view-detail-bank-card" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="fl color-main">提现详情</h4>
+                <span class="close fr" data-dismiss="modal">x</span>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <span class="view-detail-title">申请人 :</span>
+                        <span>郑荔芝</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">申请时间 :</span>
+                        <span>2016.5.27 <em>9:00</em></span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">申请提现金额 :</span>
+                        <span>1000</span>元
+                    </li>
+                    <li>
+                        <span class="view-detail-title">申请状态 :</span>
+                        <span class="bank-card-apply-status">已完成</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">收款方式 :</span>
+                        <span>银行卡</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">收款人 :</span>
+                        <span>郑艺华</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">卡号 :</span>
+                        <span>6227001627837363331</span>
+                    </li>
+                    <li>
+                        <span class="view-detail-title">所属银行 :</span>
+                        <span>中国银行</span>
+                    </li>
+                    <div class="bank-card-apply-status-complete">
+                        <li>
+                            <span class="view-detail-title">付款时间 :</span>
+                            <span>2016.12.25 <em>9:00</em></span>
+                        </li>
+                        <li>
+                            <span class="view-detail-title">实际付款金额 :</span>
+                            <span>2000</span>元
+                        </li>
+                        <li>
+                            <span class="view-detail-title">付款凭证 :</span>
+                            <span class="proof">凭证证明</span>
+                            <a class="proof-download" href="javascript:;">下载</a>
+                        </li>
+                        <li class="clearfix">
+                            <span class="view-detail-title fl">备注 :</span>
+                            <span class="remark-con fl">当今世界正处于大发展、大变革、大调整的时期，中国既有巨大机遇也面临着巨大的风险和挑战，面对全新的形势，如何加快改革发展，实现中华民族伟大复兴的中国梦，是中国共产党人需要破解的历史命题。以习近平同志为核心的党中央，以宏大的战略视野、巨大的政治担当和高超的驾驭能力，开启了彻底改变中国经济发展方式的深刻变革。在中国经济已经进入新常态的背景之下，这也是一场影响深远的新改革。</span>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--侧边栏联系方式-->
+<div class="side-bar">
+    <ul>
+        <li class="tel">
+            <div class="tel-con detail">
+                <span></span>
+                <p>客服电话</p>
+                <p>400-878-9551</p>
+            </div>
+            <i></i>
+        </li>
+        <li class="qq">
+            <div class="qq-con detail">
+                <span></span>
+                <p>客服QQ</p>
+                <p>2544745674</p>
+                <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+            </div>
+            <i></i>
+        </li>
+        <li class="weixin">
+            <div class="weixin-con detail">
+                <p>微信扫一扫</p>
+                <span></span>
+            </div>
+            <i></i>
+        </li>
+        <li class="top">
+            <i></i>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<div class="footer-wrap">
+    <div class="footer font-12">
+        <ul>
+            <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+            <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+            <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+            <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+        </ul>
+        <div class="footer-bot">
+            <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+        </div>
+    </div>
+</div>
+<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../../dep/datetimepicker/jquery.datetimepicker.js"></script>
+<script src="../../dep/datetimepicker/datetime.js"></script>
+<script src="../../dep/layer/layer.js"></script>
+<script src="../../dep/js/wom-tool.js"></script>
+<script src="../../src/js/site-stage-layout-common.js"></script>
+<script src="../../src/js/media-vendor-user-admin/withdraw-deposit-record-list.js"></script>
+</body>
+</html>

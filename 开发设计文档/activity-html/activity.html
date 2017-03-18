@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>沃米活动页面</title>
+    <link rel="stylesheet" href="dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="dep/css/normalize.css">
+    <link rel="stylesheet" href="dep/css/sweetalert.css">
+    <link rel="stylesheet" href="src/css/activity.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="top-wrap">
+    <div class="top clearfix">
+        <div class="top-left">
+            <p>您好，欢迎来到沃米优选-自媒体价值发现者</p>
+        </div>
+        <div class="top-right login-cancel" style="display:none;">
+            <a class="login" href="<?= Url::to(['account/login']) ?>">登录</a>
+            <a class="regist" href="<?= Url::to(['account/reg']) ?>">注册</a>
+            <a href="<?= Url::to(['help/index']) ?>">帮助中心</a>
+            <a href="<?= Url::to(['help/about']) ?>">关于我们</a>
+        </div>
+        <div class="top-right login-success" style="display: none">
+            <a class="" href="<?= Url::to(['weixin/ad-owner-plan/list']) ?>">个人中心</a>
+            <a class="" href="<?= Url::to(['help/index']) ?>">帮助中心</a>
+            <a class="" href="<?= Url::to(['help/about']) ?>">关于我们</a>
+            <a href="<?= Url::to(['/account/logout']) ?>">退出</a>p
+        </div>
+    </div>
+</div>
+<!--侧边导航-->
+<div class="slideBar clearfix">
+    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank" class="slideButton contactQQ clearfix">
+        <div class="slideCode qqCode">
+            <p>扫描或点击</p>
+            <p>直接与客服沟通</p>
+            <span></span>
+        </div>
+        <span class="icon"></span>
+    </a>
+    <a href="#" class="slideButton contactTel clearfix">
+        <div>联系电话:400-878-9551</div><span  class="icon"></span>
+    </a>
+    <a href="#" class="slideButton contactService">
+        <div class="slideCode wxCode"></div><span class="icon"></span>
+    </a>
+    <a class="slideButton toTop">
+        <span class="icon"></span>
+    </a>
+</div>
+<!--顶部图标-->
+<div class="top-logo">
+    <div class="top-logo-content clearfix">
+        <a class="logo fl" href="#"><img src="src/images/logo.png" alt="沃米优选"></a>
+        <a class="tel fr" href="#"><img src="src/images/telphone.png" alt="沃米优选电话"></a>
+    </div>
+</div>
+<!--banner-->
+<div class="banner"></div>
+<!--content-->
+<div class="content">
+    <div class="main-content">
+        <div class="top-content">
+            <!--漂浮头像-->
+            <div class="icon-lacation icon-1">
+                <div class="icon-container">
+                    <div class="top-content-icon">
+                        <div class="shadow">
+                            <p class="name">艾克里里</p>
+                            <p>平均直播数</p>
+                            <p class="num live">1210000</p>
+                            <p>粉丝数</p>
+                            <p class="num fans">6215000</p>
+                        </div>
+                    </div>
+                    <span class="small-icon"></span>
+                </div>
+            </div>
+            <div class="icon-lacation icon-2">
+                <div class="icon-container">
+                    <div class="top-content-icon">
+                        <div class="shadow">
+                            <p class="name">二姐Alice</p>
+                            <p>平均直播数</p>
+                            <p class="num live">226000</p>
+                            <p>粉丝数</p>
+                            <p class="num fans">1780000</p>
+                        </div>
+                    </div>
+                    <span class="small-icon"></span>
+                </div>
+            </div>
+            <div class="icon-lacation icon-3">
+                <div class="icon-container">
+                    <div class="top-content-icon">
+                        <div class="shadow">
+                            <p class="name">-王小强-</p>
+                            <p>平均直播数</p>
+                            <p class="num live">6259</p>
+                            <p>粉丝数</p>
+                            <p class="num fans">1564000</p>
+                        </div>
+                    </div>
+                    <span class="small-icon"></span>
+                </div>
+            </div>
+            <div class="icon-lacation icon-4">
+                <div class="icon-container">
+                    <div class="top-content-icon">
+                        <div class="shadow">
+                            <p class="name">崔子格!</p>
+                            <p>平均直播数</p>
+                            <p class="num live">32475</p>
+                            <p>粉丝数</p>
+                            <p class="num fans">1134605</p>
+                        </div>
+                    </div>
+                    <span class="small-icon"></span>
+                </div>
+            </div>
+            <div class="icon-lacation icon-5">
+                <div class="icon-container">
+                    <div class="top-content-icon">
+                        <div class="shadow">
+                            <p class="name">大胃王密子君</p>
+                            <p>平均直播数</p>
+                            <p class="num live">426000</p>
+                            <p>粉丝数</p>
+                            <p class="num fans">411000</p>
+                        </div>
+                    </div>
+                    <span class="small-icon"></span>
+                </div>
+            </div>
+            <div class="icon-lacation icon-6">
+                <div class="icon-container">
+                    <div class="top-content-icon">
+                        <div class="shadow">
+                            <p class="name">王不凡</p>
+                            <p>平均直播数</p>
+                            <p class="num live">426000</p>
+                            <p>粉丝数</p>
+                            <p class="num fans">411000</p>
+                        </div>
+                    </div>
+                    <span class="small-icon"></span>
+                </div>
+            </div>
+        </div>
+        <!--海量网红资源打造  销量冠军-->
+        <div class="title">
+            <div class="title-top">海量网红资源打造</div>
+            <div class="title-bottom">销量冠军</div>
+        </div>
+        <!--resource-->
+        <div class="resource clearfix">
+            <div class="resource-content icon-7">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">张沫凡MOMO</p>
+                <p class="sketch">喜欢分享各种臭美的视频</p>
+                <p>平均观看数<span>1589000</span></p>
+                <p>直播价<span>195000</span></p>
+                <p>粉丝数<span>1767000</span></p>
+            </div>
+            <div class="resource-content icon-8">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">苏黎黎</p>
+                <p class="sketch">Vs media 官方合作伙伴</p>
+                <p>平均观看数<span>486000</span></p>
+                <p>直播价<span>32500</span></p>
+                <p>粉丝数<span>845000</span></p>
+            </div>
+            <div class="resource-content icon-9">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">板板陈昱洁</p>
+                <p class="sketch">美拍红人板板陈昱洁</p>
+                <p>平均观看数<span>1014000</span></p>
+                <p>直播价<span>26000</span></p>
+                <p>粉丝数<span>621777</span></p>
+            </div>
+            <div class="resource-content icon-10">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">张笑桐</p>
+                <p class="sketch">自拍达人搞笑幽默主播风格</p>
+                <p>平均观看数<span>369000</span></p>
+                <p>直播价<span>15600</span></p>
+                <p>粉丝数<span>464000</span></p>
+            </div>
+            <div class="resource-content icon-11">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">远洋君</p>
+                <p class="sketch">斗鱼TV签约游戏主播</p>
+                <p>平均观看数<span>215000</span></p>
+                <p>直播价<span>78000</span></p>
+                <p>粉丝数<span>432977</span></p>
+            </div>
+            <div class="resource-content icon-12">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">super33小宝贝</p>
+                <p class="sketch">新丝路模特经纪公司模特</p>
+                <p>平均观看数<span>45000</span></p>
+                <p>直播价<span>6500</span></p>
+                <p>粉丝数<span>407000</span></p>
+            </div>
+            <div class="resource-content icon-13">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">大嘟嘟</p>
+                <p class="sketch">花椒人气女主播杜碧韵</p>
+                <p>平均观看数<span>176958</span></p>
+                <p>直播价<span>9100</span></p>
+                <p>粉丝数<span>310543</span></p>
+            </div>
+            <div class="resource-content icon-14">
+                <div class="resource-content-icon">
+                    <div class="small-icon"></div>
+                </div>
+                <p class="name">商侃kiwi</p>
+                <p class="sketch">中国内地演员</p>
+                <p>平均观看数<span>653000</span></p>
+                <p>直播价<span>65000</span></p>
+                <p>粉丝数<span>7500</span></p>
+            </div>
+        </div>
+        <a class="submit agreed-time">我要约期</a>
+        <a class="submit more-resource">我要约期</a>
+    </div>
+</div>
+<!--showCase-->
+<div class="showCase">
+    <div class="title">
+        <div class="title-top">行业kol</div>
+        <div class="title-bottom">资源套餐</div>
+    </div>
+    <!--底部轮播-->
+    <div class="case-carousel">
+        <div class="success-case" id="floor-four">
+            <div id="tab">
+                <ul class="clearfix">
+                    <li class="active1">母婴行业</li>
+                    <li>服装行业</li>
+                    <li>美食行业</li>
+                    <li>美妆</li>
+                    <li id="finance">3C行业</li>
+                </ul>
+            </div>
+            <div id="banner2">
+                <div id="wrap">
+                    <ul id="pic" class="clearfix">
+                        <li class="mom">
+                            <div class="img-box fl"></div>
+                            <div class="wx fl">
+                                <span></span>
+                                <p>微信账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-101"></span>
+                                            <div class="person-introduce fl">
+                                                <p>科学家庭育...</p>
+                                                <p>国家级出版机构专业团队联合百威...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>101470</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>280万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥140300<i>原价:154330元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-102"></span>
+                                            <div class="person-introduce fl">
+                                                <p>粥悦悦</p>
+                                                <p>粥悦悦，二胎妈妈，绘本漫画家,畅...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>62558</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>40万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥132000 <i>原价:145200元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video fl">
+                                <span></span>
+                                <p>视频网红</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-103"></span>
+                                            <div class="person-introduce fl">
+                                                <p>子瑜妈妈</p>
+                                                <p>《亲手做零食 家人放心吃》作者</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>23.6万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>219万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥49500<i>原价:54450元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-104"></span>
+                                            <div class="person-introduce fl">
+                                                <p>大晨妈妈手...</p>
+                                                <p>出版《大晨妈妈手绘育儿日记》</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>161万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>65万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥99000<i>原价:108900元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wb fl">
+                                <span></span>
+                                <p>微博账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-105"></span>
+                                            <div class="person-introduce fl">
+                                                <p>同道大叔</p>
+                                                <p>微博知名星座博主</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>1997</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>1115万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥51700<i>原价:56870元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-106"></span>
+                                            <div class="person-introduce fl">
+                                                <p>宝贝计划</p>
+                                                <p>微电商达人</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>693</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>456万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥7800 <i>原价:8580元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clothing">
+                            <div class="img-box fl"></div>
+                            <div class="wx fl">
+                                <span></span>
+                                <p>微信账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-201"></span>
+                                            <div class="person-introduce fl">
+                                                <p>IF...</p>
+                                                <p>最有态度的时尚，最有期待的生活...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>14945</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>48万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥132000<i>原价:145200元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-202"></span>
+                                            <div class="person-introduce fl">
+                                                <p>买买菌</p>
+                                                <p>自从感染了买买菌，你的钱包就...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>33897</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>60万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥66000 <i>原价:72600元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video fl">
+                                <span></span>
+                                <p>视频网红</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-203"></span>
+                                            <div class="person-introduce fl">
+                                                <p>苏黎黎</p>
+                                                <p>Vs media 官方合作伙伴</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>48600</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>84.5万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥38500<i>原价:42350元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-204"></span>
+                                            <div class="person-introduce fl">
+                                                <p>恋珊妮</p>
+                                                <p>电影导演、制片人、演员</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>354000</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>122.5万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥27500<i>原价:30250元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wb fl">
+                                <span></span>
+                                <p>微博账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-205"></span>
+                                            <div class="person-introduce fl">
+                                                <p>妖妖小精</p>
+                                                <p>《色系军团》漫画译制组负责人</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>2676</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>445万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥14300<i>原价:15730元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-206"></span>
+                                            <div class="person-introduce fl">
+                                                <p>私人挑款师</p>
+                                                <p>知名时知名时尚博主尚博主</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>12321</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>719万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥12000 <i>原价:13200元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="food">
+                            <div class="img-box fl"></div>
+                            <div class="wx fl">
+                                <span></span>
+                                <p>微信账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-301"></span>
+                                            <div class="person-introduce fl">
+                                                <p>餐饮老板内...</p>
+                                                <p>中国首席餐饮经管新媒体，最大餐...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>23109</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>92万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥110000<i>原价:121000元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-302"></span>
+                                            <div class="person-introduce fl">
+                                                <p>二更食堂</p>
+                                                <p>每晚二更，一个睡前暖心故事，陪...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>94704</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>380万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥238000 <i>原价:243000元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video fl">
+                                <span></span>
+                                <p>视频网红</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-303"></span>
+                                            <div class="person-introduce fl">
+                                                <p>一只鸡腿子</p>
+                                                <p>微博知名幽默博主</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>362.1万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>312万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥55000<i>原价:60500元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-304"></span>
+                                            <div class="person-introduce fl">
+                                                <p>大胃王密子...</p>
+                                                <p>淘女郎认证 微博签约自媒体</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>19.8万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>62万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥66000<i>原价:72600元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wb fl">
+                                <span></span>
+                                <p>微博账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-305"></span>
+                                            <div class="person-introduce fl">
+                                                <p>我与美食的...</p>
+                                                <p>微博知名博主</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>7342</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>381万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥5500<i>原价:8888元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-306"></span>
+                                            <div class="person-introduce fl">
+                                                <p>美食健康顾...</p>
+                                                <p>关注美食、关注健康</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>346</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>546万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥1700 <i>原价:1870元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="makeup">
+                            <div class="img-box fl"></div>
+                            <div class="wx fl">
+                                <span></span>
+                                <p>微信账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-401"></span>
+                                            <div class="person-introduce fl">
+                                                <p>气质范</p>
+                                                <p>你身边的私人时尚顾问</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>1090000</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>133万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥55000<i>原价:60500元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-402"></span>
+                                            <div class="person-introduce fl">
+                                                <p>她刊</p>
+                                                <p>中国女性第一刊</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>976000</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>350万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥143000 <i>原价:157300元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video fl">
+                                <span></span>
+                                <p>视频网红</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-403"></span>
+                                            <div class="person-introduce fl">
+                                                <p>小P老师</p>
+                                                <p>著名造型师</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>126万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>3600万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥49500<i>原价:72600元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-404"></span>
+                                            <div class="person-introduce fl">
+                                                <p>手边巴黎</p>
+                                                <p>时尚/旅行专栏作家</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>6.8万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>112万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥16500<i>原价:18150元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wb fl">
+                                <span></span>
+                                <p>微博账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-405"></span>
+                                            <div class="person-introduce fl">
+                                                <p>陈大咖</p>
+                                                <p>代表作美食随笔《不过一碗人间烟火》</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>311</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>29万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥11000<i>原价:12100元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-406"></span>
+                                            <div class="person-introduce fl">
+                                                <p>伊然Halm...</p>
+                                                <p>亚洲知名美肤专家</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>423</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>31万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥22000 <i>原价:24200元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="finance">
+                            <div class="img-box fl"></div>
+                            <div class="wx fl">
+                                <span></span>
+                                <p>微信账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-501"></span>
+                                            <div class="person-introduce fl">
+                                                <p>科技美学</p>
+                                                <p>那岩 每天用语音为你解读前沿科技</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>56783</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>100万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥132000<i>原价:145200元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-502"></span>
+                                            <div class="person-introduce fl">
+                                                <p>科技每日推...</p>
+                                                <p>有态度的科技生活媒体，网聚240...</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均阅读数</p>
+                                                <p>35726</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>240万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥108900 <i>原价:19790元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video fl">
+                                <span></span>
+                                <p>视频网红</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-503"></span>
+                                            <div class="person-introduce fl">
+                                                <p>app菌</p>
+                                                <p>微博知名科普视频博主</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>61.4万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>317万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥55000<i>原价:60500元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-504"></span>
+                                            <div class="person-introduce fl">
+                                                <p>主持人王不...</p>
+                                                <p>广播电视台广播电视发展中心主持人</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均观看数</p>
+                                                <p>42.6万</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>45.5万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥11000<i>原价:12100元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wb fl">
+                                <span></span>
+                                <p>微博账号</p>
+                                <div class="price-box">
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-505"></span>
+                                            <div class="person-introduce fl">
+                                                <p>techweb</p>
+                                                <p>TebWeb官方微博</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>432</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>310万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span>￥10900<i>原价:11990元</i></p>
+                                    </div>
+                                    <hr>
+                                    <div class="person">
+                                        <div>
+                                            <span class="fl por-506"></span>
+                                            <div class="person-introduce fl">
+                                                <p>百科酱</p>
+                                                <p>微博知名博主</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="read-num fl">
+                                                <p>平均点赞数</p>
+                                                <p>819</p>
+                                            </div>
+                                            <div class="fans-num fl">
+                                                <p>粉丝数</p>
+                                                <p>416万</p>
+                                            </div>
+                                        </div>
+                                        <p><span></span> ￥3000 <i>原价:3300元</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="dot" style="display: none">
+                    <li class="active2 clearfix"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id="prev"></div>
+                <div id="next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="submit">定制属于你的套餐</div>
+    <div class="title qxqy">
+        <div class="title-top">我们的服务</div>
+        <div class="title-bottom">全心全意</div>
+    </div>
+    <div class="service-bg">
+        <div class="service clearfix">
+            <div class="service-content">
+                <div class="service-img zxzb"><span></span></div>
+                <h1>在线直播</h1>
+                <p>线下直播的互动直播</p>
+            </div>
+            <div class="service-content">
+                <div class="service-img xxhd"><span></span></div>
+                <h1>线下活动</h1>
+                <p>线下活动的直播互动</p>
+            </div>
+            <div class="service-content">
+                <div class="service-img yyfb"><span></span></div>
+                <h1>预约发布</h1>
+                <p>已有视频的预约发布</p>
+            </div>
+            <div class="service-content">
+                <div class="service-img ycsp"><span></span></div>
+                <h1>原创视频</h1>
+                <p>创作视频和发布上线</p>
+            </div>
+        </div>
+    </div>
+    <div class="title wnfw">
+        <div class="title-top">专业营销经理</div>
+        <div class="title-bottom">为您服务</div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="footer-mask">
+        <div class="footer-content clearfix">
+            <div class="footer-form fl">
+                <input type="text" placeholder="请输入您的姓名" class="name">
+                <input type="text" placeholder="请输入您的公司名称" class="company">
+                <input type="text" placeholder="请输入您的联系电话" class="tel">
+                <input type="text" placeholder="请输入您的邮箱" class="email">
+                <input type="text" placeholder="请输入您的预算" class="budget">
+                <div class="dropdown" id="a">
+                    <button class="btn btn-default dropdown-toggle form-demand" type="button"  data-toggle="dropdown">
+                        请输入您的效果需求<span class="icon"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation">品牌曝光</li>
+                        <li role="presentation">用户拉新</li>
+                        <li role="presentation">活动宣传</li>
+                    </ul>
+                </div>
+                <div class="submit">提 交</div>
+            </div>
+
+            <div class="contact fr">
+                <p>400-878-9551</p>
+                <h1>全国免费咨询热线</h1>
+                <a href="#" class="contact-qq clearfix">
+                    <span class="qq-icon fl"></span>
+                    <p class="fl">QQ在线咨询</p>
+                </a>
+                <a href="#" class="contact-email clearfix">
+                    <span class="email-icon fl"></span>
+                    <p class="fl">service@51wom.com</p>
+                </a>
+            </div>
+            <div class="weixin fr">
+                <p>沃米优选</p>
+                <p>微信公众号</p>
+                <span class="QG-code"></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="dep/js/jquery-1.10.2.min.js"></script>
+<script src="dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="dep/js/sweetalert.min.js"></script>
+<script src="src/js/activity.js"></script>
+</body>
+</html>

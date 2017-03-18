@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>账号管理</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/media-vendor-user-admin/account-manage-list.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-top-wrap">
+            <div class="head-top clearfix login-cancel hidden">
+                <h3 class="welcome">欢迎来到沃米优选</h3>
+                <div class="enter clearfix">
+                    <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                    <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                    <a class="help" href="javascript:void(0)">帮助中心</a>
+                    <span class="tel">400-878-9551</span><i></i>
+                </div>
+            </div>
+            <div class="head-top clearfix login-success">
+                <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+                <div class="enter clearfix">
+                    <ul class="clearfix">
+                        <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                        <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                        <li>可用金额: <span>***</span></li>
+                        <li>冻结金额: <span>***</span></li>
+                        <li><a href="javascript:;">立即充值</a></li>
+                        <li><a href="javascript:;">帮助中心</a></li>
+                        <li>退出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head-bottom">
+            <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a class="active" href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">微信营销</a></li>
+                    <li><a href="javascript:void(0)">视频网红</a></li>
+                    <li><a href="javascript:void(0)">新浪微博</a></li>
+                    <li><a href="javascript:void(0)">解决方案</a></li>
+                    <li><a href="javascript:void(0)">案例中心</a></li>
+                    <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                当前位置：
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li class="active color-main">账号管理</li>
+            </ol>
+        </div>
+    </div>
+    <!-- 主要内容部分 -->
+    <div class="content-wrap clearfix">
+        <!--左侧导航栏-->
+        <div class="content-sidebar fl shadow">
+            <ul>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>订单管理</span>
+                    <dl>
+                        <dd><a href="#">微信订单</a></dd>
+                        <dd><a href="#">微博订单</a></dd>
+                        <dd><a href="#">视频订单</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <a class="title red" href="javascript:;"><i class="icon"></i>账号管理</a>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>财务管理</span>
+                    <dl>
+                        <dd><a href="#">全部流水</a></dd>
+                        <dd><a href="#">消费记录</a></dd>
+                        <dd><a href="#">充值记录</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>消息中心</a>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>基础资料</a>
+                </li>
+            </ul>
+        </div>
+        <!--右侧内容-->
+        <div class="content fr">
+            <div class="con-top shadow clearfix">
+                <div class="condition-area search-quick clearfix fl">
+                    <div class="dropdown fl">
+                        <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="show-default fl">全部账号</span>
+                            <span class="caret fr"></span>
+                        </div>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>全部账号</li>
+                            <li>待审核</li>
+                            <li>审核通过</li>
+                            <li>审核未通过</li>
+                        </ul>
+                    </div>
+                    <input class="form-control fl" type="text">
+                </div>
+                <button class="btn-search btn btn-danger bg-main">入驻账号</button>
+                <button class="btn-search btn btn-danger bg-main"><i></i>搜索</button>
+
+            </div>
+            <div class="table shadow">
+                <table class="table-info">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>微信账号</th>
+                        <th>粉丝数</th>
+                        <th>报价</th>
+                        <th>审核状态</th>
+                        <th>上下架状态</th>
+                        <th>操作</th>
+                        <th>备注</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="order-account">
+                            1
+                        </td>
+                        <td class="account-ID clearfix">
+                            <dl class="clearfix">
+                                <dt class="fl">
+                                    <a href="#">
+                                        <img src="../../src/images/demo.jpg" alt="">
+                                    </a>
+                                    <i></i>
+                                </dt>
+                                <dd class="fl">
+                                    <a class="ID-name plain-text-length-limit" href="#" data-limit="6" data-title="撒旦了煎熬了看来了" data-value = '11111'>爱上的那你阿萨德爱神的箭</a>
+                                    <div class="ewm-ID">
+                                        <i class="ewm"></i>
+                                        <em class="plain-text-length-limit" data-limit="6" data-title="hrekghk">hrekghk</em>
+                                        <img src="../../src/images/demo.jpg" alt="" height="80px" width="80px">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </td>
+                        <td class="">1233</td>
+                        <td class="refer-price">
+                            <ul>
+                                <li><span class="pos">单图文：</span><span><i>不接单</i><em></em></span></li>
+                                <li><span class="pos">多图文头条：</span><span><i>￥14000</i><em>（直发）</em></span></li>
+                                <li><span class="pos">多图文2条：</span><span><i>￥13000</i><em>（原创）</em></span></li>
+                                <li><span class="pos">多图文3-N条：</span><span><i>￥13000</i><em>（直发）</em></span></li>
+                            </ul>
+                        </td>
+                        <td>
+                           <span class="green">审核通过</span>
+                        </td>
+                        <td class="check-status">
+                            <span class="out-shelves">已下架</span>
+                            <div class="dropdown fl current-status">
+                                <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="show-default fl">已上架</span>
+                                    <span class="caret fr"></span>
+                                </div>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li data-toggle="modal" data-target="#modal-on-shelves">已上架</li>
+                                    <li data-toggle="modal" data-target="#modal-out-shelves">已下架</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="opetate">
+                            <a href="#">详情</a>
+                        </td>
+                        <td>
+                            <span class="remark plain-text-length-limit" data-limit="6" data-title="单图文不接单单图文不接单">单图文不接单单图文不接单</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="order-account">
+                            1
+                        </td>
+                        <td class="account-ID clearfix">
+                            <dl class="clearfix">
+                                <dt class="fl">
+                                    <a href="#">
+                                        <img src="../../src/images/demo.jpg" alt="">
+                                    </a>
+                                    <i></i>
+                                </dt>
+                                <dd class="fl">
+                                    <a class="ID-name plain-text-length-limit" href="#" data-limit="6" data-title="撒旦了煎熬了看来了" data-value = '11111'>爱上的那你阿萨德爱神的箭</a>
+                                    <div class="ewm-ID">
+                                        <i class="ewm"></i>
+                                        <em class="plain-text-length-limit" data-limit="6" data-title="hrekghk">hrekghk</em>
+                                        <img src="../../src/images/demo.jpg" alt="" height="80px" width="80px">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </td>
+                        <td class="">1233</td>
+                        <td class="refer-price">
+                            <ul>
+                                <li><span class="pos">单图文：</span><span><i>不接单</i><em></em></span></li>
+                                <li><span class="pos">多图文头条：</span><span><i>￥14000</i><em>（直发）</em></span></li>
+                                <li><span class="pos">多图文2条：</span><span><i>￥13000</i><em>（原创）</em></span></li>
+                                <li><span class="pos">多图文3-N条：</span><span><i>￥13000</i><em>（直发）</em></span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span class="red">待审核</span>
+                        </td>
+                        <td class="check-status">
+                            <span class="out-shelves current-status">已下架</span>
+                            <div class="dropdown fl">
+                                <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="show-default fl">已上架</span>
+                                    <span class="caret fr"></span>
+                                </div>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li data-toggle="modal" data-target="#modal-on-shelves">已上架</li>
+                                    <li data-toggle="modal" data-target="#modal-out-shelves">已下架</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="opetate">
+                            <a href="#">详情</a>
+                        </td>
+                        <td>
+                            <span class="remark plain-text-length-limit" data-limit="6" data-title="单图文不接单单图文不接单">单图文不接单单图文不接单</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="order-account">
+                            1
+                        </td>
+                        <td class="account-ID clearfix">
+                            <dl class="clearfix">
+                                <dt class="fl">
+                                    <a href="#">
+                                        <img src="../../src/images/demo.jpg" alt="">
+                                    </a>
+                                    <i></i>
+                                </dt>
+                                <dd class="fl">
+                                    <a class="ID-name plain-text-length-limit" href="#" data-limit="6" data-title="撒旦了煎熬了看来了" data-value = '11111'>爱上的那你阿萨德爱神的箭</a>
+                                    <div class="ewm-ID">
+                                        <i class="ewm"></i>
+                                        <em class="plain-text-length-limit" data-limit="6" data-title="hrekghk">hrekghk</em>
+                                        <img src="../../src/images/demo.jpg" alt="" height="80px" width="80px">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </td>
+                        <td class="">1233</td>
+                        <td class="refer-price">
+                            <ul>
+                                <li><span class="pos">单图文：</span><span><i>不接单</i><em></em></span></li>
+                                <li><span class="pos">多图文头条：</span><span><i>￥14000</i><em>（直发）</em></span></li>
+                                <li><span class="pos">多图文2条：</span><span><i>￥13000</i><em>（原创）</em></span></li>
+                                <li><span class="pos">多图文3-N条：</span><span><i>￥13000</i><em>（直发）</em></span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <span class="red">审核不通过</span>
+                        </td>
+                        <td class="check-status">
+                            <span class="out-shelves current-status">已下架</span>
+                            <div class="dropdown fl">
+                                <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="show-default fl">已上架</span>
+                                    <span class="caret fr"></span>
+                                </div>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li data-toggle="modal" data-target="#modal-on-shelves">已上架</li>
+                                    <li data-toggle="modal" data-target="#modal-out-shelves">已下架</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="opetate">
+                            <a href="#">详情</a>
+                            <a href="#" data-toggle="modal" data-target="#modal-invalid-order-info">原因</a>
+                        </td>
+                        <td>
+                            <span class="remark plain-text-length-limit" data-limit="6" data-title="单图文不接单单图文不接单">单图文不接单单图文不接单</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="no-order">暂无订单</div>
+            </div>
+            <!--分页-->
+            <div class="table-footer clearfix">
+                <div class="page-wb fl system_page">
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                    <em> ... </em>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                    <div class="count fl">
+                        <i class="fl">前往</i>
+                        <input type="text" name="tiaozhuan" class="text fl now_pages">
+                        <i class="fl">页</i>
+                        <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--侧边栏联系方式-->
+    <div class="side-bar">
+        <ul>
+            <li class="tel">
+                <div class="tel-con detail">
+                    <span></span>
+                    <p>客服电话</p>
+                    <p>400-878-9551</p>
+                </div>
+                <i></i>
+            </li>
+            <li class="qq">
+                <div class="qq-con detail">
+                    <span></span>
+                    <p>客服QQ</p>
+                    <p>2544745674</p>
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+                </div>
+                <i></i>
+            </li>
+            <li class="weixin">
+                <div class="weixin-con detail">
+                    <p>微信扫一扫</p>
+                    <span></span>
+                </div>
+                <i></i>
+            </li>
+            <li class="top">
+                <i></i>
+            </li>
+        </ul>
+    </div>
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer font-12">
+            <ul>
+                <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+                <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+                <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+                <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+            </ul>
+            <div class="footer-bot">
+                <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+            </div>
+        </div>
+    </div>
+    <!--上架modal-->
+    <div id="modal-on-shelves" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <h4>是否确认上架?</h4>
+                    <div class="btn-opetate-order">
+                        <button class="make-sure btn btn-danger bg-main" data-dismiss="modal">确认</button>
+                        <button class="cancel btn btn-danger bg-main" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下架modal-->
+    <div id="modal-out-shelves" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body clearfix">
+                    <h4>是否确认下架?</h4>
+                    <div class="btn-opetate-order">
+                        <button class="make-sure btn btn-danger bg-main" data-dismiss="modal">确认</button>
+                        <button class="cancel btn btn-danger bg-main" data-dismiss="modal">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--原因modal-->
+    <div id="modal-invalid-order-info" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header clearfix"><span class="modal-title red fl">原因</span><i class="close fr" data-dismiss="modal">X</i></div>
+                <div class="modal-body">
+                    <div class="reason-con clearfix">
+                        <span class="modal-body-title reason fl">原 因：</span>
+                        <div class="reason-area fl">安静的户口和khaki好看</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../dep/js/jquery-1.10.2.min.js"></script>
+    <script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+    <script src="../../dep/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../../dep/datetimepicker/datetime.js"></script>
+    <script src="../../dep/layer/layer.js"></script>
+    <script src="../../dep/plupload/plupload.full.min.js"></script>
+    <script src="../../src/js/plupload.js"></script>
+    <script src="../../src/js/media-vendor-user-admin/account-manage-list.js"></script>
+    <script src="../../src/js/site-stage-layout-common.js"></script>
+    <script src="../../dep/js/wom-tool.js"></script>
+</body>
+</html>

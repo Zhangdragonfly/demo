@@ -1,0 +1,413 @@
+@charset "utf-8";
+body{
+	min-width: 1200px;
+}
+.w-1200{
+	width: 1200px;
+	margin: 0 auto;
+	background: #ffffff;
+	border: 1px solid #DDDDDD;
+}
+.w-592{
+	width: 592px;
+	padding: 16px 24px;
+	background: #ffffff;
+	border: 1px solid #DDDDDD;
+}
+.bread .breadcrumb{
+	background: #ffffff;
+}
+.shadow{
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	margin-bottom: 12px;
+}
+.show-all-info{
+	position: absolute;
+	z-index: 5999;
+	border: solid 1px #bfbfbf;
+	color: #353535;
+	background: #FFFFFF;
+	border-radius: 3px;
+	/*padding: 0 5px;*/
+	display: none;
+	font-size: 12px;
+	margin: -37px 0 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~账号基础信息~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.base-info{
+	padding: 30px 36px;
+}
+.account-con{
+	width: 614px;
+	line-height: 30px;
+	margin-right: 20px;
+	position: relative;
+}
+.account-pic{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 50%;
+	position: relative;
+	margin:10px 36px 0 0;
+}
+.account-pic img{
+	position: absolute;
+	left: -165px;
+	top: -165px;
+}
+.account-intro p{
+	display: inline-block;
+	cursor: pointer;
+}
+.account-name span:nth-of-type(1){
+	font-size: 18px;
+	color: #000000;
+	margin-right: 10px;
+	font-weight: 600;
+}
+.fans-num,
+.account-name i
+{
+	color: #8D8D8D;
+}
+.account-con-info{
+	color: #575757;
+}
+.account-property{
+	width: 430px;
+}
+.ewm{
+	position: absolute;
+	right: 0;
+	top: -25px;
+}
+.ewm img{
+	border: 1px solid #D6D6D6;
+	border-radius: 5px;
+	display: none;
+	margin-right: 10px;
+}
+.ewm span{
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	margin-top: 28px;
+	background: url("../../images/detial.png") 0 0 no-repeat;
+}
+.resource-s span{
+	vertical-align: top;
+	margin-right: 20px;
+	font-size: 18px;
+	color: #000000;
+}
+.resource-s ul{
+	display: inline-block;
+	width: 190px;
+}
+.resource-s ul li{
+	float: left;
+	padding: 0 10px;
+	line-height: 24px;
+	border: 1px solid #E37381;
+	border-radius: 3px;
+	margin: 0 11px 9px 0;
+	color: #888888;
+}
+.account-sign{
+	margin-top: 20px;
+}
+.account-relate-num a{
+	display: block;
+	margin-top: 8px;
+}
+.account-relate-num a:nth-of-type(1){
+	margin-top: 16px;
+}
+.account-relate-num a i{
+	display: inline-block;
+	width: 38px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right: 8px;
+	background: url("../../images/detial.png") 0 -55px no-repeat;
+}
+.account-relate-num a:nth-of-type(2) i{
+	background-position: 0 -94px;
+}
+.account-analyze{
+	width: 1050px;
+	height: 112px;
+	padding: 12px;
+	background: #FDF3F4;
+	line-height: 24px;
+	font-size: 12px;
+	margin-top: 25px;
+}
+.account-analyze h5{
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~账号价格~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.account-price{
+	margin-bottom: 15px;
+}
+.account-price,
+.data-summary,
+.data-show-map
+{
+	padding: 16px 24px;
+}
+.con-header{
+	position: relative;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.headline i{
+	display: inline-block;
+	width: 6px;
+	height: 23px;
+	vertical-align: top;
+	margin-right: 10px;
+	background: url("../../images/detial.png") 0 -149px no-repeat;
+}
+.help-icon{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	vertical-align: middle;
+	margin-left: 4px;
+	cursor: pointer;
+	background: url("../../images/detial.png") -21px -149px no-repeat;
+}
+.con-header{
+	position: relative;
+}
+.help-explain-con{
+	width: 248px;
+	border: 1px solid #B8B8B8;
+	border-radius: 3px;
+	padding: 0 5px;
+	line-height: 20px;
+	position: absolute;
+	left: 114px;
+	top: -16px;
+	background: #ffffff;
+	text-align: left;
+	font-size: 12px;
+	color: #484644;
+	display: none;
+	z-index: 10;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.help-explain-con h3{
+	line-height: 35px;
+	font-size: 14px;
+	color: #C81624;
+	border-bottom: 1px solid #EBEBEB;
+}
+.help-explain-con em{
+	display: inline-block;
+	border: 10px solid transparent;
+	border-right: 10px solid #fff;
+	position: absolute;
+	left: -19px;
+	top: 18px;
+}
+.help-explain-con p{
+	font-weight: normal;
+	margin: 5px 0;
+}
+.help-explain-con em:nth-of-type(1){
+	border-right: 10px solid #B8B8B8;
+	left: -20px;
+}
+.pos-price{
+	width: 690px;
+	line-height: 38px;
+	margin:0 62px 0 30px;
+}
+.pos-price table{
+	width: 100%;
+}
+.pos-price tbody tr:nth-child(2n+1){
+	background: #FDF3F4;
+}
+.pos-price thead th{
+	font-size: 16px;
+	font-weight: normal;
+	padding-left: 15px;
+	color: #000000;
+}
+.pos-price tbody td{
+	padding-left: 20px;
+}
+.price-indate p{
+	line-height: 38px;
+	margin-bottom: 10px;
+}
+.order-remarks p{
+	margin-top: 10px;
+	line-height: 24px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~数据概要~~~~~~~~~~~~~~~~~~~~~~~*/
+.data-summary{
+	margin-bottom: 19px;
+}
+.data-show-l{
+	width: 656px;
+	height: 164px;
+	border-right: 1px solid #C1C1C1;
+}
+.data-show-l ul{
+	margin: 26px 0 0 62px;
+}
+.data-show-l li{
+	float: left;
+	margin-right: 64px;
+}
+.data-show-l span{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
+.data-pic{
+	display: block;
+	width: 54px;
+	height: 54px;
+	margin: 0 0 12px 25px;
+	background: url("../../images/detial.png") -53px 0 no-repeat;
+}
+.data-show-l li:nth-of-type(2) .data-pic{
+	background-position: -123px 0;
+	margin-left: 6px;
+}
+.data-show-l li:nth-of-type(3) .data-pic{
+	background-position: -53px -79px;
+	margin-left: 6px;
+}
+.data-show-l li:nth-of-type(4) .data-pic{
+	background-position: -127px -78px;
+	margin-left: 6px;
+}
+.data-typ{
+	color: #9B9B9B;
+}
+.data-num{
+	font-size: 20px;
+	color: #575757;
+}
+.data-show-r{
+	width: 490px;
+	margin-top: 21px;
+}
+.data-show-r ol{
+	margin: 2px 0 0 54px;
+}
+.data-show-r li{
+	float: left;
+	margin-right: 68px;
+	text-align: center;
+}
+.data-show-r li:nth-of-type(3){
+	margin-right: 0;
+}
+.sum-data-type{
+	display: block;
+	width: 77px;
+	height: 77px;
+	border-radius: 50%;
+	color: #545454;
+	line-height: 77px;
+	border: 2px solid #C41A27;
+}
+.sum-type{
+	line-height: 60px;
+	color: #000000;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~运维情况~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.data-map-l{
+	width: 580px;
+}
+.art-data{
+	margin: 61px 0 54px 0;
+}
+.art-data ul{
+	margin: 10px 0 0 20px;
+}
+.art-data ul li{
+	float: left;
+	margin-right: 62px;
+	text-align: center;
+}
+.art-data ul li span{
+	display: block;
+}
+.art-data .art-num{
+	width: 123px;
+	height: 123px;
+	border-radius: 50%;
+	border: 2px solid #C41A27;
+	line-height: 123px;
+	color: #C41A27;
+	font-size: 22px;
+}
+.art-type{
+	line-height: 26px;
+	margin: 20px 0;
+	font-size: 16px;
+}
+.map-property{
+	width: 548px;
+}
+.read-num-map,
+.trend-data-map,
+.like-num-map,
+.pub-date-week-map,
+.pub-date-map
+{
+	width: 540px;
+	height: 260px;
+}
+.pub-date-week-map,
+.pub-date-map
+{
+	margin-top: -20px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~文章~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.total-art{
+	width: 1200px;
+	margin: 26px auto 0;
+}
+.art-info{
+	border-top: 1px solid #E6E6E6;
+	line-height: 36px;
+}
+.art-info:nth-of-type(1){
+	border-top: none;
+}
+.art-head{
+	margin-top: 12px;
+}
+.art-head .title{
+	font-size: 18px;
+	color: #000000;
+}
+.art-info p a{
+	color: #8A8A8A;
+}
+.art-head .date-time,
+.art-info ul li{
+	font-size: 12px;
+	color: #000000;
+	margin-right: 36px;
+}
+.more-art{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: right;
+}
+.more-art a{
+	color: #C41A27;
+	line-height: 52px;
+}

@@ -1,0 +1,538 @@
+@charset "utf-8";
+body{
+	min-width: 1200px;
+	background: #ffffff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~banner图~~~~~~~~~~~~~~~~~~~~~~*/
+.nav{
+	margin-bottom: 0;
+}
+.ad-banner{
+	width: 100%;
+	height: 438px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 30px;
+}
+.ad-banner ul{
+	height: 438px;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	margin-left: -960px;
+}
+.ad-banner ul li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 438px;
+	/*opacity: 0;*/
+}
+.ad-banner ul li.current{
+	z-index: 10;
+}
+.ad-banner ul li a{
+	display: block;
+}
+.ad-banner ol{
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	bottom: 10px;
+	z-index: 20;
+}
+.ad-banner ol li{
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	float: left;
+	margin: 0 7px;
+	background: #7F7F7F;
+	border-radius: 50%;
+	transition: all 0.5s;
+}
+.slider-nav .active,
+.ad-banner ol li:hover
+{
+	background: #C51623;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~案例中心~~~~~~~~~~~~~~~~~~~~*/
+.case-center{
+	text-align: center;
+	width: 1200px;
+	margin: 0 auto;
+}
+.module-header{
+	position: relative;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.module-header h3
+{
+	font-size: 20px;
+	color: #1E1E1E;
+	line-height: 30px;
+	position: relative;
+}
+.module-header span{
+	font-size: 12px;
+	color: #1E1E1E;
+	line-height: 34px;
+}
+.module-header .bg-icon{
+	display: block;
+	width: 424px;
+	height: 12px;
+	margin: 4px auto 0;
+	background: url("../images/case-center.png") 0 -88px no-repeat;
+}
+.case-header .more{
+	display: inline-block;
+	width: 45px;
+	height: 33px;
+	border: 1px solid #D2454E;
+	color: #D2454E;
+	line-height: 33px;
+	border-radius: 3px;
+	position: absolute;
+	right: 70px;
+	top: 20px;
+}
+.case-con-header{
+	margin-bottom: 30px;
+}
+.case-con-header li{
+	float: left;
+	margin: 0 50px;
+	height: 50px;
+	position: relative;
+}
+.case-con-header li span{
+	display: block;
+	cursor: pointer;
+	width: 90px;
+	height: 32px;
+	line-height: 32px;
+	transition: all 0.5s;
+	font-size: 16px;
+	color: #1E1E1E;
+}
+.case-con-header li span:hover,
+li.current-nav span{
+	border-radius: 5px;
+	text-align: center;
+	background: #C81624;
+	color: #ffffff;
+}
+.current-nav:hover i,
+.current-nav i{
+	display: block;
+	width: 14px;
+	height: 9px;
+	position: absolute;
+	left: 50%;
+	margin: 4px 0 0 -7px;
+	background: url("../images/case-center.png") -5px -4px no-repeat;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~案例中心动态效果部分CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*.part-case{
+	padding: 0 60px;
+}*/
+.case-info{
+	height: 600px;
+	width: 1148px;
+	padding: 0 46px;
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+.current-case-info{
+	display: block;
+}
+.part-case-info-con{
+	position: absolute;
+	left: 46px;
+	top: 0;
+}
+.case-info-con{
+	float: left;
+	/*margin-top: 20px;*/
+	width: 1102px;
+}
+.case-info-con .pic-l{
+	width: 310px;
+	height: 530px;
+	background: #C81624;
+	margin-right: 44px;
+}
+.case-info-r{
+	width: 700px;
+	text-align: left;
+}
+.case-resource{
+	margin-bottom: 36px;
+}
+.case-resource h4{
+	font-size: 16px;
+	color: #C81624;
+	line-height: 16px;
+	margin-bottom: 23px;
+}
+.case-resource p{
+	color: #8C8C8C;
+	font-size: 12px;
+	line-height: 22px;
+}
+.case-light p{
+	margin-bottom: 43px;
+}
+.case-light li{
+	float: left;
+	margin-right: 70px;
+}
+.data-bg{
+	width: 60px;
+	height: 60px;
+	margin-right: 11px;
+	vertical-align: middle;
+	background: url("../images/case-center.png") -738px -271px no-repeat;
+}
+.read-bg{
+	background-position: -576px -272px;
+}
+.like-bg{
+	background-position: -657px -272px;
+}
+.data-show span{
+	display: block;
+	color: #878787;
+}
+.data-show .data-num{
+	font-size: 30px;
+	color: #C81622;
+}
+.case-media-partners li{
+	float: left;
+	margin-right: 30px;
+}
+.data-pic{
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	position: relative;
+	border: 2px solid #C81622;
+	margin-right: 15px;
+}
+.data-pic img{
+	position: absolute;
+	left: -172px;
+	top: -172px;
+}
+.data-show{
+	margin-top: 5px;
+}
+.data-show span{
+	display: block;
+	text-align: left;
+	line-height: 22px;
+}
+.case-media-partners .data-show span:nth-of-type(2){
+	width: 90px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.slider-list{
+	position: absolute;
+	bottom: 28px;
+	left: 50%;
+}
+.slider-list li{
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	float: left;
+	margin: 0 7px;
+	background: #7F7F7F;
+	border-radius: 50%;
+	transition: all 0.5s;
+}
+.slider-list li.current-case{
+	background: #C81622;
+}
+.case-info .prev,
+.case-info .next{
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -31px;
+	cursor: pointer;
+	background: url("../images/case-center.png") -576px -392px no-repeat;
+}
+.case-info .next{
+	left: auto;
+	right: 0;
+	background-position: -652px -392px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~品牌客户~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.brand-customer{
+	width: 100%;
+	height: 408px;
+	background: #F5F5F5;
+}
+.in-brand-customer{
+	width: 1200px;
+	margin: 0 auto;
+}
+.brand-header{
+	padding-top: 26px;
+}
+.brand-logo li{
+	float: left;
+	width: 254px;
+	height: 89px;
+	cursor: pointer;
+	margin: 0 40px 27px 0;
+	background: url("../images/case-center.png") -295px -694px no-repeat;
+}
+.brand-logo li:hover{
+	background: url("../images/case-center.png") -0px -694px no-repeat;
+}
+.brand-logo .pepsi:hover{
+	background-position: -0px -694px;
+}
+.brand-logo .philips{
+	background-position: -294px -799px;
+}
+.brand-logo .philips:hover{
+	background-position: -0px -799px;
+}
+.brand-logo .sh-brank{
+	background-position: -295px -272px;
+}
+.brand-logo .sh-brank:hover{
+	background-position: -0px -272px;
+}
+.brand-logo .ford{
+	background-position: -295px -377px;
+}
+.brand-logo .ford:hover{
+	background-position: -0px -377px;
+}
+.brand-logo .bridgestone{
+	background-position: -294px -904px;
+}
+.brand-logo .bridgestone:hover{
+	background-position: -0px -904px;
+}
+.brand-logo .china-mobile{
+	background-position: -294px -1009px;
+}
+.brand-logo .china-mobile:hover{
+	background-position: -0px -1009px;
+}
+.brand-logo .clear-logo{
+	height: 91px;
+	background-position: -294px -482px;
+}
+.brand-logo .clear-logo:hover{
+	background-position: -0px -482px;
+}
+.brand-logo .lining{
+	background-position: -295px -589px;
+}
+.brand-logo .lining:hover{
+	background-position: -0px -589px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~平台优势~~~~~~~~~~~~~~~~~~~~~~*/
+.platform-advantage{
+	padding: 20px 0 80px 0;
+}
+.advantage-type{
+	width: 1200px;
+	margin: 0 auto;
+}
+.advantage-type p{
+	width: 196px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #575757;
+}
+.advantage-per{
+	float: left;
+	margin: 0 40px;
+	text-align: center;
+}
+.advantage-per span{
+	display: block;
+	width: 113px;
+	height: 117px;
+	margin:0 0 20px 30px;
+	background: url("../images/case-center.png") -3px -141px no-repeat;
+	transition: all 2s;
+}
+.advantage-per span:hover{
+	transform: rotateY(360deg);
+}
+.advantage-fast span{
+	background-position: -142px -141px;
+}
+.advantage-good span{
+	background-position: -281px -141px;
+}
+.advantage-save span{
+	background-position: -420px -146px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~底部~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer{
+	height: 360px;
+	text-align: left;
+	font-size: 14px;
+	background-color: #252828;
+	padding-bottom:10px;
+}
+.footer .footer-con{
+	width: 1200px;
+	height: 226px;
+	padding-top: 26px;
+	margin:0 auto;
+}
+
+.footer .footer-con .footer-left{
+	width: 140px;
+	margin-left:35px;
+	display: inline-block;
+	float: left;
+}
+.footer-con .footer-left h2{
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height:1.6;
+}
+.footer-con .footer-left img{
+	display: block;
+	margin: 5px auto 0;
+}
+.footer-con .footer-mid{
+	width: 794px;
+	min-height: 200px;
+	display: inline-block;
+}
+.footer-con .footer-mid ul{
+	width: 25%;
+	display: inline-block;
+	float: left;
+	padding-left:45px;
+}
+.footer-con .footer-mid ul li{
+	margin-bottom:16px;
+	cursor: pointer;
+}
+.footer-con .footer-mid ul li .footer-mid-icon{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	float: left;
+	margin-left:-30px;
+	background: url("../images/index-footer.png") no-repeat;
+}
+.footer-con .footer-mid ul li .shhyx{
+	background-position: -225px -42px;
+}
+.footer-con .footer-mid ul li .znsj{
+	background-position: -249px -42px;
+}
+.footer-con .footer-mid ul li .jjfa{
+	background-position: -273px -42px;
+}
+.footer-con .footer-mid ul li .jxal{
+	background-position: -297px -42px;
+}
+.footer-con .footer-mid ul li .ppfw{
+	background-position: -327px -47px;
+}
+.footer-con .footer-mid ul li:first-child{
+	color: #808080;
+	font-size: 18px;
+}
+.footer-con .footer-mid ul li a,.footer-con .footer-mid ul li span{
+	color: #808383;
+	font-size: 14px;
+}
+.footer-con .footer-mid ul li a:hover{
+	color: #e6444f;
+}
+.footer-con .footer-right{
+	width: 230px;
+	border-left:1px solid #808383;
+	float: right;
+	text-align: center;
+	display: inline-block;
+}
+.footer-con .footer-right h2{
+	font-size: 30px;
+	color: #e5434e;
+	margin-bottom:15px;
+}
+.footer-con .footer-right p{
+	font-size: 18px;
+	color: #babdbc;
+	margin-bottom:18px;
+}
+.footer-con .footer-right a{
+	width: 165px;
+	height: 34px;
+	display: inline-block;
+	margin: 0 auto;
+}
+.footer-con .footer-right .footer-qq{
+	margin-bottom:20px;
+}
+.footer-con .footer-right .footer-qq,.footer-con .footer-right .footer-email{
+	color: #fff;
+	font-size: 14px;
+	line-height: 29px;
+	border: 2px solid #e5434e;
+}
+.footer-right .footer-qq .qq-icon{
+	width: 17px;
+	height: 17px;
+	background: url("../images/index-footer.png") no-repeat;
+	background-position: -232px -1px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.footer-right .footer-email .email-icon{
+	width: 17px;
+	height: 17px;
+	background: url("../images/index-footer.png") no-repeat;
+	background-position: -255px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.footer .footer-bottom{
+	width: 100%;
+	height: 120px;
+	background-color: #212424;
+	padding-top:20px;
+}
+.footer .footer-bottom p{
+	text-align: center;
+	font-family: 宋体;
+	color: #fff;
+	font-size: 12px;
+}
+.footer .footer-bottom .footer-bottom-img{
+	margin: 20px auto 0;
+	width: 240px;
+	height: 42px;
+	background:url("../images/index-footer.png") no-repeat;
+	background-position: 5px -82px;
+}

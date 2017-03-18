@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>报表管理-微信报表</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/wom.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/ad-owner-user-admin/report-forms-manage/report-forms-list.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <div class="head-top-wrap">
+        <div class="head-top clearfix login-cancel hidden">
+            <h3 class="welcome">欢迎来到沃米优选</h3>
+            <div class="enter clearfix">
+                <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                <a class="help" href="javascript:void(0)">帮助中心</a>
+                <span class="tel">400-878-9551</span><i></i>
+            </div>
+        </div>
+        <div class="head-top clearfix login-success">
+            <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+            <div class="enter clearfix">
+                <ul class="clearfix">
+                    <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                    <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                    <li>可用金额: <span>***</span></li>
+                    <li>冻结金额: <span>***</span></li>
+                    <li><a href="javascript:;">立即充值</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li>退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a class="active" href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">微信营销</a></li>
+                <li><a href="javascript:void(0)">视频网红</a></li>
+                <li><a href="javascript:void(0)">新浪微博</a></li>
+                <li><a href="javascript:void(0)">解决方案</a></li>
+                <li><a href="javascript:void(0)">案例中心</a></li>
+                <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="bread">
+        <ol class="breadcrumb font-500">
+            当前位置：
+            <li><a href="#">首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">报表管理</a></li>
+            <li class="active color-main">微信报表</li>
+        </ol>
+    </div>
+</div>
+<!-- 主要内容部分 -->
+<div class="content-wrap clearfix">
+    <!--左侧导航栏-->
+    <div class="content-sidebar fl shadow">
+        <ul>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>活动管理</span>
+                <dl>
+                    <dd><a href="#">微信活动</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>订单管理</span>
+                <dl>
+                    <dd><a href="#">微信订单</a></dd>
+                    <dd><a href="#">微博订单</a></dd>
+                    <dd><a href="#">视频订单</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>媒体库管理</span>
+                <dl>
+                    <dd><a href="javascript:;">微信 </a></dd>
+                    <dd><a href="javascript:;">微博</a></dd>
+                    <dd><a href="javascript:;">视频</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon rotate"></i>
+                <span class="title active"><i class="icon"></i>报表管理</span>
+                <dl class="show">
+                    <dd><a class="on-click" href="javascript:;">微信报表</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>素材管理</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>财务管理</span>
+                <dl>
+                    <dd><a href="#">全部流水</a></dd>
+                    <dd><a href="#">消费记录</a></dd>
+                    <dd><a href="#">充值记录</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>消息中心</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <a class="title" href="javascript:;"><i class="icon"></i>个人设置</a>
+                <dl>
+                    <dd><a href="#">基础资料</a></dd>
+                    <dd><a href="#">修改登录密码</a></dd>
+                    <dd><a href="#">新设支付密码</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <div class="content fr">
+        <div class="con-top shadow clearfix">
+            <div class="account-name fl font-14 font-500">
+                账号名称/ID : <input type="text">
+            </div>
+            <div class="publish-con-title fl font-14 font-500">
+                发布内容标题 : <input type="text">
+            </div>
+            <button class="btn-search btn btn-danger bg-main fr"><i></i>搜索</button>
+        </div>
+        <div class="table shadow">
+            <table>
+                <thead>
+                <tr>
+                    <th>选择</th>
+                    <th>订单号</th>
+                    <th>投放账号</th>
+                    <th>投放位置</th>
+                    <th>阅读量</th>
+                    <th>点赞数</th>
+                    <th>发布内容标题</th>
+                    <th>发布链接</th>
+                    <th>发布时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td><input type="checkbox"></td>
+                    <td class="order-number">20161224</td>
+                    <td class="account" width="150">
+                        <a href="javascript:;" class="plain-text-length-limit" data-limit="7" data-title="玩车教授erp雷雨晴雷教授">玩车教授雷雨晴雷教授</a>
+                        <span class="plain-text-length-limit" data-limit="16">wanchejiaoshou阿萨德啊adadas</span>
+                        <span class="follower-account">粉丝数 : 12万</span>
+                    </td>
+                    <td class="msg-status">
+                        <span>多图文一条</span>
+                        <span>(只原创)</span>
+                    </td>
+                    <td class="reading-account">25000</td>
+                    <td class="agree-account">200</td>
+                    <td class="title-publish-con">双十二推广</td>
+                    <td class="publish-link" width="140"><span class="publish-link-ellipsis plain-text-length-limit" data-limit="20" data-title="http://www.51wom.local">http://www.51wom.local</span></td>
+                    <td class="publish-time">2016.12.10</td>
+                    <td class="operate"><a href="Javascript:;">查看报表</a></td>
+                </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="order-number">20161224</td>
+                        <td class="account" width="150">
+                            <a href="javascript:;" class="plain-text-length-limit" data-limit="7" data-title="玩车教授erp雷雨晴雷教授">玩车教授雷雨晴雷教授</a>
+                            <span class="plain-text-length-limit" data-limit="16">wanchejiaoshou阿萨德啊adadas</span>
+                            <span class="follower-account">粉丝数 : 12万</span>
+                        </td>
+                        <td class="msg-status">
+                            <span>多图文一条</span>
+                            <span>(只原创)</span>
+                        </td>
+                        <td class="reading-account">25000</td>
+                        <td class="agree-account">200</td>
+                        <td class="title-publish-con">双十二推广</td>
+                        <td class="publish-link" width="140"><span class="publish-link-ellipsis plain-text-length-limit" data-limit="20" data-title="http://www.51wom.local">http://www.51wom.local</span></td>
+                        <td class="publish-time">2016.12.10</td>
+                        <td class="operate"><a href="Javascript:;">查看报表</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="order-number">20161224</td>
+                        <td class="account" width="150">
+                            <a href="javascript:;" class="plain-text-length-limit" data-limit="7" data-title="玩车教授erp雷雨晴雷教授">玩车教授雷雨晴雷教授</a>
+                            <span class="plain-text-length-limit" data-limit="16">wanchejiaoshou阿萨德啊adadas</span>
+                            <span class="follower-account">粉丝数 : 12万</span>
+                        </td>
+                        <td class="msg-status">
+                            <span>多图文一条</span>
+                            <span>(只原创)</span>
+                        </td>
+                        <td class="reading-account">25000</td>
+                        <td class="agree-account">200</td>
+                        <td class="title-publish-con">双十二推广</td>
+                        <td class="publish-link" width="140"><span class="publish-link-ellipsis plain-text-length-limit" data-limit="20" data-title="http://www.51wom.local">http://www.51wom.local</span></td>
+                        <td class="publish-time">2016.12.10</td>
+                        <td class="operate"><a href="Javascript:;">查看报表</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="order-number">20161224</td>
+                        <td class="account" width="150">
+                            <a href="javascript:;" class="plain-text-length-limit" data-limit="7" data-title="玩车教授erp雷雨晴雷教授">玩车教授雷雨晴雷教授</a>
+                            <span class="plain-text-length-limit" data-limit="16">wanchejiaoshou阿萨德啊adadas</span>
+                            <span class="follower-account">粉丝数 : 12万</span>
+                        </td>
+                        <td class="msg-status">
+                            <span>多图文一条</span>
+                            <span>(只原创)</span>
+                        </td>
+                        <td class="reading-account">25000</td>
+                        <td class="agree-account">200</td>
+                        <td class="title-publish-con">双十二推广</td>
+                        <td class="publish-link" width="140"><span class="publish-link-ellipsis plain-text-length-limit" data-limit="20" data-title="http://www.51wom.local">http://www.51wom.local</span></td>
+                        <td class="publish-time">2016.12.10</td>
+                        <td class="operate"><a href="Javascript:;">查看报表</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td class="order-number">20161224</td>
+                        <td class="account" width="150">
+                            <a href="javascript:;" class="plain-text-length-limit" data-limit="7" data-title="玩车教授erp雷雨晴雷教授">玩车教授雷雨晴雷教授</a>
+                            <span class="plain-text-length-limit" data-limit="16">wanchejiaoshou阿萨德啊adadas</span>
+                            <span class="follower-account">粉丝数 : 12万</span>
+                        </td>
+                        <td class="msg-status">
+                            <span>多图文一条</span>
+                            <span>(只原创)</span>
+                        </td>
+                        <td class="reading-account">25000</td>
+                        <td class="agree-account">200</td>
+                        <td class="title-publish-con">双十二推广</td>
+                        <td class="publish-link" width="140"><span class="publish-link-ellipsis plain-text-length-limit" data-limit="20" data-title="http://www.51wom.local">http://www.51wom.local</span></td>
+                        <td class="publish-time">2016.12.10</td>
+                        <td class="operate"><a href="Javascript:;">查看报表</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="no-order">暂无订单</div>
+        </div>
+        <!--分页-->
+        <div class="table-footer clearfix">
+            <label class="check-all"><input type="checkbox">全选</label>
+            <!--批量操作-->
+            <div class="batch-operate fr">
+                <button class="export-report-forms btn btn-danger bg-main">导出报表</button>
+            </div>
+            <div class="page-wb system_page">
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                <em> ... </em>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                <div class="count fl">
+                    <i class="fl">前往</i>
+                    <input type="text" name="tiaozhuan" class="text fl now_pages">
+                    <i class="fl">页</i>
+                    <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--侧边栏联系方式-->
+<div class="side-bar">
+    <ul>
+        <li class="tel">
+            <div class="tel-con detail">
+                <span></span>
+                <p>客服电话</p>
+                <p>400-878-9551</p>
+            </div>
+            <i></i>
+        </li>
+        <li class="qq">
+            <div class="qq-con detail">
+                <span></span>
+                <p>客服QQ</p>
+                <p>2544745674</p>
+                <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+            </div>
+            <i></i>
+        </li>
+        <li class="weixin">
+            <div class="weixin-con detail">
+                <p>微信扫一扫</p>
+                <span></span>
+            </div>
+            <i></i>
+        </li>
+        <li class="top">
+            <i></i>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<div class="footer-wrap">
+    <div class="footer font-12">
+        <ul>
+            <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+            <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+            <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+            <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+        </ul>
+        <div class="footer-bot">
+            <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+        </div>
+    </div>
+</div>
+<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../../dep/datetimepicker/jquery.datetimepicker.js"></script>
+<script src="../../dep/datetimepicker/datetime.js"></script>
+<script src="../../dep/layer/layer.js"></script>
+<script src="../../dep/js/wom-tool.js"></script>
+<script src="../../src/js/site-stage-layout-common.js"></script>
+<script src="../../src/js/ad-owner-user-admin/report-forms-list.js"></script>
+</body>
+</html>

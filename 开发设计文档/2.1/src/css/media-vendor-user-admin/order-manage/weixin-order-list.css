@@ -1,0 +1,834 @@
+@charset "utf-8";
+
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 70px;
+    border-top: 2px solid #c81624;
+    padding-top: 16px;
+}
+.table{
+    width: 1000px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+.red{
+    color: #c81624;
+}
+.green{
+    color: #48C819;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~左侧导航~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-sidebar li:nth-child(1) .icon{
+    background: url("../../../images/media-lib-ghost.png") no-repeat -19px -10px;
+}
+.content-sidebar li:nth-child(2) .icon{
+    background: url("../../../images/media-lib-ghost.png") no-repeat -19px -72px;
+}
+.content-sidebar li:nth-child(3) .icon{
+    background: url("../../../images/media-lib-ghost.png") no-repeat -19px -107px;
+}
+.content-sidebar li:nth-child(4) .icon{
+    background: url("../../../images/media-lib-ghost.png") no-repeat -16px -138px;
+}
+.content-sidebar li:nth-child(5) .icon{
+    background: url("../../../images/media-lib-ghost.png") no-repeat -19px -172px;
+}
+.content-sidebar li:nth-child(6) .icon{
+    background: url("../../../images/media-lib-ghost.png") no-repeat -19px -205px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~内容部分头部搜索~~~~~~~~~~~~~~~~~~~~~~~~~`*/
+.order-status{
+    line-height: 36px;
+    margin-left: 10px;
+}
+.con-top .media-lib-name{
+    margin-left: 16px;
+}
+.con-top .detail-name{
+    margin-left: 46px;
+}
+.con-top div input{
+    width: 148px;
+    height: 38px;
+    outline:none;
+    border-radius: 4px;
+    padding:0 8px ;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top div input::-webkit-input-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input::-moz-placeholder{
+    color: #ccc;
+    font-weight: normal;
+}
+.con-top div input:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top .search-btn,
+.con-top .create{
+    height: 38px;
+    font-size: 16px;
+}
+.con-top .search-btn i{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background: url("../../../images/media-lib-ghost.png") no-repeat -105px -58px;
+}
+.con-top .create{
+    width: 134px;
+    padding:0 0 0 8px;
+    line-height: 34px;
+}
+.con-top .create i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 4px;
+    background: url("../../../images/media-lib-ghost.png") no-repeat -105px -14px;
+}
+.dropdown{
+    width: 115px;
+    height: 38px;
+    margin:0 8px 0 6px;
+    color: #aaa;
+}
+.dropdown .show-default{
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 6px;
+}
+.dropdown .caret{
+    margin: 14px 6px 0 0;
+}
+.dropdown-menu{
+    min-width: 108px;
+}
+.order-time .line{
+    margin:0;
+}
+.order-account{
+    margin-right: 8px;
+}
+.con-top .order-time input{
+    width: 146px;
+    text-align: left;
+}
+.con-top .search-btn{
+    width: 84px;
+    margin-left: 8px;
+}
+.content h4{
+    line-height: 40px;
+    text-align: right;
+}
+.search-quick input{
+    margin-right: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~表格部分~~~~~~~~~~~~~~~~~~~*/
+.table table{
+    width: 968px;
+    margin: 0 auto;
+
+}
+.table table thead tr{
+    height: 62px;
+}
+.table table tr th{
+    text-align: center;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+.table table tr td{
+    text-align: center;
+    font-size: 12px;
+}
+.table table tr td:nth-of-type(7) div{
+    cursor: pointer;
+    margin-left:6px;
+}
+.table table tr td .execute-link-stay{
+    margin-bottom: 4px;
+}
+
+.table table tr{
+    height: 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.account-ID dl{
+    display: inline-block;
+    vertical-align: middle;
+    width: 162px;
+}
+.account-ID dt,
+.account-ID dt a
+{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.account-ID dt a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.account-ID dt i{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../../../images/plan_active.png") -183px -23px no-repeat;
+}
+.account-ID dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.account-ID .ewm{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../../images/plan_active.png") -163px -23px no-repeat;
+}
+.account-ID dd{
+    margin: 6px 0 0 10px;
+}
+.ewm-ID{
+    position: relative;
+}
+.ewm-ID img{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: none;
+}
+.pos i,
+.sum
+{
+    color: #8D8D8D;
+}
+.no-border{
+    border: none;
+}
+.execute-result li{
+    display: none;
+    cursor: pointer;
+}
+.operate li{
+    display: none;
+    color: #c81822;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.operate li a{
+    color: #c81822;
+}
+.operate .btn-submit-effect-shots.undo{
+    color: #8d8d8d;
+}
+.no-order {
+    width: 1000px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    display: none;
+}
+.red{
+    color: #c81822;
+}
+.green{
+    color: #69cd49;
+ }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.modal-content{
+    width: 716px;
+    padding: 0 15px;
+}
+.modal-content .modal-title{
+    font-weight: 600;
+    font-size: 16px;
+}
+.modal-content h4{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.modal-content .modal-body-title{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+.modal-content .btn-opetate-order{
+    text-align: center;
+}
+.modal-content .btn-opetate-order button{
+    width: 72px;
+    height: 36px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+.modal-content input,
+.modal-content textarea{
+    outline: none;
+    resize: none;
+    border-radius: 4px;
+    padding:5px 0 0 5px;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.modal-content input{
+    padding: 0 0 0 5px;
+}
+.modal-content input:focus,
+.modal-content textarea:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+
+.pic-show img{
+    margin-right: 34px;
+    border-radius: 6px;
+}
+.link-address{
+    margin-bottom: 20px;
+}
+/*#perform-verify .modal-content{
+    height: 450px;
+}*/
+.radio-select{
+    margin: 10px 0 10px 48px;
+}
+.radio-select li{
+    float: left;
+    margin-right: 35px;
+}
+.radio-select i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    cursor: pointer;
+    background: url(../../../images/plan_active.png) -156px 0 no-repeat;
+}
+.radio-select .selected{
+    background-position: -125px 0;
+}
+.feedback{
+    display: none;
+}
+.feedback span{
+    vertical-align: top;
+}
+.feedback textarea{
+    display: inline-block;
+    width: 600px;
+    height: 142px;
+    resize: none;
+}
+.feedback ul{
+    margin-left: 48px;
+    font-size: 12px;
+    color: #CACACA;
+}
+.submit-btn{
+    display: block;
+    background: #c81822;
+    width: 84px;
+    height: 40px;
+    margin-left: 280px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~接单弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-accept-order .modal-content{
+    width: 424px;
+    height: 234px;
+}
+#modal-accept-order .modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -117px 0 0 -211px;
+}
+#modal-accept-order .modal-content h4{
+    margin: 35px 0 45px 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~拒单弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-refuse-order .modal-content{
+    width: 424px;
+}
+#modal-refuse-order .modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -138px 0 0 -211px;
+}
+#modal-refuse-order .modal-content h4{
+    margin: 16px 0 12px 0;
+}
+#modal-refuse-order .modal-body{
+    padding: 0;
+}
+#modal-refuse-order .refuse-reason-section{
+    margin-bottom: 10px;
+}
+.refuse-reason-section .tips{
+    text-align: right;
+    font-weight: normal;
+    margin: 0;
+    font-size: 12px;
+    padding-right: 20px;
+    color: #bdbdbd;
+    font-size: 12px;
+}
+.refuse-reason-section .tips em{
+    color: #ca1622;
+}
+#modal-refuse-order .refuse-reason-section textarea{
+    width: 300px;
+    height: 105px;
+    outline: none;
+    resize: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 5px 0 0 5px;
+    border: 1px solid #dddddd;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+#modal-refuse-order .refuse-reason-section textarea:focus{
+    border: 1px solid #66afe9;
+    box-shadow: -2px 2px 2px rgba(102, 175, 233, 0.2);
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+#modal-refuse-order .btn-opetate-order{
+    margin-bottom: 12px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~提交执行链接modal样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-submit-execute-link .modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -242px 0 0 -290px;
+}
+#modal-submit-execute-link .modal-content{
+    width: 580px;
+}
+#modal-submit-execute-link .link-address{
+    margin:0 0 12px 36px;
+}
+#modal-submit-execute-link .link-address-input{
+    width: 392px;
+    height: 45px;
+}
+#modal-submit-execute-link .modal-content .tips{
+    color: #c61621;
+    padding-left: 82px;
+    margin-bottom: 20px;
+}
+#modal-submit-execute-link .modal-content .screenshot{
+    margin-left: 36px;
+}
+.screenshot .choose-screen-shot{
+    width: 76px;
+    height: 70px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    margin:0 14px 0 6px;
+    background: url(../../../images/plan_active.png) -1px -281px no-repeat;
+    cursor: pointer;
+}
+#modal-submit-execute-link .img-size-tips{
+    display: block;
+    margin: 15px 0 6px 0;
+}
+#modal-submit-execute-link .view-example:hover{
+    color: #c61621;
+}
+#modal-submit-execute-link .execute-link-submit-btn{
+    display: block;
+    width: 98px;
+    height: 36px;
+    margin:36px auto 40px;
+}
+
+ .file-list{
+    margin-top: 15px;
+    padding-left: 74px;
+}
+ .file-list li{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 8px;
+}
+ .file-list li img{
+    width: 92px;
+    height: 112px;
+    border-radius: 4px;
+}
+ .file-list li .delete-pic{
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    border-radius: 50%;
+    background: #ca1622;
+    transition: all .5s;
+}
+ .file-list li .delete-pic:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+ .file-list li .delete-pic i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
+    background: url("../../../images/phone.png") no-repeat -398px -30px;
+}
+ .file-list .progress{
+    margin-bottom: 4px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~执行链接modal样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-show-execute-link .modal-content{
+    height: 274px;
+}
+#modal-show-execute-link .modal-dialog{
+    margin: -182px 0 0 -290px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~执行反馈modal样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-resubmit-execute-link .modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -238px 0 0 -290px;
+}
+#modal-resubmit-execute-link .modal-content{
+    width: 580px;
+}
+#modal-resubmit-execute-link .modal-content .feedback-con{
+    margin:25px 0 16px 0;
+}
+#modal-resubmit-execute-link .feedback-con textarea{
+    width: 372px;
+    height: 62px;
+}
+#modal-resubmit-execute-link .link-address-input{
+    width: 372px;
+    height: 42px;
+    outline: none;
+    resize: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+#modal-resubmit-execute-link .modal-content .tips{
+    color: #c61621;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+#modal-resubmit-execute-link .screenshot .choose-screen-shot{
+    width: 76px;
+    height: 70px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    margin:0 14px 0 6px;
+}
+#modal-resubmit-execute-link .img-size-tips{
+    display: block;
+    margin: 15px 0 6px 0;
+}
+#modal-resubmit-execute-link .view-example{
+    display: block;
+    margin-top: 27px;
+}
+#modal-resubmit-execute-link .view-example:hover{
+    color: #c61621;
+}
+#modal-resubmit-execute-link .execute-link-submit-btn{
+    display: block;
+    width: 98px;
+    height: 36px;
+    margin:10px auto 40px;
+}
+#modal-resubmit-execute-link .modal-body ul{
+    padding-left: 96px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~提交效果截图modal样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-submit-effect-shots .modal-dialog{
+    margin: -182px 0 0 -290px;
+}
+#modal-submit-effect-shots .modal-content{
+    width: 580px;
+}
+#modal-submit-effect-shots .link-address{
+    margin:0 0 12px 36px;
+}
+#modal-submit-effect-shots .link-address-input{
+    width: 392px;
+    height: 45px;
+}
+#modal-submit-effect-shots .modal-content .tips{
+    color: #c61621;
+    padding-left: 82px;
+    margin-bottom: 20px;
+}
+#modal-submit-effect-shots .modal-content .screenshot{
+    margin-left: 36px;
+}
+#modal-submit-effect-shots .screenshot .choose-screen-shot{
+    width: 76px;
+    height: 70px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    margin:0 14px 0 6px;
+}
+.img-size-tips{
+    display: block;
+    margin: 15px 0 6px 0;
+    color: #8d8d8d;
+}
+#modal-submit-effect-shots .view-example:hover{
+    color: #c61621;
+}
+#modal-submit-effect-shots .execute-link-submit-btn{
+    display: block;
+    width: 98px;
+    height: 36px;
+    margin:36px auto 40px;
+}
+#modal-submit-effect-shots .file-list{
+    margin-top: 15px;
+    padding-left: 74px;
+}
+#modal-submit-effect-shots .file-list li{
+    display: inline-block;
+    margin:10px 0 0 10px;
+    position: relative;
+    border-radius: 8px;
+}
+#modal-submit-effect-shots .file-list li img{
+    width: 92px;
+    height: 112px;
+    border-radius: 4px;
+}
+#modal-submit-effect-shots .file-list li .delete-pic{
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    border-radius: 50%;
+    background: #ca1622;
+    transition: all .5s;
+}
+#modal-submit-effect-shots .file-list li .delete-pic:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+#modal-submit-effect-shots .file-list li .delete-pic i{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-right: 0;
+    background: url("../../../images/phone.png") no-repeat -398px -30px;
+}
+#modal-submit-effect-shots .file-list .progress{
+    margin-bottom: 4px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~效果截图modal样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-show-effect-shots .modal-dialog{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -138px 0 0 -358px;
+}
+#modal-show-effect-shots .modal-content{
+    width: 716px;
+    height: 276px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~详情弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-arrange-order-detail .modal-dialog,
+#modal-arrange-order-more-detail .modal-dialog
+{
+    width: 580px;
+    height: 414px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -207px 0 0 -295px;
+    line-height: 36px;
+}
+#modal-arrange-order-detail .modal-content,
+#modal-arrange-order-more-detail .modal-content
+{
+    width: 580px;
+    height: 414px;
+}
+#modal-arrange-order-detail .modal-body span:nth-of-type(1),
+#modal-arrange-order-more-detail .modal-body span:nth-of-type(1),
+#modal-direct-order-detail .modal-body span:nth-of-type(1)
+{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+.requirements{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.requirements span{
+    vertical-align: top;
+}
+.requirements .requirements-con{
+    display: inline-block;
+    width: 390px;
+    height: 144px;
+    resize: none;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+.attach-file ul{
+    margin-top: 5px;
+}
+.attach-file ul li {
+    float: left;
+    padding: 0 8px;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 10px;
+    border: 1px solid #C81622;
+    border-radius: 2px;
+
+}
+#modal-direct-order-detail .modal-dialog{
+    width: 580px;
+    height: 642px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -321px 0 0 -295px;
+    line-height: 36px;
+}
+#modal-direct-order-detail .modal-content{
+    width: 580px;
+    height: 642px;
+}
+#modal-direct-order-detail p{
+    display: inline-block;
+}
+.cover-pic .btn{
+    width: 62px;
+    height: 34px;
+    background: #C81622;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~原因~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-invalid-order-info .modal-dialog{
+    margin: -171px 0 0 -240px;
+}
+#modal-invalid-order-info .modal-content{
+    width: 480px;
+}
+#modal-invalid-order-info .reason-con .reason{
+    width: 68px;
+}
+#modal-invalid-order-info .reason-con .reason-area{
+    width: 370px;
+    height:230px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    text-indent: 2em;
+    padding-top: 5px;
+}
+#modal-invalid-order-info .modal-body{
+    padding:15px 0;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~查看示例图片~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-view-example .modal-dialog{
+    margin: -185px 0 0 -240px;
+}
+#modal-view-example .modal-content{
+    width: 480px;
+    padding:0;
+}
+#modal-view-example .modal-content img{
+    width: 450px;
+    height: 280px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~直投订单详情~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-direct-order-detail .modal-body{
+    position: relative;
+}
+#modal-direct-order-detail .cover-pic .view-cover-pic{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    display: none;
+}

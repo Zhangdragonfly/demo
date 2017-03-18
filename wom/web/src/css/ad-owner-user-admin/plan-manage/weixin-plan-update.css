@@ -1,0 +1,456 @@
+@charset "utf-8";
+
+body,.breadcrumb{
+    background: #f5f5f5;
+}
+.red,
+.set-font-color
+{
+    color: #c71523;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~活动内容~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.active-content-wrap,
+.active-content,
+.source-wrap
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.active-content-wrap h2,
+.source-wrap h2
+{
+    text-align: center;
+    font-weight: 600;
+    line-height: 60px;
+}
+.active-content{
+    width: 1200px;
+    margin: 10px 0 20px 0;
+    padding: 20px 60px;
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+    border-top: 2px solid #c71523;
+}
+.active-platform{
+    line-height: 32px;
+}
+.modify-active-name{
+    margin-left: 36px;
+    cursor: pointer;
+}
+.edit-active-name{
+    display: none;
+}
+.edit-active-name input{
+    width: 300px;
+    height: 26px;
+    display: inline-block;
+    margin-left: 7px;
+    border: 1px solid #B7B7B7;
+}
+.edit-active-name .btn,
+.edit-requirements-sum .btn
+{
+    width: 56px;
+    height: 26px;
+    line-height: 14px;
+    margin: 0 5px;
+    background: #c71523;
+
+}
+.active-status{
+    margin: 30px 0;
+}
+.requirements-sum textarea
+{
+    display: inline-block;
+    width: 858px;
+    height: 228px;
+    padding: 10px;
+    resize: none;
+    text-indent: 2em;
+    background: #ffffff;
+}
+.requirements-sum span{
+    vertical-align: top;
+}
+.edit-requirements-sum{
+    text-align: right;
+    margin:10px 150px 0 0;
+}
+.edit-requirements-sum span{
+    cursor: pointer;
+    line-height: 30px;
+}
+.edit-requirements-sum .btn{
+    display: none;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~table样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.source-edit{
+    margin: 10px 0 30px 0;
+    border-top: 2px solid #c71523;
+}
+.thead-title{
+    width: 99%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+}
+.thead-title thead tr th{
+    text-align: center;
+    height: 82px;
+    line-height: 72px;
+    vertical-align: middle;
+}
+.table{
+    width: 1170px;
+    margin:0 auto;
+}
+.table a.synopsis:hover{
+    color:#c81624;
+}
+.table tr{
+    border-bottom:1px solid #e5e5e5;
+}
+.table tbody tr td{
+    height: 90px;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    border-top: 0;
+}
+.area-account-info dl{
+    display: inline-block;
+    vertical-align: middle;
+    width: 162px;
+}
+.area-account-info dt,
+.area-account-info dt a
+{
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.area-account-info dt a{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.area-account-info dt i{
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/plan_active.png") -183px -23px no-repeat;
+}
+.area-account-info dt img{
+    position: absolute;
+    left: -192px;
+    top: -182px;
+}
+.area-account-info .ewm{
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url("../../../images/plan_active.png") -163px -23px no-repeat;
+}
+.area-account-info dd{
+    margin: 6px 0 0 10px;
+}
+.account-id-area{
+    position: relative;
+}
+.account-id-area img{
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    display: none;
+}
+.dropdown,.table .price{
+    color: #9a9a9a;
+}
+.dropdown{
+    margin: 0;
+    margin-left: 46px;
+}
+.set-font-green{
+    color: #47C813;
+}
+.area-pos-select .pub-type-read,
+.area-pos-select .dropdown,
+.status-has-add-content,
+.status-not-add-content
+{
+    display: none;
+}
+.area-operate a{
+    display: block;
+    line-height: 24px;
+}
+.area-operate a:hover{
+    color: #c81624;
+}
+.area-remark li span:nth-of-type(1),
+.area-remark li span:nth-of-type(2)
+{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+.area-remark li span:nth-of-type(2){
+    text-align: left;
+    width: 60px;
+}
+.nothing-resource{
+    text-align: center;
+    line-height: 60px;
+    display: none;
+}
+.area-operate li
+{
+    line-height: 24px;
+    cursor: pointer;
+    display: none;
+}
+.area-operate li:hover{
+    color: #c81624;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~数据综合显示~~~~~~~~~~~~~~~~~~~~~~~*/
+.data-show{
+    width: 100%;
+    height: 76px;
+    background: #ffffff;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+}
+.data-show-position{
+    position: fixed;
+    bottom: 0px;
+}
+.in-data-show{
+    width: 1200px;
+    margin: 0 auto;
+}
+.in-data-show li{
+    float: left;
+    padding-left:20px;
+    line-height: 32px;
+    margin-top: 10px;
+    color: #323232;
+}
+.in-data-show li em{
+    color: #E4E4E4;
+}
+.in-data-show p{
+    padding-left: 20px;
+}
+.pay-sum{
+    margin: 8px;
+}
+.pay-sum span,
+.has-pay-sum span
+{
+    font-weight: bold;
+}
+.has-pay-sum{
+    display: none;
+}
+.data-btn a{
+    height: 32px;
+    background: #c81624;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~效果截图和执行链接弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.modal-dialog{
+    width: 716px;
+    min-height: 288px;
+    padding: 0 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -139px 0 0 -358px;
+}
+.modal-content{
+    width: 716px;
+    min-height: 298px;
+    padding: 0 15px;
+}
+.effect-shots-pic .pic-show{
+    width: 570px;
+}
+.pic-show img{
+    margin-right: 34px;
+}
+.link-address{
+    margin-bottom: 20px;
+}
+.link-address a{
+    display: inline-block;
+    width: 600px;
+}
+.radio-select{
+    margin: 10px 0 10px 48px;
+}
+.radio-select li{
+    float: left;
+    margin-right: 35px;
+}
+.radio-select i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin: 0 10px 0px 0;
+    cursor: pointer;
+    background: url(../../images/plan_active.png) -156px 0 no-repeat;
+}
+.radio-select .selected{
+    background-position: -125px 0;
+}
+.feedback{
+    display: none;
+}
+.feedback span{
+    vertical-align: top;
+}
+.feedback textarea{
+    display: inline-block;
+    width: 600px;
+    height: 142px;
+    resize: none;
+}
+.feedback ul{
+    margin-left: 48px;
+    font-size: 12px;
+    color: #CACACA;
+}
+.submit-btn{
+    display: block;
+    background: #c81822;
+    width: 84px;
+    height: 40px;
+    margin-left: 280px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~详情弹出层样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-arrange-order-detail .modal-dialog,
+#modal-arrange-order-more-detail .modal-dialog
+{
+    width: 580px;
+    min-height: 460px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -230px 0 0 -295px;
+    line-height: 28px;
+}
+#modal-arrange-order-detail .modal-content,
+#modal-arrange-order-more-detail .modal-content
+{
+    width: 580px;
+    min-height: 460px;
+}
+#modal-arrange-order-detail .modal-body span:nth-of-type(1),
+#modal-arrange-order-more-detail .modal-body span:nth-of-type(1),
+#modal-direct-order-detail .modal-body span:nth-of-type(1)
+{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+.active-name-show{
+    display: inline-block;
+    width: 400px;
+    line-height: 36px;
+}
+.article-to-lead a,
+.title-name,
+.org-text a,
+.abstract p,
+.curry-on-remarks p
+{
+    display: inline-block;
+    width: 400px;
+    line-height: 22px;
+    margin-top: 6px;
+}
+.requirements{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.requirements span{
+    vertical-align: top;
+}
+.requirements .requirements-con{
+    display: inline-block;
+    width: 390px;
+    height: 144px;
+    resize: none;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}
+.attach-file ul{
+    margin-top: 3px;
+    width: 400px;
+}
+.attach-file ul li {
+    float: left;
+    padding: 0 8px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 10px 5px 0;
+    border: 1px solid #C81622;
+    border-radius: 2px;
+
+}
+#modal-direct-order-detail .modal-dialog{
+    width: 580px;
+    min-height: 642px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -321px 0 0 -295px;
+    line-height: 36px;
+}
+#modal-direct-order-detail .modal-content{
+    width: 580px;
+    min-height: 642px;
+}
+#modal-direct-order-detail p{
+    display: inline-block;
+}
+.cover-pic .btn{
+    width: 62px;
+    height: 34px;
+    background: #C81622;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~原因弹出层~~~~~~~~~~~~~~~~~~~~~~~*/
+#modal-invalid-order-info .modal-dialog{
+    width: 480px;
+    height: 344px;
+    padding: 0 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -161px 0 0 -240px;
+    line-height: 36px;
+}
+#modal-invalid-order-info .modal-content{
+    width: 480px;
+    height: 344px;
+}
+.reason-con .reason{
+    width: 52px;
+}
+.reason-con .reason-show{
+    width: 348px;
+    height:230px;
+    text-indent: 2em;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+}

@@ -1,0 +1,27 @@
+stages:
+  - deploy
+
+deploy_dev:
+  stage: deploy
+  script:
+    - echo "Deploy to development server"
+    - cd ../dev.51wom.com
+    - git pull
+  environment:
+    name: development
+    url: http://dev.51wom.com
+  only:
+  - dev
+
+deploy_prod:
+  stage: deploy
+  script:
+    - echo "Deploy to production server"
+    - cd ../prod.51wom.com
+    - git pull
+  environment:
+    name: production
+    url: http://51wom.com
+  when: manual
+  only:
+  - prod

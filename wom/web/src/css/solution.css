@@ -1,0 +1,668 @@
+@charset "utf-8";
+
+body{
+    background: #f5f5f5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~登录前头部~~~~~~~~~~~~~~~~~~~~~~~~*/
+.head-top-wrap{
+    height: 42px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #dcdcdc;
+}
+.nav{
+    margin-bottom: 0;
+}
+.head-top{
+    min-width: 1200px;
+    line-height: 42px;
+    margin: 0 auto;
+}
+.head-top .welcome{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 24px;
+}
+.head-top .enter{
+    float: right;
+}
+.head-top .enter a{
+    float: left;
+}
+.head-top .enter .entrance{
+    display: inline-block;
+    width: 82px;
+    height: 28px;
+    color: #fff;
+    background: #c6151f;
+    text-align: center;
+    line-height: 28px;
+    margin: 7px 20px 0 0;
+    border-radius: 4px;
+}
+.head-top .enter .help{
+    margin-right: 16px;
+}
+.head-top .enter .help:hover{
+    color: #000;
+    text-decoration: underline!important;
+}
+.head-top .enter .tel{
+    float: right;
+    margin-right: 20px;
+}
+.head-top .enter i{
+    display: inline-block;
+    float: right;
+    width: 24px;
+    height:18px;
+    background: url("../images/login-ghost.png") -188px -255px no-repeat;
+    margin:12px 8px 0 0;
+}
+.head-bottom{
+    min-width: 1280px;
+    height: 96px;
+    margin:0 auto;
+    padding-top: 16px;
+    border-bottom: 1px solid #bebebe;
+}
+.head-bottom h1{
+    width: 217px;
+    height: 69px;
+    float: left;
+    margin-left: 38px;
+}
+.head-bottom .nav{
+    float: right;
+}
+.head-bottom .nav li{
+    float: left;
+    width: 75px;
+    height: 80px;
+    text-align: center;
+    line-height: 68px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.head-bottom .nav li a{
+    height: 80px;
+    display: block;
+}
+.head-bottom .nav a.active{
+    color:#c81624;
+    border-bottom: 4px solid #c81724;
+}
+.head-bottom .nav a:hover{
+    color:#c81624;
+    border-bottom: 4px solid #c81724;
+}
+.head-bottom .nav .about-us{
+    margin-right: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~登陆后的头部~~~~~~~~~~~~~~~~~~~~~*/
+.enter ul li{
+    float: left;
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 500;
+}
+.enter ul .username:hover,
+.enter ul .my-lib:hover{
+    color: #c81624;
+}
+
+.head-top .enter a{
+    float: none;
+}
+.head-top .enter a:hover{
+    color:#c81624;
+}
+.head-bottom{
+    background: #fff;
+}
+.breadcrumb{
+    background: #f5f5f5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~头部~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.head{
+    width: 100%;
+    height: 131px;
+    background: #ffffff;
+    min-width: 1200px;
+    position: relative;
+}
+.head h1{
+    margin:0 16% 0 3%;
+}
+.head h1 a{
+    text-indent: -99999px;
+    display: inline-block;
+    width: 217px;
+    height: 69px;
+    background: url("../images/logo.png");
+    margin-top: 32px;
+}
+.search-key{
+    margin-top:48px;
+    width: 546px;
+    height: 40px;
+    border: 1px solid #8d8d8d;
+    border-radius: 2px;
+    box-shadow: inset 2px 2px 5px #dfdfdf;
+    position: absolute;
+    left: 50%;
+    margin-left: -273px;
+}
+.search-key .dropdown{
+    margin: 10px 5px 0 8px;
+    width: 102px;
+    cursor: pointer;
+}
+.search-key .dropdown .caret{
+    margin-top: -2px;
+}
+.search-key ul{
+    left: -9px;
+    top: 28px;
+    position: absolute;
+}
+.search-key ul li{
+    padding: 3px 20px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.search-key ul li:hover{
+    background: #f5f5f5;
+}
+.search-key input{
+    width: 368px;
+    height: 27px;
+    padding:0 10px;
+    outline: none;
+    border: none;
+    margin-top: 6px;
+    border-left: 1px solid #b7b7b7;
+    color: #8d8d8d;
+}
+.search-media{
+    width: 60px;
+    height: 40px;
+    background: #C81724;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+.search-media span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url("../images/list-ghost.png") 0 -107px no-repeat;
+}
+.header{
+    min-width: 1200px;
+}
+.header .phone-num{
+    display: block;
+    width: 275px;
+    height: 96px;
+    margin: 20px 5% 0 0;
+    background: url("../images/list-ghost.png") 0 0 no-repeat;
+}
+.header .contact-img{
+    margin-right: 5%;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~导航~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.nav{
+    width: 100%;
+    min-width: 1200px;
+    background: #C81724;
+    height: 54px;
+    line-height: 54px;
+}
+.nav ul{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.nav ul li{
+    float: left;
+}
+.nav ul li a{
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 45px;
+}
+.nav ul li a.active-nav,
+.nav ul li a:hover{
+    background: #1E1E1E;
+}
+/*页面主体内容*/
+div.section{
+    width: 100%;
+    min-width: 1200px;
+    background-color: #fff;
+}
+div.section.bg-gray{
+    background-color: #efefef;
+}
+div.section-4,
+div.section-5{
+    padding-bottom: 40px;
+}
+div.section-7{
+    padding-bottom: 110px;
+}
+div.section .content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*title*/
+.title{
+    width: 422px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 75px 0 85px;
+}
+.title P{
+    font-size: 22px;
+    color: #c61822;
+    margin-bottom: 18px;
+}
+.title .title-bottom{
+    width: 100%;
+    height: 13px;
+    background: url("../images/solution/explain-bg.png") -381px -564px no-repeat;
+}
+/*title end*/
+
+/*直播营销面临的问题*/
+div.question-box{
+    margin-bottom: 170px;
+}
+div.question-box-1{
+    margin-left: 111px;
+}
+div.question-box-2{
+    margin: 0 105px;
+}
+div.question-box-3{
+    margin-right: 111px;
+}
+.question-box .img-box{
+    width: 256px;
+    height: 170px;
+}
+.question-box-1 .img-box{
+    background: url("../images/solution/explain-bg.png") 0 -127px no-repeat;
+}
+.question-box-2 .img-box{
+    background: url("../images/solution/explain-bg.png") -277px -127px no-repeat;
+}
+.question-box-3 .img-box{
+    background: url("../images/solution/explain-bg.png") -554px -127px no-repeat;
+}
+.question-box > p{
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+}
+
+/*如何选择合适的网红主播*/
+/*img-title*/
+.img-title{
+    width: 450px;
+    padding: 45px 0;
+    margin: 0 auto;
+}
+.img-title .img-title-bg{
+    width: 156px;
+    height: 156px;
+    margin: 0 auto;
+}
+.img-title .img-title-bg-1{
+    background: url("../images/solution/explain-bg.png") 0 -330px no-repeat;
+}
+.img-title .img-title-bg-2{
+    background: url("../images/solution/explain-bg.png") -171px -330px no-repeat;
+}
+.img-title .img-title-bg-3{
+    background: url("../images/solution/explain-bg.png") -343px -330px no-repeat;
+}
+.img-title > p{
+    font-size: 24px;
+    color: #5a5a5a;
+    margin-top: 22px;
+    text-align: center;
+}
+/*img-title end*/
+.tag-box{
+    width: 932px;
+    margin: 0 auto;
+    padding-bottom: 62px;
+}
+.tag-box .tag{
+    border: 3px solid #c81820;
+    border-radius: 5px;
+    padding: 14px 14px 9px;
+    width: 207px;
+    height: 101px;
+    margin: 13px;
+}
+.tag-box .tag > p{
+    font-size: 14px;
+    color: #525252;
+    line-height: 1.5;
+}
+.tag-box .tag .small-title{
+    font-size: 20px;
+    color: #c81820;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*如何玩转网红直播*/
+.icon-box{
+    width: 835px;
+    margin: 0 auto;
+}
+.icon-box .icon{
+    width: 97px;
+    margin: 0 35px;
+}
+.icon-box .icon .icon-img{
+    width: 97px;
+    height: 97px;
+}
+.icon-box .icon .icon-img-1{
+    background: url("../images/solution/explain-bg.png") -326px 13px no-repeat;
+}
+.icon-box .icon .icon-img-2{
+    background: url("../images/solution/explain-bg.png") -110px -3px no-repeat;
+}
+.icon-box .icon .icon-img-3{
+    background: url("../images/solution/explain-bg.png") 0 9px no-repeat;
+}
+.icon-box .icon .icon-img-4{
+    background: url("../images/solution/explain-bg.png") -439px 19px no-repeat;
+}
+.icon-box .icon .icon-img-5{
+    background: url("../images/solution/explain-bg.png") -214px 10px no-repeat;
+}
+.icon-box .icon > p{
+    color: #c61822;
+    font-size: 16px;
+    text-align: center;
+    margin: 25px 0;
+}
+div.method-box{
+    width: 1077px;
+    height: 252px;
+    margin: 0 auto;
+    background: url("../images/solution/method-bg.png") 0 0 no-repeat;
+    position: relative;
+}
+.method-box .method-content-box{
+    width: 160px;
+    position: absolute;
+    top: 30px;
+}
+.method-box .method-content-box-1{
+    left: 40px;
+}
+.method-box .method-content-box-2{
+    left: 310px;
+}
+.method-box .method-content-box-3{
+    left: 545px;
+}
+.method-box .method-content-box-4{
+    left: 749px;
+}
+.method-box .method-content-box-5{
+    left: 976px;
+}
+.method-box .method-content-box p{
+    color: #575757;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/*如何评估直播效应*/
+.living-point-img{
+    width: 1069px;
+    height: 479px;
+    margin: 0 auto;
+    background: url("../images/solution/explain-living-img.png") 0 0 no-repeat;
+}
+
+/*谦玛促进直播的良性循环*/
+.living-feature-img{
+    width: 1200px;
+    height: 442px;
+    margin: 0 auto;
+    background: url("../images/solution/explain-living-feature.png") 60px 0 no-repeat;
+}
+
+/*视频网红直播服务产品*/
+.living-product-box{
+    width: 236px;
+    margin: 0 75px 0 96px;
+    padding-bottom: 90px;
+}
+.living-product-box-2{
+    width: 236px;
+    margin: 0 75px;
+}
+.living-product-box > p{
+    color: #c81822;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.living-product-box > div{
+    width: 236px;
+    height: 125px;
+    position: relative;
+    padding: 13px 8px 13px 12px;
+}
+.living-product-box > div > .top-left-border{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    border-top: 3px solid #c81822;
+    border-left: 3px solid #c81822;
+    top: 0;
+    left: 0;
+}
+.living-product-box > div > .bottom-right-border{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    border-bottom: 3px solid #c81822;
+    border-right: 3px solid #c81822;
+    bottom: 0;
+    right: 0;
+}
+.living-product-box > div > p{
+    color: #525252;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/*视频网红直播服务产品*/
+.resource-point{
+    line-height: 1.6;
+    width: 234px;
+    height: 240px;
+}
+.resource-point-1{
+    margin-left: 109px;
+}
+.resource-point-2{
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.resource-point-3{
+    margin-right: 109px;
+}
+.resource-point > span{
+    width: 97px;
+    height: 97px;
+    margin: 0 auto 55px;
+    display: block;
+}
+.resource-point-1 > span{
+    background: url("../images/solution/explain-bg.png") 3px -513px no-repeat;
+}
+.resource-point-2 > span{
+    background: url("../images/solution/explain-bg.png") -110px -513px no-repeat;
+}
+.resource-point-3 > span{
+    background: url("../images/solution/explain-bg.png") -223px -513px no-repeat;
+}
+.resource-point > p{
+    color: #545454;
+    font-size: 16px;
+    text-align: center;
+}
+.resource-point > p > span{
+    color: #c61724;
+    font-size: 16px;
+}
+
+/*页面主体内容 end*/
+/*~~~~~~~~~~~~~~~~~~~~~~~侧边栏联系方式~~~~~~~~~~~~~~~~~~~~~~~*/
+.side-bar{
+    width: 40px;
+    position: fixed;
+    top:50%;
+    right: 0;
+    margin-top: -85px;
+}
+.side-bar li{
+    width: 40px;
+    height:38px;
+    background: #1e1e1e;
+    margin-bottom: 6px;
+    border-radius: 6px 0 0 6px;
+    padding: 2px 0 0 6px;
+    cursor: pointer;
+    position: relative;
+}
+.side-bar li i{
+    display: block;
+    width: 30px;
+    height:30px;
+    background: red;
+}
+.side-bar .tel i{
+    background: url("../images/login-ghost.png") no-repeat -435px 4px;
+}
+.side-bar .qq i{
+    background: url("../images/login-ghost.png") no-repeat -435px -50px;
+}
+.side-bar .weixin i{
+    background: url("../images/login-ghost.png") no-repeat -435px -102px;
+}
+.side-bar .top i{
+    background: url("../images/login-ghost.png") no-repeat -382px -106px;
+}
+.side-bar li .detail{
+    width: 150px;
+    height:158px;
+    box-shadow: 0 0 20px #ccc;
+    border: 1px solid #c6c6c6;
+    position: absolute;
+    top:0;
+    left: 46px;
+    background: #fff;
+    z-index: -1;
+}
+.side-bar li .detail span{
+    display:block;
+    width: 16px;
+    height: 20px;
+    margin:0 auto 10px;
+}
+.side-bar li .detail p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.side-bar li .qq-con{
+    padding-top: 20px;
+}
+.side-bar li .tel-con{
+    padding-top: 22px;
+}
+.side-bar li .qq-con span{
+    background: url("../images/contact-way.png") no-repeat;
+}
+.side-bar li .tel-con span{
+    background: url("../images/contact-way.png") no-repeat -148px 0;
+}
+.side-bar li .weixin-con span{
+    background: url("../images/contact-way.png") no-repeat 0 -39px;
+}
+.side-bar li .tel-con span{
+    width:42px;
+    height: 42px;
+}
+.side-bar li .weixin-con span{
+    width: 115px;
+    height: 116px;
+}
+.side-bar li .weixin-con p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~底部~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer{
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    height: 96px;
+    background: #1E1E1E;
+    padding-top: 23px;
+    color: #414141;
+}
+.in-footer a{
+    line-height: 20px;
+    color: #ffffff;
+    padding-right: 29px;
+}
+.in-footer a i{
+    display: inline-block;
+    width: 14px;
+    margin:-1px 15px 0 16px;
+    vertical-align: middle;
+    background: url("../images/list-ghost.png") 0 -148px no-repeat;
+}
+.in-footer a:first-child i{
+    height: 13px;
+}
+.in-footer a:nth-of-type(2) i{
+    height: 9px;
+    background-position: -48px -150px;
+}
+.in-footer a:nth-of-type(3) i{
+    height: 15px;
+    background-position: -96px -147px;
+}
+.in-footer a:last-child i{
+    width: 18px;
+    height: 13px;
+    background-position: -141px -148px;
+}
+.footer p{
+    color: #ffffff;
+    margin-top: 10px;
+}

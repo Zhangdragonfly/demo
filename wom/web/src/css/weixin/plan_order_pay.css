@@ -1,0 +1,121 @@
+.create-step ul li{
+	background: #C81624;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~支付内容~~~~~~~~~~~~~~~~~~~*/
+.pay-content{
+	width: 1200px;
+	min-height: 650px;
+	margin: 0 auto 50px;
+	padding: 0 30px;
+	background: #ffffff;
+	border-top: 4px solid #C81624;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	color: #1D1D1D;
+	text-align: center;
+}
+.pay-content h2{
+	font-weight: bold;
+	text-align: left;
+	font-size: 16px;
+	line-height: 60px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.sum-count{
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+.pay-count{
+	line-height: 30px;
+	padding: 12px 0;
+	font-size: 16px;
+}
+.pay-count p{
+	font-size: 14px;
+}
+.pay-count p{
+	text-align: left;
+	margin-left: -5px;
+}
+.pay-count li{
+	float: left;
+	margin-right: 30px;
+}
+.sum-count a{
+	width: 92px;
+	height: 38px;
+	background: #C81624;
+	margin-top: 24px;
+	line-height: 24px;
+}
+.sum-count a:hover{
+	background: #C81624;
+}
+.pay-way{
+	padding: 25px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.pay-way li{
+	float: left;
+	margin-right: 50px;
+}
+.pay-way li i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: bottom;
+	margin: 0 18px 16px 0;
+	cursor: pointer;
+	background: url("../../images/plan_active.png") -156px 0 no-repeat;
+}
+.pay-way li span{
+	display: inline-block;
+	width: 141px;
+	height: 49px;
+	text-indent: -9999999px;
+	background: url("../../images/plan_active.png") 0 -92px no-repeat;
+}
+.pay-way li:nth-of-type(2) span{
+	background-position: 0 -43px;
+}
+.pay-way li:nth-of-type(3) span{
+	width: 192px;
+	background-position: 0 -138px;
+}
+.pay-way li .pay-way-current{
+	background-position: -125px 0;
+}
+.pay-psw{
+	padding-top: 25px;
+}
+.pay-psw input{
+	display: inline-block;
+	width: 252px;
+	height: 46px;
+}
+.pay-alert em{
+	font-size: 12px;
+}
+
+.pay-alert i{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	vertical-align: middle;
+	margin: -4px 4px 0 11px;
+	background: url("../../images/plan_active.png") -92px 0 no-repeat;
+}
+.pay-psw p i{
+	font-weight: bold;
+}
+.pay-psw p a:hover,
+.pay-alert a:hover
+{
+	color: #C81624;
+}
+.pay-content button{
+	width: 440px;
+	height: 46px;
+	background: #C81624;
+	margin: 40px;
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的媒体库-微信</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/ad-owner-user-admin/media-lib-manage.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="header">
+    <div class="head-top-wrap">
+        <div class="head-top clearfix login-cancel hidden">
+            <h3 class="welcome">欢迎来到沃米优选</h3>
+            <div class="enter clearfix">
+                <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                <a class="help" href="javascript:void(0)">帮助中心</a>
+                <span class="tel">400-878-9551</span><i></i>
+            </div>
+        </div>
+        <div class="head-top clearfix login-success">
+            <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+            <div class="enter clearfix">
+                <ul class="clearfix">
+                    <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                    <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                    <li>可用金额: <span>***</span></li>
+                    <li>冻结金额: <span>***</span></li>
+                    <li><a href="javascript:;">立即充值</a></li>
+                    <li><a href="javascript:;">帮助中心</a></li>
+                    <li>退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head-bottom">
+        <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a class="active" href="javascript:void(0)">首页</a></li>
+                <li><a href="javascript:void(0)">微信营销</a></li>
+                <li><a href="javascript:void(0)">视频网红</a></li>
+                <li><a href="javascript:void(0)">新浪微博</a></li>
+                <li><a href="javascript:void(0)">解决方案</a></li>
+                <li><a href="javascript:void(0)">案例中心</a></li>
+                <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 面包屑 -->
+    <div class="bread">
+        <ol class="breadcrumb font-500">
+            当前位置：
+            <li><a href="#">首页</a></li>
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">媒体库管理</a></li>
+            <li class="active color-main">微信</li>
+        </ol>
+    </div>
+</div>
+<!-- 主要内容部分 -->
+<div class="content-wrap clearfix">
+    <!--左侧导航栏-->
+    <div class="content-sidebar fl shadow">
+        <ul>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>活动管理</span>
+                <dl>
+                    <dd><a href="#">微信活动</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>订单管理</span>
+                <dl>
+                    <dd><a href="#">微信订单</a></dd>
+                    <dd><a href="#">微博订单</a></dd>
+                    <dd><a href="#">视频订单</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon rotate"></i>
+                <span class="title"><i class="icon"></i>媒体库管理</span>
+                <dl class="show">
+                    <dd><a class="on-click" href="javascript:;">微信 </a></dd>
+                    <dd><a href="javascript:;">微博</a></dd>
+                    <dd><a href="javascript:;">视频</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>素材管理</a>
+            </li>
+            <li class="fold">
+                <i class="rotate-icon"></i>
+                <span class="title"><i class="icon"></i>财务管理</span>
+                <dl>
+                    <dd><a href="#">全部流水</a></dd>
+                    <dd><a href="#">消费记录</a></dd>
+                    <dd><a href="#">充值记录</a></dd>
+                </dl>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>消息中心</a>
+            </li>
+            <li class="fold">
+                <a class="title" href="javascript:;"><i class="icon"></i>基础资料</a>
+            </li>
+        </ul>
+    </div>
+    <!--右侧内容-->
+    <div class="content fr">
+        <div class="con-top shadow clearfix">
+            <div class="condition-area media-lib-name fl font-16 font-500">
+                媒体库名称 : <input type="text" placeholder="请输入媒体库名称">
+            </div>
+            <div class="condition-area detail-name fl font-16 font-500">
+                微信账号 : <input type="text" placeholder="输入微信名称/ID">
+            </div>
+            <button class="btn-search btn btn-danger bg-main"><i></i>搜索</button>
+            <button href="#create" class="btn-create btn btn-danger bg-main" data-toggle="modal"><i></i>新建媒体库</button>
+            <!-- 新建媒体库modal框 -->
+            <div id="create" class="modal modal-message fade in" aria-hidden="true" data-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="fl color-main">新建媒体库</h4>
+                            <span class="close fr" data-dismiss="modal">x</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="create-media-lib font-14 font-500">
+                                媒体库名称 : <input class="new-media-lib" type="text" placeholder="请输入新的媒体库名称">
+                            </div>
+                            <button class="btn btn-danger bg-main">保存</button>
+                        </div>
+                        <div class="modal-footer">
+                            <h4>我的媒体库特权</h4>
+                            <p>1、创建专属个人资源管理库</p>
+                            <p>2、帮助您高效管理自己的自媒体资源</p>
+                            <p>3、资源库中的资源随时共享</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weixin-table table shadow">
+            <table>
+                <thead>
+                    <tr>
+                        <th>媒体库名称</th>
+                        <th>媒体数量</th>
+                        <th class="thead-title">
+                            覆盖粉丝数
+                            <div class="explain-title">
+                                <em></em>
+                                <em></em>
+                                <div class="explain-content">
+                                    <h3>覆盖粉丝数</h3>
+                                    <p>统计该资源库全部的资源的粉丝数之和。</p>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="thead-title">
+                            头条总参考报价
+                            <div class="explain-title">
+                                <em></em>
+                                <em></em>
+                                <div class="explain-content">
+                                    <h3>头条总参考报价</h3>
+                                    <p>统计该资源库全部的资源的头条参考报价。</p>
+
+                                </div>
+                            </div>
+                        </th>
+                        <th class="thead-title">
+                            投放预计阅读量
+                            <div class="explain-title">
+                                <em></em>
+                                <em></em>
+                                <div class="explain-content">
+                                    <h3>投放预计阅读量</h3>
+                                    <p>统计该资源库全部的资源的头条阅读数之和。</p>
+                                </div>
+                            </div>
+                        </th>
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html" class="synopsis" data-str="5">五一好时光华盛顿</a></td>
+                        <td>184</td>
+                        <td>23444</td>
+                        <td>660000</td>
+                        <td>6666666</td>
+                        <td>2016.11.11</td>
+                        <td>
+                            <span class="manage"><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">管理</a></span>
+                            <span class="export">导出</span>
+                            <span class="remove">移除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">五一好时光</a></td>
+                        <td>184</td>
+                        <td>23444</td>
+                        <td>660000</td>
+                        <td>6666666</td>
+                        <td>2016.11.11</td>
+                        <td>
+                            <span class="manage"><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">管理</a></span>
+                            <span class="export">导出</span>
+                            <span class="remove">移除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">五一好时光</a></td>
+                        <td>184</td>
+                        <td>23444</td>
+                        <td>660000</td>
+                        <td>6666666</td>
+                        <td>2016.11.11</td>
+                        <td>
+                            <span class="manage"><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">管理</a></span>
+                            <span class="export">导出</span>
+                            <span class="remove">移除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">五一好时光</a></td>
+                        <td>184</td>
+                        <td>23444</td>
+                        <td>660000</td>
+                        <td>6666666</td>
+                        <td>2016.11.11</td>
+                        <td>
+                            <span class="manage"><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">管理</a></span>
+                            <span class="export">导出</span>
+                            <span class="remove">移除</span>
+                        </td>
+                    </tr>
+                    <tr class="no-border">
+                        <td><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">五一好时光</a></td>
+                        <td>184</td>
+                        <td>23444</td>
+                        <td>660000</td>
+                        <td>6666666</td>
+                        <td>2016.11.11</td>
+                        <td>
+                            <span class="manage"><a href="../media-lib-resource-detail/weixin-media-lib-resource-detail.html">管理</a></span>
+                            <span class="export">导出</span>
+                            <span class="remove">移除</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="no-lib">暂无媒体库</div>
+        </div>
+        <!--分页-->
+        <div class="table-footer clearfix">
+            <div class="page-wb fl system_page">
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                <em> ... </em>
+                <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                <div class="count fl">
+                    <i class="fl">前往</i>
+                    <input type="text" name="tiaozhuan" class="text fl now_pages">
+                    <i class="fl">页</i>
+                    <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--侧边栏联系方式-->
+<div class="side-bar">
+    <ul>
+        <li class="tel">
+            <div class="tel-con detail">
+                <span></span>
+                <p>客服电话</p>
+                <p>400-878-9551</p>
+            </div>
+            <i></i>
+        </li>
+        <li class="qq">
+            <div class="qq-con detail">
+                <span></span>
+                <p>客服QQ</p>
+                <p>2544745674</p>
+                <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+            </div>
+            <i></i>
+        </li>
+        <li class="weixin">
+            <div class="weixin-con detail">
+                <p>微信扫一扫</p>
+                <span></span>
+            </div>
+            <i></i>
+        </li>
+        <li class="top">
+            <i></i>
+        </li>
+    </ul>
+</div>
+<!--底部-->
+<div class="footer-wrap">
+    <div class="footer font-12">
+        <ul>
+            <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+            <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+            <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+            <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+        </ul>
+        <div class="footer-bot">
+            <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+        </div>
+    </div>
+</div>
+<script src="../../dep/js/jquery-1.10.2.min.js"></script>
+<script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+<script src="../../dep/layer/layer.js"></script>
+<script src="../../src/js/ad-owner-user-admin/ad-user-admin-common.js"></script>
+<script src="../../src/js/ad-owner-user-admin/media-lib-manage.js"></script>
+<script>
+    //新建点击保存
+    $(function(){
+        $('.modal-body .bg-main').click(function(){
+            if($(this).siblings('.create-media-lib').find('input').val() == '') return false;
+            $(this).prop({disabled:true});
+            $(this).css({background:'#999999',border:'1px solid #999999'});
+            $(this).text('保存中...');
+        })
+    })
+</script>
+</body>
+</html>

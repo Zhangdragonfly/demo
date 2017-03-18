@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>微博预约</title>
+    <link rel="stylesheet" href="../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../dep/datetimepicker/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../src/css/weibo/order-creat.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-top-wrap">
+            <div class="head-top clearfix login-cancel hidden">
+                <h3 class="welcome">欢迎来到沃米优选</h3>
+                <div class="enter clearfix">
+                    <a class="entrance" href="../login&register/ad-login.html">广告主入口</a>
+                    <a class="entrance" href="../login&register/media-login.html">媒体主入口</a>
+                    <a class="help" href="javascript:void(0)">帮助中心</a>
+                    <span class="tel">400-878-9551</span><i></i>
+                </div>
+            </div>
+            <div class="head-top clearfix login-success">
+                <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+                <div class="enter clearfix">
+                    <ul class="clearfix">
+                        <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                        <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                        <li>可用金额: <span>***</span></li>
+                        <li>冻结金额: <span>***</span></li>
+                        <li><a href="javascript:;">立即充值</a></li>
+                        <li><a href="javascript:;">帮助中心</a></li>
+                        <li>退出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head-bottom">
+            <h1><a href="#"><img src="../src/images/logo.png" alt="沃米优选"></a></h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a class="active" href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">微信营销</a></li>
+                    <li><a href="javascript:void(0)">视频网红</a></li>
+                    <li><a href="javascript:void(0)">新浪微博</a></li>
+                    <li><a href="javascript:void(0)">解决方案</a></li>
+                    <li><a href="javascript:void(0)">案例中心</a></li>
+                    <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                当前位置：
+                <li><a href="#">首页</a></li>
+                <li><a href="#">新浪微博</a></li>
+                <li class="active color-main">填写预约需求</li>
+            </ol>
+        </div>
+    </div>
+    <!--填写预约需求内容-->
+    <div class="order-creat-content">
+        <h2 class="font-20">填写预约需求</h2>
+        <!--已选择资源-->
+        <div class="top-title clearfix">
+            <span class="fl">已选择资源: <i class="source-choosed-count color-main">5</i> 个</span>
+            <a class="continue-add btn btn-danger bg-main fr" href="weibo-resource-list.html">继续添加资源</a>
+        </div>
+        <div class="source-choosed shadow">
+            <table class="thead-title">
+                <thead>
+                    <tr>
+                        <th style="width:218px">微博账号</th>
+                        <th style="width:160px">粉丝数 (万)</th>
+                        <th style="width:400px">价格位置</th>
+                        <th style="width:109px">价格 (元)</th>
+                        <th style="width:200px">接单备注</th>
+                        <th style="width:100px">操作</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="table-wrap">
+                <table class="source-choosed-table table">
+                    <tbody>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+
+                            <td style="width: 150px">11.15678909078</td>
+
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="aaaaaaaaaaaaaa">徐家汇地铁站到了</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+                        <tr>
+                            <td class="user-ID" style="width: 218px">
+                                <a class="short-ID synopsis" href="javascript:;" data-str="6" data-title="袁梦成顾徐家汇">袁梦成顾徐家汇</a>
+                            </td>
+                            <td style="width: 160px">11.15678909078</td>
+                            <td style="width: 400px">
+
+                                <div class="dropdown">
+                                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fl">软广直发</span>
+                                        <span class="caret fr"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li>软广直发</li>
+                                        <li>软广转发</li>
+                                        <li>微任务直发</li>
+                                        <li>微任务转发</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td class="price" style="width: 109px">1000</td>
+                            <td class="remark" width="200px">
+                                <span class="brief-remark synopsis" data-str="8">软广不接单软广不接单</span>
+                                <div class="whole-remark">
+                                    <em></em>
+                                    <em></em>
+                                    <div class="remark-content" >
+                                        软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单软广不接单
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:100px"><span class="delete color-main">删除</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <div class="no-resource">暂未选择资源</div>
+
+            </div>
+        </div>
+        <!--填写预约需求-->
+        <h3 class="fill-order-title">填写预约需求</h3>
+        <div class="fill-order-con shadow">
+            <form action="post">
+                <div class="input-group">
+                    <span class="title-wrap">预约平台:</span>
+                    <span class="platform font-500">新浪微博</span>
+                </div>
+                <div class="input-group">
+                    <div class="title-wrap"><span class="title"><i></i>预约名称:</span></div>
+                    <input class="booking-name" type="text" placeholder="请输入预约名称">
+                    <div class="tips"><i>!</i>请输入预约名称</div>
+                </div>
+                <div class="plan-time input-group">
+                    <div class="title-wrap"><span class="title"><i></i>预约执行时间:</span></div>
+                    <input type="text" id="publish-start-time" class="input-section text-input datetimepicker" readonly="readonly" placeholder="请选择开始时间"/>
+                    <span class="line"></span>
+                    <input type="text" id="publish-end-time" class="input-section text-input datetimepicker" readonly="readonly" placeholder="请选择结束时间"/>
+                    <div class="tips"><i>!</i>请输入执行时间</div>
+                </div>
+                <div class="input-group">
+                    <div class="title-wrap"><span class="title"><i></i>联系人:</span></div>
+                    <input class="contact" type="text" placeholder="请输入联系人">
+                    <div class="tips"><i>!</i>请输入联系人</div>
+                </div>
+                <div class="input-group">
+                    <div class="title-wrap"><span class="title"><i></i>手机号码:</span></div>
+                    <input class="phone-number" type="text" placeholder="请输入手机号码">
+                    <div class="tips"><i>!</i>请填写手机号码</div>
+                </div>
+                <div class="booking-require-wrap input-group">
+                    <div class="clearfix">
+                        <div class="title-wrap fl"><span class="title"><i></i>预约需求:</span></div>
+                        <textarea class="booking-require fl" name="" id="" placeholder="请填写完整的预约需求内容" ></textarea>
+                    </div>
+                    <div class="sweet-tips">不要超过 <em> 2000 </em> 个字 </div>
+                    <div class="tips"><i>!</i>请填写预约需求</div>
+                </div>
+                <div class="feedback input-group">
+                    <div class="title-wrap"><span class="title"><i></i>需求反馈时间:</span></div>
+                    <input type="text" id="feedback-time" class="input-section text-input datetimepicker" readonly="readonly" placeholder="反馈时间要大于当前时间"/>
+                    <div class="tips"><i>!</i>请输入需求反馈时间</div>
+                </div>
+            </form>
+        </div>
+        <div class="submit btn bg-danger bg-main">提交</div>
+    </div>
+
+    <!--侧边栏联系方式-->
+    <div class="side-bar">
+        <ul>
+            <li class="tel">
+                <div class="tel-con detail">
+                    <span></span>
+                    <p>客服电话</p>
+                    <p>400-878-9551</p>
+                </div>
+                <i></i>
+            </li>
+            <li class="qq">
+                <div class="qq-con detail">
+                    <span></span>
+                    <p>客服QQ</p>
+                    <p>2544745674</p>
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+                </div>
+                <i></i>
+            </li>
+            <li class="weixin">
+                <div class="weixin-con detail">
+                    <p>微信扫一扫</p>
+                    <span></span>
+                </div>
+                <i></i>
+            </li>
+            <li class="top">
+                <i></i>
+            </li>
+        </ul>
+    </div>
+
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer font-12">
+            <ul>
+                <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+                <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+                <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+                <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+            </ul>
+            <div class="footer-bot">
+                <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dep/js/jquery-1.10.2.min.js"></script>
+    <script src="../dep/js/bootstrap-3.3.6.min.js"></script>
+    <script src="../dep/datetimepicker/jquery.datetimepicker.js"></script>
+    <script src="../dep/datetimepicker/datetime.js"></script>
+    <script src="../dep/layer/layer.js"></script>
+    <script src="../src/js/site-stage-layout-common.js"></script>
+    <script src="../src/js/weibo/order-creat.js"></script>
+</body>
+</html>

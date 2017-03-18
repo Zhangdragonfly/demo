@@ -1,0 +1,1136 @@
+@charset "utf-8";
+
+body{
+    background: #f5f5f5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~登录前头部~~~~~~~~~~~~~~~~~~~~~~~~*/
+.head-top-wrap{
+    height: 42px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #dcdcdc;
+}
+.head-top{
+    min-width: 1200px;
+    line-height: 42px;
+    margin: 0 auto;
+}
+.head-top .welcome{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 40px;
+    font-weight: normal;
+}
+.head-top .enter{
+    float: right;
+    margin-right: 50px;
+}
+.login-success .enter{
+    margin-right: 0;
+}
+.head-top .enter a{
+    float: left;
+}
+.head-top .enter .entrance{
+    display: inline-block;
+    width: 82px;
+    height: 28px;
+    color: #fff;
+    background: #c6151f;
+    text-align: center;
+    line-height: 28px;
+    margin: 7px 20px 0 0;
+    border-radius: 4px;
+}
+.head-top .enter .help{
+    margin-right: 16px;
+}
+.head-top .enter .tel{
+    float: right;
+    margin-right: 20px;
+}
+.head-top .enter i{
+    display: inline-block;
+    float: right;
+    width: 24px;
+    height:18px;
+    background: url("../../images/login-ghost.png") -188px -255px no-repeat;
+    margin:12px 8px 0 0;
+}
+.head-bottom{
+    min-width: 1280px;
+    height: 96px;
+    margin:0 auto;
+    padding-top: 16px;
+    border-bottom: 1px solid #bebebe;
+}
+.head-bottom h1{
+    width: 217px;
+    height: 69px;
+    float: left;
+    margin-left: 38px;
+}
+.head-bottom .nav{
+    float: right;
+}
+.head-bottom .nav li{
+    float: left;
+    width: 75px;
+    height: 80px;
+    text-align: center;
+    line-height: 68px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.head-bottom .nav li a{
+    height: 80px;
+    display: block;
+}
+.head-bottom .nav a.active{
+    color:#c81624;
+    border-bottom: 4px solid #c81724;
+}
+.head-bottom .nav a:hover{
+    color:#c81624;
+    border-bottom: 4px solid #c81724;
+}
+.head-bottom .nav .about-us{
+    margin-right: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~登陆后的头部~~~~~~~~~~~~~~~~~~~~~*/
+.enter ul li{
+    float: left;
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 500;
+}
+.enter ul .username:hover,
+.enter ul .my-lib:hover{
+    color: #c81624;
+}
+
+.head-top .enter a{
+    float: none;
+}
+.head-top .enter a:hover{
+    color: #c81624;
+}
+.head-top .enter a.entrance:hover{
+    color: #ffffff;
+}
+.head-bottom{
+    background: #fff;
+}
+.breadcrumb{
+    background: #f5f5f5;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~头部~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.head{
+    width: 100%;
+    height: 131px;
+    background: #ffffff;
+    min-width: 1200px;
+    position: relative;
+}
+.head h1{
+    margin:0 16% 0 3%;
+}
+.head h1 a{
+    text-indent: -99999px;
+    display: inline-block;
+    width: 217px;
+    height: 69px;
+    background: url("../../images/logo.png");
+    margin-top: 32px;
+}
+.search-key{
+    margin-top:48px;
+    width: 546px;
+    height: 40px;
+    border: 1px solid #8d8d8d;
+    border-radius: 2px;
+    box-shadow: inset 2px 2px 5px #dfdfdf;
+    position: absolute;
+    left: 50%;
+    margin-left: -273px;
+}
+.search-key .dropdown{
+    margin: 10px 5px 0 8px;
+    width: 102px;
+    cursor: pointer;
+}
+.search-key .dropdown .caret{
+    margin-top: -2px;
+}
+.search-key ul{
+    left: -9px;
+    top: 28px;
+    position: absolute;
+}
+.search-key ul li{
+    padding: 3px 20px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+.search-key ul li:hover{
+    background: #f5f5f5;
+}
+.search-key input{
+    width: 368px;
+    height: 27px;
+    padding:0 10px;
+    outline: none;
+    border: none;
+    margin-top: 6px;
+    border-left: 1px solid #b7b7b7;
+    color: #8d8d8d;
+    font-size: 12px;
+}
+.search-media{
+    width: 60px;
+    height: 40px;
+    background: #C81724;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+.search-media span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url("../../images/list-ghost.png") 0 -107px no-repeat;
+}
+.header .phone-num{
+    display: block;
+    width: 275px;
+    height: 96px;
+    margin: 20px 5% 0 0;
+    background: url("../../images/list-ghost.png") 0 0 no-repeat;
+}
+.header .contact-img{
+    margin-right: 5%;
+}
+.dropdown .caret
+{
+    background: url("../../images/list-ghost.png") -285px -75px no-repeat;
+    width: 9px;
+    height: 6px;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~导航~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.nav{
+    width: 100%;
+    background: #C81724;
+    min-width: 1200px;
+    height: 54px;
+    line-height: 54px;
+}
+.nav ul{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.nav ul li{
+    float: left;
+}
+.nav ul li a{
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 0 45px;
+}
+.nav ul li a.active-nav,
+.nav ul li a:hover{
+    background: #1E1E1E;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~banner~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.ad-banner{
+    width:100%;
+    min-width: 1200px;
+    position: relative;
+}
+.ad-banner .ad-pic{
+    height: 400px;
+}
+.ad-banner .ad-pic li{
+    opacity: 0;
+    transition: all 1s ease;
+}
+.ad-banner .ad-pic li a{
+    display: block;
+    width:100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ad-banner .ad-pic .slide1 a{
+    background:url("../../images/banner-one.jpg") 50% 50% no-repeat;
+    background-size: auto 100%;
+}
+/*勿删除*/
+/*.ad-banner .ad-pic .slide2 a{*/
+    /*background:url("../../images/banner-two.png") 50% 50% no-repeat;*/
+    /*background-size: auto 100%;*/
+/*}*/
+/*.ad-banner .ad-pic .slide3 a{*/
+    /*background: pink;*/
+/*}*/
+.ad-banner .ad-dot{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -22px;
+    overflow: hidden;
+    display: none;
+}
+.ad-banner .ad-dot li{
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    background: #ccc;
+    border-radius: 50%;
+    float: left;
+    cursor: pointer;
+}
+.ad-banner .ad-dot li.active{
+    background: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~视频网红资源~~~~~~~~~~~~~~~~~~~~~~*/
+.name{
+    display: inline-block;
+    width: 90px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.resource-wrap{
+    background: #fff;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.resource{
+    width: 1200px;
+    margin: 0 auto;
+}
+.resource-title a,.resource-title span{
+    display: inline-block;
+}
+.resource-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+.video-resource .resource-icon{
+    background: url("../../images/index-ghost.png") no-repeat -5px -74px;
+}
+.weixin-resource .resource-icon{
+    background: url("../../images/index-ghost.png") no-repeat -5px -161px;
+}
+.weibo-resource .resource-icon{
+    background: url("../../images/index-ghost.png") no-repeat -5px -246px;
+}
+.resource-name{
+    line-height: 58px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #323232;
+    font-weight: 600;
+}
+.resource-title a{
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #C81724;
+    border-radius:4px;
+    margin-top: 14px;
+}
+.resource-title a:hover{
+    color: #C81724;
+}
+.resource-nav{
+    margin-top: 20px;
+}
+.resource-nav ul li{
+    float: left;
+    width: 200px;
+    height: 64px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    color: #b5b5b5;
+    cursor: pointer;
+}
+.resource-nav ul li .platform{
+    width: 92px;
+    height: 18px;
+    text-align: left;
+    margin: 10px auto 10px;
+    font-size: 18px;
+}
+.resource-nav ul li span{
+    font-size: 12px;
+}
+.resource-nav ul .active{
+    color: #C81724;
+}
+.resource .bottom-line{
+    margin: 10px 0;
+}
+.resource .bottom-line li{
+    width: 200px;
+    height: 1px;
+    background: #e5e5e5;
+    float: left;
+}
+.resource .bottom-line .line-active{
+    background: #C81724;
+}
+.resource-con{
+    display: none;
+}
+.resource-con.show{
+    display: block;
+}
+.video-resource .resource-con ul li{
+    width: 264px;
+    height: 326px;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    padding-top: 20px;
+    margin-left: 36px;
+}
+.resource-con  .portrait{
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.resource-con .portrait img{
+    position: absolute;
+    top: -172px;
+    left: -172px;
+}
+.video-resource .resource-con .portrait img,
+.weibo-resource .resource-con .portrait img{
+    width: 85px;
+    height:85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+.resource-con .name-id-intro{
+    margin-left: 12px;
+    position: relative;
+}
+.weixin-resource .resource-con .name-id-intro i,
+.weibo-resource .resource-con .name-id-intro i{
+    display: block;
+    width:16px;
+    height: 16px;
+    position: absolute;
+}
+.weixin-resource .resource-con .name-id-intro i{
+    bottom: 20px;
+    left:-32px;
+    background: url("../../images/index-ghost.png") no-repeat -119px 1px;
+}
+.resource-con .name-id{
+    margin: 20px 0 10px 0;
+}
+.resource-con  .name-id .name{
+    font-size: 16px;
+}
+.resource-con .name-id-intro .id{
+    font-size: 12px;
+    color: #b6b6b6;
+}
+.resource-con .name-id i{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    margin-left: 4px;
+}
+.douyuTv .name-id i{
+    background: url("../../images/index-ghost.png") no-repeat -175px -6px;
+}
+.yizhibo .name-id i{
+    background: url("../../images/index-ghost.png") no-repeat -236px -6px;
+}
+.meipai .name-id i{
+    background: url("../../images/index-ghost.png") no-repeat -306px -6px;
+}
+.miaopai .name-id i{
+    background: url("../../images/index-ghost.png") no-repeat -383px -6px;
+}
+.huajiao .name-id i{
+    background: url("../../images/index-ghost.png") no-repeat -462px -7px;
+}
+.yingke .name-id i{
+    background: url("../../images/index-ghost.png") no-repeat -526px -10px;
+}
+.resource-con  .name-id-intro .intro{
+    width: 136px;
+    height: 34px;
+    font-size: 12px;
+    color: #b6b6b6;
+    overflow: hidden;
+}
+.resource-con .video-info img{
+    width: 230px;
+    height:150px;
+    margin: 20px 0 10px 0;
+}
+.follower-audience .audience{
+    margin-left: 26px;
+}
+.follower-audience span{
+    color: #b7b7b7;
+    font-size: 12px;
+}
+.follower-audience .follower-account,
+.follower-audience .audience-account{
+    color: #C81724;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~微信自媒体资源~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.weixin-resource .resource-title a{
+    border: 1px solid #5ec864;
+    color: #5ec864;
+}
+.weixin-resource .resource-con .account{
+    width: 582px;
+    border-right: 1px solid #e5e5e5;
+    margin-left: 18px;
+}
+.weixin-resource .resource-con{
+    display: none;
+}
+.weixin-resource .basic-info{
+    padding-top: 20px;
+}
+.weixin-resource .name{
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+.weixin-resource .id{
+    margin-bottom: 10px;
+}
+.weixin-resource .basic-info ul{
+    margin-left: 106px;
+}
+.weixin-resource .basic-info ul li{
+    margin-bottom: 14px;
+    color: #d3112b;
+}
+.weixin-resource .basic-info ul li span{
+    display: inline-block;
+    width: 116px;
+    text-align: right;
+    margin-right: 16px;
+    color: #525252;
+}
+.weixin-resource .account-detail{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+.weixin-resource .account-detail p{
+    color: #525252;
+    line-height:16px;
+    margin-top: 10px;
+}
+.weixin-resource .account-detail p i{
+    width:22px;
+    height: 16px;
+    display: block;
+    float: left;
+    margin:0 5px 0 24px;
+    background: url(../../images/index-ghost.png) no-repeat -95px -439px;
+}
+.weixin-resource .account-detail .reading-account-average{
+    width: 563px;
+    height: 100px;
+    margin: 22px 0 15px 0;
+}
+.weixin-resource .account-list{
+    padding-bottom: 24px;
+}
+.weixin-resource .account-list li{
+    width: 280px;
+    border-right: 1px solid #e5e5e5;
+    float: left;
+    margin-left: 20px;
+    padding-top: 6px;
+}
+.weixin-resource .account-list .detail-account{
+    margin-top: 18px;
+}
+.weixin-resource .account-list .detail-account li{
+    width: 87px;
+    text-align: center;
+    height: 45px;
+    border:none;
+    font-size: 12px;
+    margin-left: 0;
+    padding-top: 0;
+}
+.weixin-resource .account-list .detail-account li span{
+    display: block;
+}
+.weixin-resource .account-list .detail-account li span:nth-child(2){
+    color: #b4213b;
+    margin-top: 6px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~微博自媒体资源~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.weibo-resource .resource-title a{
+    border: 1px solid #f2b15f;
+    color: #f2b15f;
+}
+.weibo-resource .name-id-intro .name{
+    margin: 20px 0 12px 0;
+    font-size: 16px;
+    display: block;
+}
+.weibo-resource .account-list .name-id-intro .intro{
+    width: 80px;
+    height: 34px;
+    overflow: hidden;
+}
+.weibo-resource .name-id-intro i{
+    background: url("../../images/index-ghost.png") no-repeat -149px 0px;
+    bottom: 12px;
+    left:-30px;
+    border-radius: 50%;
+}
+.weibo-resource .basic-info ul{
+    width: 260px;
+    margin: 20px 0;
+}
+.weibo-resource .basic-info ul li{
+    float: left;
+    line-height: 32px;
+    color: #bb1c32;
+}
+.weibo-resource .basic-info ul li span{
+    color: #2b2b2b;
+}
+.weibo-resource .basic-info ul .comment-account,
+.weibo-resource .basic-info ul .agree-account{
+    margin-left: 26px;
+}
+.weibo-resource .data-charts{
+    width: 284px;
+    height: 224px;
+}
+.weibo-resource .account-detail{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.weibo-resource .account-detail .account{
+    width: 582px;
+    border-right: 1px solid #e5e5e5;
+    margin-left: 18px;
+}
+.weibo-resource .account-list .basic-info{
+    width: 90px;
+}
+.weibo-resource .account-list .name-id-intro .name{
+    margin: 10px 0 2px 0;
+}
+.weibo-resource .resource-con .account-list .name-id-intro i{
+    top: -32px;
+    left: 54px;
+}
+.weibo-resource .resource-con .account-list ul .account-list-detail{
+    width: 256px;
+    height: 150px;
+    border-right: 1px solid #e5e5e5;
+    margin-left: 44px;
+    float: left;
+}
+.weibo-resource .resource-con .account-list .account-list-ul{
+    padding-bottom: 24px;
+}
+.weibo-resource .resource-con .account-list .clearfix ul{
+    margin: 20px 0 0 32px;
+}
+.weibo-resource .resource-con .account-list .clearfix ul li{
+    line-height: 32px;
+}
+.weibo-resource .resource-con .account-list .clearfix ul li span{
+    color: #bd232f;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~经典案例~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.case-wrap{
+    margin-bottom: 20px;
+}
+.case-wrap,.our-serve-wrap{
+    width: 100%;
+    background: #fff;
+}
+.case,.our-serve{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.case .title-con,
+.our-serve .title-con{
+    line-height: 58px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #323232;
+    font-weight: 600;
+}
+.case .title,
+.our-serve .title{
+    margin-bottom: 30px;
+}
+.case .title-icon,
+.our-serve .title-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+.case .title-icon {
+    background: url(../../images/index-ghost.png) no-repeat -5px -333px;
+}
+#tab{
+    width: 1040px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+#tab ul li{
+    padding-right: 27px;
+    float: left;
+    border-right: 1px solid #c8c8c8;
+}
+#tab ul li:nth-child(1) span{
+    margin-left: 4px;
+}
+#tab ul li span {
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: #a5a5a5;
+    cursor: pointer;
+    margin-left: 27px;
+}
+#tab ul #finance{
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
+}
+#banner2{
+    width: 1147px;
+    height: 420px;
+    margin: 30px auto 0;
+    position: relative;
+}
+#wrap{
+    width: 1047px;
+    height: 337px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#pic li{
+    width: 1047px;
+    height: 337px;
+    float: left;
+}
+/*#pic li{*/
+    /**/
+/*}*/
+#pic li.zhibo{
+    background: url("../../images/直播.png") no-repeat;
+    -webkit-background-size: 1047px 337px;
+    background-size: 1047px 337px;
+}
+#pic li.kuaixiao{
+    background: url("../../images/快消.png") no-repeat;
+}
+#pic li.o2o{
+    background: url("../../images/o2o.png") no-repeat;
+}
+#pic li.muying{
+    background: url("../../images/母婴.png") no-repeat;
+}
+#pic li.car{
+    background: url("../../images/汽车.png") no-repeat;
+}
+#pic li.tour{
+    background: url("../../images/旅行.png") no-repeat;
+}
+#pic li.finance{
+    background: url("../../images/金融.png") no-repeat;
+}
+#dot{
+    position: absolute;
+    bottom:34px;
+    left: 48%;
+    margin-left: -64px;
+}
+#dot li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    background: #a5a5a5;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#prev,#next{
+    width: 15px;
+    height: 28px;
+    cursor: pointer;
+}
+#prev{
+    position: absolute;
+    top: 50%;
+    left:0;
+    margin-top:-75px;
+    background: url("http://7xo8fb.com1.z0.glb.clouddn.com/51wom/home-page/imgs/prev.png") no-repeat;
+    background-size: 15px 28px;
+}
+#next{
+    position: absolute;
+    top: 50%;
+    right:0;
+    margin-top:-75px;
+    background: url("http://7xo8fb.com1.z0.glb.clouddn.com/51wom/home-page/imgs/next.png") no-repeat;
+    background-size: 15px 28px;
+}
+#tab ul li span.active1{
+    border-bottom: 2px solid #e6444f;
+    color: #e6444f;
+    font-weight: 600;
+}
+#dot li.active2{
+    background: #e6444f;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~我们的服务~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.our-serve{
+    padding-bottom: 54px;
+}
+.our-serve .title-icon {
+    background: url(../../images/index-ghost.png) no-repeat -5px -420px;
+}
+.our-serve .computer-img{
+    width: 526px;
+    height: 300px;
+    margin: 0 40px;
+    background: url(../../images/index-ghost.png) no-repeat -180px -160px;
+}
+.our-serve .serve-con{
+    width: 530px;
+    height: 300px;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+.our-serve .serve-con li{
+    float: left;
+    position: relative;
+}
+.our-serve .serve-con .more,
+.our-serve .serve-con .fast{
+    margin-bottom: 40px;
+}
+.our-serve .serve-con li i{
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: url(../../images/index-ghost.png) no-repeat;
+    position: absolute;
+    top: -5px;
+    left: -56px;
+}
+.our-serve .serve-con .more i{
+    background-position: -93px -159px;
+}
+.our-serve .serve-con .fast i{
+    background-position: -94px -302px;
+}
+.our-serve .serve-con .great i{
+     background-position: -94px -230px;
+ }
+.our-serve .serve-con .save i{
+    background-position: -94px -372px;
+}
+.our-serve .serve-con li em{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.our-serve .serve-con li span{
+    display: block;
+    margin-bottom: 10px;
+    color: #5c5c5c;
+}
+.our-serve .serve-con li:nth-child(2n){
+    margin-left: 80px;
+}
+.no-border{
+    border: none!important;
+}
+.resource-wrap,.case-wrap,.our-serve-wrap{
+    min-width: 1200px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~侧边栏联系方式~~~~~~~~~~~~~~~~~~~~~~~*/
+.side-bar{
+    width: 40px;
+    position: fixed;
+    top:50%;
+    right: 0;
+    margin-top: -85px;
+}
+.side-bar li{
+    width: 40px;
+    height:38px;
+    background: #1e1e1e;
+    margin-bottom: 6px;
+    border-radius: 6px 0 0 6px;
+    padding: 2px 0 0 6px;
+    cursor: pointer;
+    position: relative;
+}
+.side-bar li i{
+    display: block;
+    width: 30px;
+    height:30px;
+    background: red;
+}
+.side-bar .tel i{
+    background: url("../../images/login-ghost.png") no-repeat -435px 4px;
+}
+.side-bar .qq i{
+    background: url("../../images/login-ghost.png") no-repeat -435px -50px;
+}
+.side-bar .weixin i{
+    background: url("../../images/login-ghost.png") no-repeat -435px -102px;
+}
+.side-bar .top i{
+    background: url("../../images/login-ghost.png") no-repeat -382px -106px;
+}
+.side-bar li .detail{
+    width: 150px;
+    height:158px;
+    box-shadow: 0 0 20px #ccc;
+    border: 1px solid #c6c6c6;
+    position: absolute;
+    top:0;
+    left: 46px;
+    background: #fff;
+    z-index: -1;
+}
+.side-bar li .detail span{
+    display:block;
+    width: 16px;
+    height: 20px;
+    margin:0 auto 10px;
+}
+.side-bar li .detail p{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.side-bar li .qq-con{
+    padding-top: 20px;
+}
+.side-bar li .tel-con{
+    padding-top: 22px;
+}
+.side-bar li .qq-con span{
+    background: url("../../images/contact-way.png") no-repeat;
+}
+.side-bar li .tel-con span{
+    background: url("../../images/contact-way.png") no-repeat -148px 0;
+}
+.side-bar li .weixin-con span{
+    background: url("../../images/contact-way.png") no-repeat 0 -39px;
+}
+.side-bar li .tel-con span{
+    width:42px;
+    height: 42px;
+}
+.side-bar li .weixin-con span{
+    width: 115px;
+    height: 116px;
+}
+.side-bar li .weixin-con p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~底部~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.footer{
+    width: 100%;
+    min-width: 1200px;
+    font-size: 14px;
+    background-color: #252828;
+    padding-bottom:10px;
+}
+.footer .footer-con{
+    width: 1200px;
+    height: 226px;
+    padding-top: 26px;
+    margin:0 auto;
+}
+
+.footer .footer-con .footer-left{
+    width: 140px;
+    margin-left:35px;
+    display: inline-block;
+    float: left;
+}
+.footer-con .footer-left h2{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height:1.6;
+}
+.footer-con .footer-left img{
+    display: block;
+    margin: 5px auto 0;
+}
+.footer-con .footer-mid{
+    width: 794px;
+    min-height: 200px;
+    display: inline-block;
+}
+.footer-con .footer-mid ul{
+    width: 25%;
+    display: inline-block;
+    float: left;
+    padding-left:45px;
+}
+.footer-con .footer-mid ul li{
+    margin-bottom:16px;
+}
+.footer-con .footer-mid ul li .footer-mid-icon{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    float: left;
+    margin-left:-30px;
+    background: url("../../images/index-footer.png") no-repeat;
+}
+.footer-con .footer-mid ul li .shhyx{
+    background-position: -225px -42px;
+}
+.footer-con .footer-mid ul li .znsj{
+    background-position: -249px -42px;
+}
+.footer-con .footer-mid ul li .jjfa{
+    background-position: -273px -42px;
+}
+.footer-con .footer-mid ul li .jxal{
+    background-position: -297px -42px;
+}
+.footer-con .footer-mid ul li .ppfw{
+    background-position: -327px -47px;
+}
+.footer-con .footer-mid ul li:first-child{
+    color: #808080;
+    font-size: 18px;
+}
+.footer-con .footer-mid ul li a,.footer-con .footer-mid ul li span{
+    color: #808383;
+    font-size: 14px;
+}
+.footer-con .footer-mid ul li a:hover{
+    color: #e6444f;
+}
+.footer-con .footer-right{
+    width: 230px;
+    border-left:1px solid #808383;
+    float: right;
+    text-align: center;
+    display: inline-block;
+}
+.footer-con .footer-right h2{
+    font-size: 30px;
+    color: #e5434e;
+    margin-bottom:15px;
+}
+.footer-con .footer-right p{
+    font-size: 18px;
+    color: #babdbc;
+    margin-bottom:18px;
+}
+.footer-con .footer-right a{
+    width: 165px;
+    height: 34px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.footer-con .footer-right .footer-qq{
+    margin-bottom:12px;
+}
+.footer-con .footer-right .footer-qq:hover{
+    color: #e6444f;
+}
+.footer-con .footer-right .footer-qq,.footer-con .footer-right .footer-email{
+    color: #fff;
+    font-size: 14px;
+    line-height: 29px;
+}
+.footer-con .footer-right .footer-email{
+    cursor: default;
+}
+.footer-right .footer-qq .qq-icon{
+    width: 17px;
+    height: 17px;
+    background: url("../../images/index-footer.png") no-repeat;
+    background-position: -232px -1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-right .footer-email .email-icon{
+    width: 17px;
+    height: 17px;
+    background: url("../../images/index-footer.png") no-repeat;
+    background-position: -255px 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.footer .footer-bottom{
+    width: 100%;
+    height: 100px;
+    background-color: #212424;
+    padding-top:20px;
+}
+.footer .footer-bottom p{
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+.footer .footer-bottom .footer-bottom-img{
+    margin: 20px auto 0;
+    width: 240px;
+    height: 42px;
+    background:url("../../images/index-footer.png") no-repeat;
+    background-position: 5px -82px;
+}

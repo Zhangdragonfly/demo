@@ -1,0 +1,500 @@
+@charset "utf-8";
+body{
+    background: #f5f5f5;
+}
+/*~~~登陆后的头部~~~~*/
+.enter ul li{
+    float: left;
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.enter ul .username:hover,
+.enter ul .my-lib:hover{
+    color: #c81624;
+}
+.head-top .enter a{
+    float: none;
+}
+.head-top .enter a:hover{
+    text-decoration: underline!important;
+}
+.head-bottom{
+    background: #fff;
+}
+.breadcrumb{
+    background: #f5f5f5;
+}
+/*~~~~~内容部分~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~视频的媒体库管理列表页样式开始~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.table .account{
+    position: relative;
+    padding: 16px 0;
+}
+.account dl{
+    margin-left: 10px;
+}
+.account dt{
+    width: 64px;
+    height: 64px;
+    margin-right: 8px;
+    position: relative;
+}
+.account dt a{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.account dt a img{
+    position: absolute;
+    top: -172px;
+    left: -180px;
+}
+.account dd{
+    text-align: left;
+    margin-top: 10px;
+    color: #AAAAAA;
+}
+.account dd a:hover{
+    color: #C81624;
+    text-decoration: underline;
+}
+.sex-icon-g,
+.address-icon
+{
+    display: inline-block;
+    width: 17px;
+    height: 22px;
+    vertical-align: middle;
+    margin: -4px 0 2px 0;
+    background: url("../../images/list-ghost.png") -129px -182px no-repeat;
+}
+.sex-icon-b{
+    background-position: -156px -184px;
+}
+.address-icon{
+    width: 13px;
+    height: 17px;
+    background-position: -187px -184px;
+}
+.sex-address{
+    margin-top: 10px;
+}
+.sex-address span{
+    margin-right: 8px;
+}
+.platform-icon{
+    display: inline-block;
+    width: 65px;
+    height: 27px;
+    background: url("../../images/list-ghost.png") -1px -261px no-repeat;
+}
+.platform-icon-mp{
+    background-position: -75px -261px;
+}
+.platform-icon-yzb{
+    background-position: -149px -261px;
+}
+.platform-icon-xm{
+    background-position: -1px -305px;
+}
+.platform-icon-yk{
+    background-position: -75px -305px;
+}
+.platform-icon-dy{
+    background-position: -149px -305px;
+}
+.platform-icon-hn{
+    background-position: -0px -346px;
+}
+.platform-icon-hj{
+    background-position: -76px -346px;
+}
+.platform-icon-tbzb{
+    background-position: -149px -346px;
+}
+
+.show-all-info{
+    position: absolute;
+    z-index: 5999;
+    border: solid 1px #C81624;
+    color: #C81624;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 0 5px;
+    display: none;
+    font-size: 12px;
+    margin: -37px 0 0 10px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~视频的媒体库管理列表页样式结束~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.content-wrap{
+    width: 1190px;
+    margin: 0 auto 25px;
+    background: #f5f5f5;
+}
+.content-sidebar{
+    width: 170px;
+    height: 640px;
+    border-top: 2px solid #c81624;
+}
+.content{
+    width: 1000px;
+    margin-left: 15px;
+}
+.con-top{
+    height: 72px;
+    border-top: 2px solid #c81624;
+    padding-top: 12px;
+}
+.table{
+    width: 1000px;
+}
+.shadow{
+    box-shadow: 0 0 10px #d1d1d1;
+    border-radius: 4px;
+    background: #fff;
+}
+.resource-list-table-top{
+    line-height: 60px;
+}
+.resource-list-table-top .lib-detail{
+    color: #1e1e1e;
+}
+.create-media-lib input{
+    width: 206px;
+    height: 45px;
+    outline:none;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    text-indent: 1em;
+    margin-left: 10px;
+    transition:all .4s ease;
+    -webkit-transition:all .4s ease;
+    -moz-transition:all .4s ease;
+    -ms-transition:all .4s ease;
+    -o-transition:all .4s ease;
+}
+.con-top .create{
+    height: 45px;
+    font-size: 16px;
+}
+.resource-list-table-top .create{
+    width: 134px;
+    margin-left: 16px;
+    padding:0 0 0 8px;
+    line-height: 45px;
+}
+.resource-list-table-top .create i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 7px;
+    background: url("../../images/media-lib-ghost.png") no-repeat -105px -14px;
+}
+
+/*~~~~~表格部分~~~~~*/
+table{
+    width: 968px;
+    margin: 0 auto;
+}
+table thead tr{
+    height: 60px;
+}
+table tr th{
+    text-align: center;
+    font-size: 14px;
+    color: #1d1d1d;
+    /*font-weight: normal;*/
+}
+table tr td{
+    text-align: center;
+    font-size: 12px;
+    color: #363636;
+}
+table tr{
+    height: 104px;
+    border-bottom: 1px solid #e5e5e5;
+}
+table tr td:nth-of-type(9) a{
+    display: block;
+    color: #c81624;
+    line-height: 22px;
+}
+.no-border{
+    border: none;
+}
+.portrait{
+    width: 45px;
+    height:45px;
+    margin-right: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.portrait img{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: -88px;
+    left: -88px;
+}
+.user-main-info{
+    width: 140px;
+    position: relative;
+    padding-left: 10px;
+}
+.user-main-info .v-logo{
+    display: block;
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background: url("../../images/media-lib-ghost.png") no-repeat -40px -245px;
+    position: absolute;
+    top: 56px;
+    left: 45px;
+    margin: 0;
+}
+.user-main-info .weixinID,.en-name{
+    font-size: 12px;
+}
+.user-main-info .weixinID{
+    color: #323232;
+    font-weight: 500;
+    text-align: left;
+    margin: 6px 0 3px 0;
+}
+.user-main-info .little-code{
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    margin-right: 2px;
+    cursor: pointer;
+    background: url("../../images/media-lib-ghost.png") no-repeat -162px -9px;
+}
+.user-main-info .en-name{
+    color: #a3a3a3;
+    margin-right: 0;
+}
+.user-main-info .info{
+    position: relative;
+}
+.user-main-info .weixin-code{
+    width: 100px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    top:46px;
+    left: 0;
+}
+.refer-price li span,
+.refer-price li i,
+.refer-price li em{
+    display: inline-block;
+    height: 14px;
+}
+.refer-price li span {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    color: #3c3c3c;
+}
+.refer-price li i {
+    display: inline-block;
+    width: 61px;
+    text-align: left;
+}
+.refer-price li em{
+    color:#939393;
+    width: 48px;
+}
+.refer-price div{
+    margin:6px 0;
+}
+.ruan-ad-price div,
+.wei-task-price div{
+    margin: 6px 0;
+}
+.operate span{
+    display: block;
+    color: #c91722;
+    cursor: pointer;
+    margin: 6px 0;
+    text-align: left;
+}
+.operate span i{
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 10px;
+}
+.operate .afresh-group i{
+     background: url("../../images/media-lib-ghost.png") no-repeat -62px -14px;
+}
+.operate .delete i{
+    border-radius: 50%;
+    background: url("../../images/media-lib-ghost.png") no-repeat -61px -39px;
+}
+.no-resource{
+    width: 1000px;
+    height:108px;
+    text-align: center;
+    line-height:108px;
+    display: none;
+}
+
+.table-footer{
+    margin-bottom: 20px;
+}
+
+/*微博模块*/
+.weibo-name .name{
+    color: #323232;
+    font-size: 14px;
+}
+.weibo-name .weibo-icon{
+    display: inline-block;
+    width:16px;
+    height: 16px;
+    border-radius: 50%;
+    background: url("../../images/media-lib-ghost.png") no-repeat -17px -243px;
+}
+.weibo-name .tag{
+    margin-top: 12px;
+}
+.weibo-name .tag span{
+    border: 1px solid #c5171f;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 6px;
+    margin-bottom: 4px;
+    color: #b6b6b6;
+}
+
+/*批量管理*/
+.batch-manage{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+}
+.batch-manage button{
+    width: 78px;
+    height: 38px;
+    margin-left: 10px;
+}
+
+/*~~~~~新建媒体库modal样式~~~~~*/
+.modal-content{
+    width: 480px;
+    height: 350px;
+}
+.modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -175px 0 0 -240px;
+}
+.modal-header{
+    width: 456px;
+    margin: 0 auto;
+    padding-right: 0;
+}
+.modal-header h4{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.modal-header .close{
+    margin-top: 4px;
+}
+.modal-body{
+    padding-top: 30px;
+}
+.modal-body .create-media-lib{
+    margin-left: 20px;
+}
+.modal-body .create-media-lib input{
+    width: 310px;
+    margin-left: 0;
+}
+.new-media-lib::-webkit-input-placeholder{
+    font-weight: normal;
+    color: #ccc;
+}
+.new-media-lib::-moz-placeholder{
+    font-weight: normal;
+    color: #ccc;
+}
+.modal-body button{
+    width: 310px;
+    height: 48px;
+    margin:15px 0 0 105px;
+}
+.modal-footer{
+    border: none;
+    text-align: left;
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.modal-footer h4,
+.modal-footer p{
+    line-height: 24px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~重新分组modal层开始~~~~~~~~~~~~~~~~~~*/
+#regrouping .modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -230px 0 0 -165px;
+}
+#regrouping .modal-content{
+    width: 334px;
+    height: 460px;
+}
+#regrouping .modal-header{
+    width: 100%;
+}
+#regrouping .close{
+    margin: 4px 10px 0 0;
+}
+#regrouping .modal-body{
+    padding-top: 15px;
+    line-height: 35px;
+    color: #000000;
+}
+.bd-header{
+    margin-left: 48px;
+}
+#regrouping .group-name{
+    height: 180px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 230px;
+    color: #8D8D8D;
+    margin-left: 35px;
+}
+.group-name li{
+    overflow: hidden;
+}
+.group-name li input{
+    margin: 12px 40px 0 20px;
+}
+.bd-foot{
+    margin-left: 55px;
+    line-height: 50px;
+}
+.bd-foot label{
+    cursor: pointer;
+}
+.modal-footer button{
+    width: 268px;
+    height: 48px;
+    background: #C81624;
+    text-align: center;
+}

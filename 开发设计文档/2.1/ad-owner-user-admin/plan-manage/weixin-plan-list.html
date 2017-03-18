@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信活动管理</title>
+    <link rel="stylesheet" href="../../dep/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" href="../../dep/layer/skin/layer.css">
+    <link rel="stylesheet" href="../../src/css/reset.css">
+    <link rel="stylesheet" href="../../src/css/site-stage-layout-common.css">
+    <link rel="stylesheet" href="../../src/css/ad-owner-user-admin/plan-manage.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="head-top-wrap">
+            <div class="head-top clearfix login-cancel hidden">
+                <h3 class="welcome">欢迎来到沃米优选</h3>
+                <div class="enter clearfix">
+                    <a class="entrance" href="../../login&register/ad-login.html">广告主入口</a>
+                    <a class="entrance" href="../../login&register/media-login.html">媒体主入口</a>
+                    <a class="help" href="javascript:void(0)">帮助中心</a>
+                    <span class="tel">400-878-9551</span><i></i>
+                </div>
+            </div>
+            <div class="head-top clearfix login-success">
+                <h3 class="welcome">欢迎来到沃米优选!自媒体价值发现者</h3>
+                <div class="enter clearfix">
+                    <ul class="clearfix">
+                        <li><a class="username color-main" href="javascript:;">欢迎您! <em>荔枝</em></a></li>
+                        <li><a class="my-lib color-main" href="javascript:;">我的媒体库</a></li>
+                        <li>可用金额: <span>***</span></li>
+                        <li>冻结金额: <span>***</span></li>
+                        <li><a href="javascript:;">立即充值</a></li>
+                        <li><a href="javascript:;">帮助中心</a></li>
+                        <li>退出</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="head-bottom">
+            <h1><a href="#"><img src="../../src/images/logo.png" alt="沃米优选"></a></h1>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li><a class="active" href="javascript:void(0)">首页</a></li>
+                    <li><a href="javascript:void(0)">微信营销</a></li>
+                    <li><a href="javascript:void(0)">视频网红</a></li>
+                    <li><a href="javascript:void(0)">新浪微博</a></li>
+                    <li><a href="javascript:void(0)">解决方案</a></li>
+                    <li><a href="javascript:void(0)">案例中心</a></li>
+                    <li class="about-us"><a href="javascript:void(0)">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 面包屑 -->
+        <div class="bread">
+            <ol class="breadcrumb font-500">
+                当前位置：
+                <li><a href="#">首页</a></li>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">活动管理</a></li>
+                <li class="active color-main">微信活动管理</li>
+            </ol>
+        </div>
+    </div>
+    <div class="content-wrap clearfix">
+        <!--左侧导航栏-->
+        <div class="content-sidebar fl shadow">
+            <ul>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>用户中心</a>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon rotate"></i>
+                    <span class="title"><i class="icon"></i>活动管理</span>
+                    <dl class="show">
+                        <dd><a class="on-click" href="#">微信活动</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>订单管理</span>
+                    <dl>
+                        <dd><a href="#">微信订单</a></dd>
+                        <dd><a href="#">微博订单</a></dd>
+                        <dd><a href="#">视频订单</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>媒体库管理</span>
+                    <dl>
+                        <dd><a href="javascript:;">微信 </a></dd>
+                        <dd><a href="javascript:;">微博</a></dd>
+                        <dd><a href="javascript:;">视频</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>素材管理</a>
+                </li>
+                <li class="fold">
+                    <i class="rotate-icon"></i>
+                    <span class="title"><i class="icon"></i>财务管理</span>
+                    <dl>
+                        <dd><a href="#">全部流水</a></dd>
+                        <dd><a href="#">消费记录</a></dd>
+                        <dd><a href="#">充值记录</a></dd>
+                    </dl>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>消息中心</a>
+                </li>
+                <li class="fold">
+                    <a class="title" href="javascript:;"><i class="icon"></i>基础资料</a>
+                </li>
+            </ul>
+        </div>
+        <!--右侧内容-->
+        <div class="content fr">
+            <div class="con-top shadow clearfix">
+                <span class="fl active-status">活动状态：</span>
+                <div class="dropdown fl">
+                    <div class="clearfix" data-type="wx" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="show-default fl">全部活动</span>
+                        <span class="caret fr"></span>
+                    </div>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>全部活动</li>
+                        <li>进行中</li>
+                        <li>已完成</li>
+                        <li>待支付</li>
+                        <li>待提交</li>
+                    </ul>
+                </div>
+                <div class="active-account fl font-14 font-500">
+                    活动名称 : <input type="text">
+                </div>
+                <div class="active-account fl font-14 font-500">
+                    账号名称/ID : <input type="text">
+                </div>
+                <button class="search-btn btn btn-danger bg-main"><i></i>搜索</button>
+                <a href="#" class="create btn btn-danger bg-main"><i></i>创建活动</a>
+            </div>
+            <h4><span>总计：</span><i class="red">2847</i>个</h4>
+            <div class="weibo-table table shadow">
+                <table class="weibo-order-table">
+                    <thead>
+                    <tr>
+                        <th>活动ID</th>
+                        <th>活动名称</th>
+                        <th>总粉丝量</th>
+                        <th>预计投放总金额</th>
+                        <th>创建时间</th>
+                        <th>活动状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>20160511</td>
+                        <td><a href="#" class="synopsis" data-str="6" data-title="12月火锅节啦啦">12月火锅节啦啦</a></td>
+                        <td>26万</td>
+                        <td>456541564</td>
+                        <td width="170px">2016.04.28</td>
+                        <td>未提交</td>
+                        <td>
+                            <a class="operate" href="">修改</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20160511</td>
+                        <td><a href="#" class="synopsis" data-str="6" data-title="12月火锅节啦啦">12月火锅节啦啦</a></td>
+                        <td>26万</td>
+                        <td>456541564</td>
+                        <td width="170px">2016.04.28</td>
+                        <td>待支付</td>
+                        <td>
+                            <a class="operate" href="">支付</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20160511</td>
+                        <td><a href="#" class="synopsis" data-str="6" data-title="12月火锅节啦啦">12月火锅节啦啦</a></td>
+                        <td>26万</td>
+                        <td>456541564</td>
+                        <td width="170px">2016.04.28</td>
+                        <td>进行中</td>
+                        <td>
+                            <a class="operate" href="">查看报告</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20160511</td>
+                        <td><a href="#" class="synopsis" data-str="6" data-title="12月火锅节啦啦">12月火锅节啦啦</a></td>
+                        <td>26万</td>
+                        <td>456541564</td>
+                        <td width="170px">2016.04.28</td>
+                        <td>已完成</td>
+                        <td>
+                            <a class="operate" href="">查看报告</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="no-data">暂无订单</div>
+            </div>
+            <!--分页-->
+            <div class="table-footer clearfix">
+                <div class="page-wb fl system_page">
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_prev"> &lt; </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this on"> 1 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 2 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 3 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 4 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 5 </a>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_this num"> 6 </a>
+                    <em> ... </em>
+                    <a href="javascript:;" now_num="1" big_num="250" all_num="5000" class="click_next num"> &gt; </a>
+                    <div class="count fl">
+                        <i class="fl">前往</i>
+                        <input type="text" name="tiaozhuan" class="text fl now_pages">
+                        <i class="fl">页</i>
+                        <span now_num="1" big_num="250" all_num="5000" class="aok fl start_select">前往</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--侧边栏联系方式-->
+    <div class="side-bar">
+        <ul>
+            <li class="tel">
+                <div class="tel-con detail">
+                    <span></span>
+                    <p>客服电话</p>
+                    <p>400-878-9551</p>
+                </div>
+                <i></i>
+            </li>
+            <li class="qq">
+                <div class="qq-con detail">
+                    <span></span>
+                    <p>客服QQ</p>
+                    <p>2544745674</p>
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800187006" target="_blank">点击直接与客服沟通</a>
+                </div>
+                <i></i>
+            </li>
+            <li class="weixin">
+                <div class="weixin-con detail">
+                    <p>微信扫一扫</p>
+                    <span></span>
+                </div>
+                <i></i>
+            </li>
+            <li class="top">
+                <i></i>
+            </li>
+        </ul>
+    </div>
+    <!--底部-->
+    <div class="footer-wrap">
+        <div class="footer font-12">
+            <ul>
+                <li class="about-us clearfix"><span></span><a href="javascript:void(0)">关于我们</a><i></i></li>
+                <li class="contact-us clearfix"><span></span><a href="javascript:void(0)">联系我们</a><i></i></li>
+                <li class="service clearfix"><span></span><a href="javascript:void(0)">服务条款</a><i></i></li>
+                <li class="help clearfix"><span></span><a href="javascript:void(0)">帮助中心</a><i></i></li>
+            </ul>
+            <div class="footer-bot">
+                <p> <span> Copyright 2016 &nbsp; www.51wom.com &nbsp; All Rights Reserved</span> 沃米优选:自媒体价值发现者 版权所有 沪ICP备11022867号-1</p>
+            </div>
+        </div>
+    </div>
+    <script src="../../dep/js/jquery-1.10.2.min.js"></script>
+    <script src="../../dep/js/bootstrap-3.3.6.min.js"></script>
+    <script src="../../dep/layer/layer.js"></script>
+    <script src="../../src/js/site-stage-layout-common.js"></script>
+    <script>
+        $(function(){
+            //鼠标放上去显示完整信息ID篇
+            $("a[data-title]").each(function() {
+                var a = $(this);
+                var title = a.attr('data-title');
+                if (title == undefined || title == "") return;
+                a.data('data-title', title).hover(function () {
+                            var offset = a.offset();
+                            $("<div class='show-all-info'>"+title+"</div>").appendTo($(".weibo-table")).css({ top: offset.top + a.outerHeight() + 6, left: offset.left + a.outerWidth() + 1 }).fadeIn(function () {
+                            });
+                        },
+                        function(){ $(".show-all-info").remove();
+                        }
+                );
+            });
+        })
+    </script>
+</body>
+</html>
